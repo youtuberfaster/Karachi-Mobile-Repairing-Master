@@ -3,357 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    
-    <title>Karachi Mobile Repairing Master | Professional Phone Repair Guide</title>
-    <meta name="description" content="Professional mobile phone repairing guide. Model-specific diagnosis and repair for iPhone, Samsung, Techno, Infinix, Xiaomi, Oppo, Vivo and more.">
-    <meta name="keywords" content="mobile repairing, iPhone repair, Samsung repair, Techno repair, Infinix repair, charging problem, dead mobile fix, water damage repair">
+    <title>Karachi Mobile Repairing Master | Complete Phone Repair Guide</title>
+    <meta name="description" content="Complete model-specific mobile phone repairing guide. Professional diagnosis and repair for all faults.">
+    <meta name="keywords" content="mobile repairing, iPhone repair, Samsung repair, Techno repair, charging problem, dead mobile, water damage, network fix">
     <meta name="author" content="Karachi Mobile Repairing Master">
     <meta name="robots" content="index, follow">
     
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #f0f2f5 0%, #e0e5ec 100%);
-            min-height: 100vh;
-        }
-
-        .app-wrapper {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 20px;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .main-header {
-            background: linear-gradient(135deg, #c0392b, #e74c3c);
-            border-radius: 25px;
-            padding: 25px 30px;
-            margin-bottom: 25px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(192, 57, 43, 0.3);
-        }
-
-        .main-header h1 {
-            color: white;
-            font-size: 1.8rem;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
-        }
-
-        .main-header p {
-            color: #ffcdd2;
-            font-size: 0.9rem;
-        }
-
-        .back-btn-container {
-            margin-bottom: 20px;
-        }
-
-        .back-btn {
-            background: #c0392b;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            font-size: 1rem;
-            border-radius: 50px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .back-btn:hover {
-            background: #a93226;
-            transform: translateX(-3px);
-        }
-
-        .main-content {
-            background: white;
-            border-radius: 25px;
-            padding: 30px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            flex: 1;
-        }
-
-        .main-footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 25px;
-            color: #7f8c8d;
-            font-size: 0.8rem;
-        }
-
-        .section-title {
-            font-size: 1.5rem;
-            color: #2c3e50;
-            margin-bottom: 25px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #c0392b;
-            display: inline-block;
-        }
-
-        .brands-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .brand-card {
-            background: linear-gradient(135deg, #fff, #f8f9fa);
-            border-radius: 20px;
-            padding: 25px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-align: center;
-            border: 1px solid #e0e0e0;
-        }
-
-        .brand-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            border-color: #c0392b;
-        }
-
-        .brand-icon {
-            font-size: 3rem;
-            margin-bottom: 12px;
-        }
-
-        .brand-card h3 {
-            color: #2c3e50;
-            font-size: 1.3rem;
-            margin-bottom: 5px;
-        }
-
-        .brand-card p {
-            color: #7f8c8d;
-            font-size: 0.8rem;
-        }
-
-        .model-count {
-            display: inline-block;
-            background: #c0392b;
-            color: white;
-            padding: 3px 10px;
-            border-radius: 20px;
-            font-size: 0.7rem;
-            margin-top: 10px;
-        }
-
-        .models-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .model-card {
-            background: #f8f9fa;
-            border-radius: 15px;
-            padding: 18px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-align: center;
-            border: 1px solid #e0e0e0;
-        }
-
-        .model-card:hover {
-            background: #c0392b;
-            color: white;
-            transform: scale(1.02);
-        }
-
-        .model-card:hover .model-name {
-            color: white;
-        }
-
-        .model-name {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 5px;
-        }
-
-        .faults-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 18px;
-            margin-top: 20px;
-        }
-
-        .fault-card {
-            background: #f8f9fa;
-            border-radius: 15px;
-            padding: 20px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            border-left: 4px solid #c0392b;
-        }
-
-        .fault-card:hover {
-            background: #fff5f0;
-            transform: translateX(5px);
-        }
-
-        .fault-icon {
-            font-size: 2rem;
-        }
-
-        .fault-info {
-            flex: 1;
-        }
-
-        .fault-info h4 {
-            color: #2c3e50;
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-        }
-
-        .fault-info p {
-            color: #7f8c8d;
-            font-size: 0.75rem;
-        }
-
-        .repair-header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .repair-header h2 {
-            color: #c0392b;
-            font-size: 1.6rem;
-            margin-bottom: 10px;
-        }
-
-        .diagnosis-box {
-            background: #e8f4f8;
-            border-radius: 20px;
-            padding: 20px;
-            margin-bottom: 25px;
-            border-left: 5px solid #2980b9;
-        }
-
-        .diagnosis-box h3 {
-            color: #2980b9;
-            margin-bottom: 15px;
-        }
-
-        .possible-causes {
-            background: #fef9e7;
-            border-radius: 20px;
-            padding: 20px;
-            margin-bottom: 25px;
-            border-left: 5px solid #f39c12;
-        }
-
-        .possible-causes h3 {
-            color: #e67e22;
-            margin-bottom: 15px;
-        }
-
-        .cause-list {
-            list-style: none;
-        }
-
-        .cause-list li {
-            padding: 8px 0;
-            border-bottom: 1px solid #f0e0c0;
-        }
-
-        .step {
-            background: #fff;
-            border: 1px solid #e0e0e0;
-            border-radius: 20px;
-            margin-bottom: 20px;
-            padding: 20px;
-        }
-
-        .step-title {
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: #c0392b;
-            margin-bottom: 12px;
-        }
-
-        .step-text {
-            line-height: 1.6;
-            color: #34495e;
-        }
-
-        .tools-box {
-            background: #e8f5e9;
-            border-radius: 20px;
-            padding: 20px;
-            margin-top: 25px;
-            border-left: 5px solid #27ae60;
-        }
-
-        .tools-box h3 {
-            color: #27ae60;
-            margin-bottom: 12px;
-        }
-
-        .warning-box {
-            background: #fdecea;
-            border-radius: 20px;
-            padding: 20px;
-            margin-top: 20px;
-            border-left: 5px solid #e74c3c;
-        }
-
-        .warning-box h3 {
-            color: #e74c3c;
-            margin-bottom: 12px;
-        }
-
-        .warning-box ul {
-            padding-left: 20px;
-        }
-
-        .search-bar {
-            margin-bottom: 25px;
-        }
-
-        .search-bar input {
-            width: 100%;
-            padding: 15px 20px;
-            border: 2px solid #e0e0e0;
-            border-radius: 50px;
-            font-size: 1rem;
-            outline: none;
-        }
-
-        .search-bar input:focus {
-            border-color: #c0392b;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #f0f2f5 0%, #e0e5ec 100%); min-height: 100vh; }
+        .app-wrapper { max-width: 1400px; margin: 0 auto; padding: 20px; min-height: 100vh; display: flex; flex-direction: column; }
+        .main-header { background: linear-gradient(135deg, #c0392b, #e74c3c); border-radius: 25px; padding: 25px 30px; margin-bottom: 25px; text-align: center; box-shadow: 0 10px 30px rgba(192,57,43,0.3); }
+        .main-header h1 { color: white; font-size: 1.8rem; margin-bottom: 8px; }
+        .main-header p { color: #ffcdd2; font-size: 0.9rem; }
+        .back-btn-container { margin-bottom: 20px; }
+        .back-btn { background: #c0392b; color: white; border: none; padding: 12px 25px; font-size: 1rem; border-radius: 50px; cursor: pointer; font-weight: bold; display: inline-flex; align-items: center; gap: 8px; }
+        .back-btn:hover { background: #a93226; transform: translateX(-3px); }
+        .main-content { background: white; border-radius: 25px; padding: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); flex: 1; }
+        .main-footer { text-align: center; padding: 20px; margin-top: 25px; color: #7f8c8d; font-size: 0.8rem; }
+        .section-title { font-size: 1.5rem; color: #2c3e50; margin-bottom: 25px; padding-bottom: 10px; border-bottom: 3px solid #c0392b; display: inline-block; }
+        .brands-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
+        .brand-card { background: linear-gradient(135deg, #fff, #f8f9fa); border-radius: 20px; padding: 25px; cursor: pointer; transition: all 0.3s ease; text-align: center; border: 1px solid #e0e0e0; }
+        .brand-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.1); border-color: #c0392b; }
+        .brand-icon { font-size: 3rem; margin-bottom: 12px; }
+        .brand-card h3 { color: #2c3e50; font-size: 1.3rem; }
+        .model-count { display: inline-block; background: #c0392b; color: white; padding: 3px 10px; border-radius: 20px; font-size: 0.7rem; margin-top: 10px; }
+        .models-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; margin-top: 20px; }
+        .model-card { background: #f8f9fa; border-radius: 15px; padding: 18px; cursor: pointer; text-align: center; border: 1px solid #e0e0e0; transition: all 0.3s; }
+        .model-card:hover { background: #c0392b; color: white; transform: scale(1.02); }
+        .model-name { font-size: 1rem; font-weight: 600; color: #2c3e50; }
+        .model-card:hover .model-name { color: white; }
+        .faults-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px; margin-top: 20px; }
+        .fault-card { background: #f8f9fa; border-radius: 15px; padding: 20px; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; gap: 15px; border-left: 4px solid #c0392b; }
+        .fault-card:hover { background: #fff5f0; transform: translateX(5px); }
+        .fault-icon { font-size: 2rem; }
+        .fault-info h4 { color: #2c3e50; font-size: 1.1rem; }
+        .fault-info p { color: #7f8c8d; font-size: 0.75rem; }
+        .repair-header { text-align: center; margin-bottom: 30px; }
+        .repair-header h2 { color: #c0392b; font-size: 1.6rem; }
+        .diagnosis-box { background: #e8f4f8; border-radius: 20px; padding: 20px; margin-bottom: 25px; border-left: 5px solid #2980b9; }
+        .diagnosis-box h3 { color: #2980b9; margin-bottom: 15px; }
+        .possible-causes { background: #fef9e7; border-radius: 20px; padding: 20px; margin-bottom: 25px; border-left: 5px solid #f39c12; }
+        .possible-causes h3 { color: #e67e22; margin-bottom: 15px; }
+        .cause-list { list-style: none; }
+        .cause-list li { padding: 8px 0; border-bottom: 1px solid #f0e0c0; }
+        .step { background: #fff; border: 1px solid #e0e0e0; border-radius: 20px; margin-bottom: 20px; padding: 20px; }
+        .step-title { font-size: 1.1rem; font-weight: bold; color: #c0392b; margin-bottom: 12px; }
+        .step-text { line-height: 1.6; color: #34495e; }
+        .tools-box { background: #e8f5e9; border-radius: 20px; padding: 20px; margin-top: 25px; border-left: 5px solid #27ae60; }
+        .tools-box h3 { color: #27ae60; }
+        .warning-box { background: #fdecea; border-radius: 20px; padding: 20px; margin-top: 20px; border-left: 5px solid #e74c3c; }
+        .warning-box ul { padding-left: 20px; }
+        .search-bar { margin-bottom: 25px; }
+        .search-bar input { width: 100%; padding: 15px 20px; border: 2px solid #e0e0e0; border-radius: 50px; font-size: 1rem; outline: none; }
+        .search-bar input:focus { border-color: #c0392b; }
         @media (max-width: 768px) {
-            .app-wrapper {
-                padding: 10px;
-            }
-            .main-header h1 {
-                font-size: 1.3rem;
-            }
-            .main-content {
-                padding: 20px 15px;
-            }
-            .brands-grid, .models-grid, .faults-grid {
-                grid-template-columns: 1fr;
-            }
+            .app-wrapper { padding: 10px; }
+            .main-header h1 { font-size: 1.3rem; }
+            .main-content { padding: 20px 15px; }
+            .brands-grid, .models-grid, .faults-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -361,12 +69,10 @@
     <div class="app-wrapper">
         <div class="main-header">
             <h1>📱 KARACHI MOBILE REPAIRING MASTER</h1>
-            <p>Model-Specific Phone Repair Guide | Expert Diagnosis & Solutions</p>
+            <p>Model-Specific Complete Phone Repair Guide | 15 Faults | 50+ Models</p>
         </div>
-
         <div id="backBtnContainer" class="back-btn-container"></div>
         <div id="mainContent" class="main-content"></div>
-
         <div class="main-footer">
             <p>© 2024 Karachi Mobile Repairing Master - Complete Mobile Repairing Guide</p>
         </div>
@@ -374,7 +80,7 @@
 
     <script>
         // ============================================
-        // BRANDS AND MODELS
+        // BRANDS AND MODELS (50+)
         // ============================================
         const brands = [
             { id: "apple", name: "Apple iPhone", icon: "🍎", modelCount: 12 },
@@ -399,503 +105,155 @@
         };
 
         // ============================================
-        // MODEL-SPECIFIC REPAIR GUIDES
+        // ALL 15 FAULTS LIST
+        // ============================================
+        const faultsList = [
+            { id: "charging", name: "🔋 Charging Problem", icon: "🔋", desc: "Not charging, slow charging, intermittent charging" },
+            { id: "dead", name: "💀 Dead Mobile", icon: "💀", desc: "No power, not turning on, no response" },
+            { id: "speaker", name: "🔊 Speaker Problem", icon: "🔊", desc: "No sound, low volume, crackling sound" },
+            { id: "mic", name: "🎙️ Microphone Problem", icon: "🎙️", desc: "No voice in calls, voice recording not working" },
+            { id: "network", name: "📶 No Network Signal", icon: "📶", desc: "Emergency calls only, no service" },
+            { id: "display", name: "🖥️ Display Issue", icon: "🖥️", desc: "No display, lines on screen, flickering" },
+            { id: "water", name: "💧 Water Damage", icon: "💧", desc: "Liquid damage, phone dropped in water" },
+            { id: "camera", name: "📸 Camera Problem", icon: "📸", desc: "Camera not opening, blurry photos" },
+            { id: "wifi", name: "📡 WiFi Problem", icon: "📡", desc: "WiFi not connecting, weak signal" },
+            { id: "bluetooth", name: "🔵 Bluetooth Issue", icon: "🔵", desc: "Not pairing, connection drops" },
+            { id: "touch", name: "👆 Touch Problem", icon: "👆", desc: "Touch not working, ghost touches" },
+            { id: "battery", name: "🔋 Battery Drain", icon: "🔋", desc: "Battery dying fast, overheating" },
+            { id: "sim", name: "💳 SIM Not Detected", icon: "💳", desc: "No SIM card detected" },
+            { id: "fingerprint", name: "🔐 Fingerprint Issue", icon: "🔐", desc: "Fingerprint not working" },
+            { id: "buttons", name: "🔘 Button Issue", icon: "🔘", desc: "Power/volume buttons not working" }
+        ];
+
+        // ============================================
+        // COMPLETE MODEL-SPECIFIC REPAIR GUIDES (ALL 15 FAULTS)
         // ============================================
         
-        const modelRepairGuides = {
-            // ========== IPHONE MODELS ==========
-            "iPhone 16 Pro Max": {
-                charging: {
-                    title: "iPhone 16 Pro Max Charging Problem - Complete Guide",
-                    possibleCauses: ["🔌 Damaged USB-C port", "🔋 Faulty battery or BMS", "🔧 Damaged Tristar IC", "🔧 Hydra IC issue", "⚡ Overvoltage protection IC"],
-                    steps: [
-                        "STEP 1: Check USB-C port for debris or damage. Clean with isopropyl alcohol.",
-                        "STEP 2: Test with known working USB-C cable and 20W+ charger.",
-                        "STEP 3: Check battery voltage on connector - should be 3.85V (iPhone 16 uses LCO battery)",
-                        "STEP 4: Locate Tristar IC (U4000) near charging port - common failure in iPhones",
-                        "STEP 5: Check Hydra IC (U4900) - responsible for fast charging detection",
-                        "STEP 6: Measure PP_VBUS_MAIN voltage - should be 5V or 9V when charging",
-                        "STEP 7: Check PP_BATT_VCC line for shorts to ground",
-                        "STEP 8: Reheat Tristar IC with hot air at 320°C for 30 seconds",
-                        "STEP 9: If still not working, replace Tristar IC (U4000)",
-                        "STEP 10: Last resort - replace charging port flex cable"
-                    ],
-                    tools: ["Multimeter", "Hot air gun (320°C)", "Soldering iron", "Isopropyl alcohol", "Tweezers", "Magnifying glass"],
-                    warnings: ["Don't use cheap USB-C cables - can damage Tristar IC", "Always disconnect battery first", "iPhone 16 uses new LCO battery - handle carefully"]
-                },
-                dead: {
-                    title: "iPhone 16 Pro Max Dead (No Power) - Complete Guide",
-                    possibleCauses: ["🔋 Dead battery (below 2.5V)", "🔧 PMIC failure", "⚡ Short on main power line", "🔘 Power button flex issue", "💀 CPU underfill problem"],
-                    steps: [
-                        "STEP 1: Connect to power source and check for amperage draw",
-                        "STEP 2: Check battery voltage - below 2.5V means battery dead",
-                        "STEP 3: Use DC power supply on battery connector - check for shorts",
-                        "STEP 4: Locate PMIC (U7000) - main power management IC",
-                        "STEP 5: Check PP_VDD_MAIN - should be 3.8V",
-                        "STEP 6: Check PP1V8_SDRAM - 1.8V for RAM",
-                        "STEP 7: Check PP0V9_SOC - 0.9V for CPU core",
-                        "STEP 8: If no voltage on main lines, PMIC is likely dead",
-                        "STEP 9: Check for shorts using thermal camera or alcohol method",
-                        "STEP 10: Replace PMIC if all voltages missing"
-                    ],
-                    tools: ["DC Power Supply", "Multimeter", "Hot air gun (350°C)", "Thermal camera or alcohol", "Microscope", "Tweezers"],
-                    warnings: ["Never connect battery backwards - will blow PMIC", "Use ESD protection", "iPhone 16 has underfill on CPU - careful with heat"]
-                },
-                speaker: {
-                    title: "iPhone 16 Pro Max Speaker Problem - Complete Guide",
-                    possibleCauses: ["🔊 Blown speaker unit", "🧹 Speaker grille blocked", "🔌 Loose speaker connector", "🎛️ Audio amplifier IC failure", "🧵 Torn speaker flex cable"],
-                    steps: [
-                        "STEP 1: Check speaker grille for debris - clean with soft brush",
-                        "STEP 2: Test speaker with known working speaker from another iPhone 16",
-                        "STEP 3: Check speaker connector J4200 on motherboard",
-                        "STEP 4: Inspect speaker flex cable for tears or damage",
-                        "STEP 5: Locate Audio Amplifier IC (U4200) near speaker connector",
-                        "STEP 6: Check continuity from speaker connector to audio IC",
-                        "STEP 7: Measure SPKRAMP_VDD - should be 3.8V",
-                        "STEP 8: Reheat Audio Amplifier IC if dry solder suspected",
-                        "STEP 9: If all checks pass, replace speaker module",
-                        "STEP 10: Also check earpiece speaker - often fails together"
-                    ],
-                    tools: ["Multimeter", "Hot air gun (320°C)", "Soft brush", "Tweezers", "Magnifying glass"],
-                    warnings: ["Don't blow compressed air directly - can damage speaker membrane", "iPhone 16 has dual speakers - check both"]
-                }
-            },
-            
-            "iPhone 16 Pro": {
-                charging: {
-                    title: "iPhone 16 Pro Charging Problem - Complete Guide",
-                    possibleCauses: ["🔌 USB-C port damage", "🔋 Battery BMS failure", "🔧 Tristar IC (U4000) failure", "🔧 Hydra IC issue", "⚡ Tiger IC for fast charging"],
-                    steps: [
-                        "STEP 1: Clean USB-C port thoroughly with alcohol and soft brush",
-                        "STEP 2: Test with Apple original 20W charger and certified cable",
-                        "STEP 3: Check battery voltage - iPhone 16 Pro uses 3.88V LCO battery",
-                        "STEP 4: Locate Tristar IC (U4000) - most common charging IC failure",
-                        "STEP 5: Check Hydra IC (U4900) for fast charging issues",
-                        "STEP 6: Measure PP_VBUS_MAIN - should be 5V/9V/15V on PD charger",
-                        "STEP 7: Check Tiger IC (U5200) for USB-C controller issues",
-                        "STEP 8: Reheat Tristar IC with flux at 310°C",
-                        "STEP 9: Replace Tristar IC if reheat doesn't work",
-                        "STEP 10: Check charging coil L4000 for continuity"
-                    ],
-                    tools: ["Multimeter", "Hot air gun (310°C)", "Soldering iron", "Flux", "USB-C tester", "Tweezers"],
-                    warnings: ["iPhone 16 Pro supports 27W fast charging - check PD negotiation", "Don't use non-certified USB-C cables"]
-                },
-                dead: {
-                    title: "iPhone 16 Pro Dead - Complete Repair Guide",
-                    possibleCauses: ["🔋 Completely discharged battery", "🔧 PMIC (U7000) failure", "⚡ Short on PP_BATT_VCC", "🔘 Power button flex disconnected", "💀 NAND or CPU issue"],
-                    steps: [
-                        "STEP 1: Connect to power - check for 5V on USB-C meter",
-                        "STEP 2: Check battery voltage - below 2.5V needs replacement",
-                        "STEP 3: Apply DC power supply to battery connector at 3.8V",
-                        "STEP 4: Check for current draw - 0A means no power path",
-                        "STEP 5: Locate PMIC U7000 - supplies all voltages",
-                        "STEP 6: Check PP_VDD_MAIN - should be 3.8V if PMIC working",
-                        "STEP 7: Check PP1V8_SDRAM and PP0V9_SOC voltages",
-                        "STEP 8: If main voltage present but no others, PMIC is faulty",
-                        "STEP 9: Check for shorts on all power rails using diode mode",
-                        "STEP 10: Replace PMIC if all rails missing"
-                    ],
-                    tools: ["DC Power Supply", "Multimeter with diode mode", "Hot air gun (350°C)", "Thermal camera", "Microscope"],
-                    warnings: ["iPhone 16 Pro has stacked motherboard - be careful separating", "Don't apply more than 4.2V to battery connector"]
-                }
-            },
-            
-            "iPhone 16": {
-                charging: {
-                    title: "iPhone 16 Charging Problem - Complete Guide",
-                    possibleCauses: ["🔌 Dirty or damaged USB-C port", "🔋 Battery connection issue", "🔧 Tristar IC failure", "⚡ Charging coil open", "🔌 Charging port flex damaged"],
-                    steps: [
-                        "STEP 1: Clean USB-C port with toothpick and alcohol - most common fix",
-                        "STEP 2: Test with multiple certified USB-C cables",
-                        "STEP 3: Check battery connector J4500 for loose connection",
-                        "STEP 4: Inspect charging port flex for tears or damage",
-                        "STEP 5: Locate Tristar IC U4000 on motherboard",
-                        "STEP 6: Check continuity of charging coil L4000",
-                        "STEP 7: Measure PP_VBUS_MAIN - should be 5V minimum",
-                        "STEP 8: Reheat Tristar IC with flux at 310°C",
-                        "STEP 9: Replace charging port flex if pins are damaged",
-                        "STEP 10: Replace Tristar IC as last resort"
-                    ],
-                    tools: ["Multimeter", "Hot air gun", "USB-C tester", "Plastic toothpick", "Isopropyl alcohol", "Tweezers"],
-                    warnings: ["iPhone 16 uses standard USB-C - try different cables first", "Port cleaning solves 70% of charging issues"]
-                }
-            },
-            
-            // ========== SAMSUNG MODELS ==========
-            "Galaxy S24 Ultra": {
-                charging: {
-                    title: "Samsung Galaxy S24 Ultra Charging Problem - Complete Guide",
-                    possibleCauses: ["🔌 Damaged USB-C port", "🔋 Battery or BMS issue", "🔧 SM5150 Charging IC failure", "🔧 MAX77801 Power IC issue", "⚡ Overvoltage protection circuit"],
-                    steps: [
-                        "STEP 1: Check USB-C port for debris - clean with alcohol",
-                        "STEP 2: Test with Samsung original 45W charger and 5A cable",
-                        "STEP 3: Check battery voltage on connector - should be 3.88V",
-                        "STEP 4: Locate SM5150 Charging IC - common failure on S24 Ultra",
-                        "STEP 5: Locate MAX77801 Power Management IC",
-                        "STEP 6: Measure VCHG line - should be 5V/9V when charging",
-                        "STEP 7: Check charging coil L5200 for continuity",
-                        "STEP 8: Reheat SM5150 with hot air at 330°C",
-                        "STEP 9: Check VBUS line for shorts to ground",
-                        "STEP 10: Replace SM5150 if reheat doesn't work",
-                        "STEP 11: Check wireless charging coil as alternative test"
-                    ],
-                    tools: ["Multimeter", "Hot air gun (330°C)", "Soldering iron", "Samsung 45W charger", "USB-C meter", "Tweezers"],
-                    warnings: ["S24 Ultra requires 45W charger for fast charging - 25W won't show fast charging", "Don't use cheap cables - can damage SM5150"]
-                },
-                dead: {
-                    title: "Samsung Galaxy S24 Ultra Dead - Complete Guide",
-                    possibleCauses: ["🔋 Dead battery (below 2.5V)", "🔧 MAX77801 Power IC failure", "⚡ Short on main power line", "🔘 Power button flex", "💀 CPU or PMIC issue"],
-                    steps: [
-                        "STEP 1: Connect to 45W charger - wait 30 minutes (battery might be deeply discharged)",
-                        "STEP 2: Check battery voltage - below 2.5V needs replacement",
-                        "STEP 3: Use DC power supply at 3.88V on battery connector",
-                        "STEP 4: Check for current draw - 0.2-0.5A is normal boot current",
-                        "STEP 5: Locate MAX77801 Power IC (main PMIC)",
-                        "STEP 6: Check VSYS line - should be 3.8V",
-                        "STEP 7: Check VREG_BUCK1 for 1.8V",
-                        "STEP 8: Check VREG_BUCK4 for 0.9V (CPU core)",
-                        "STEP 9: If no voltages, check for shorts on all rails",
-                        "STEP 10: Replace MAX77801 if no output",
-                        "STEP 11: Check power button flex continuity"
-                    ],
-                    tools: ["DC Power Supply", "Multimeter", "Hot air gun (350°C)", "Thermal camera", "Microscope", "Tweezers"],
-                    warnings: ["S24 Ultra has vapor chamber cooling - heat spreads quickly", "Use flux when working on PMIC"]
-                }
-            },
-            
-            "Galaxy S24+": {
-                charging: {
-                    title: "Samsung Galaxy S24+ Charging Problem - Complete Guide",
-                    possibleCauses: ["🔌 USB-C port damage", "🔋 Battery connector loose", "🔧 SM5150 Charging IC", "⚡ Charging coil open", "🔌 Charging flex cable damage"],
-                    steps: [
-                        "STEP 1: Clean USB-C port thoroughly",
-                        "STEP 2: Test with 45W Samsung charger",
-                        "STEP 3: Check battery voltage - S24+ uses 3.88V battery",
-                        "STEP 4: Locate SM5150 Charging IC (different location from Ultra)",
-                        "STEP 5: Check VBUS line from USB-C to SM5150",
-                        "STEP 6: Measure voltage on charging coil L5200",
-                        "STEP 7: Check for shorts on VCHG line",
-                        "STEP 8: Reheat SM5150 with flux at 320°C",
-                        "STEP 9: Replace charging port flex if pins are bent",
-                        "STEP 10: Replace SM5150 as last option"
-                    ],
-                    tools: ["Multimeter", "Hot air gun (320°C)", "Soldering iron", "USB-C tester", "Tweezers"],
-                    warnings: ["S24+ has same charging circuit as S24 Ultra", "Check wireless charging - if working, USB port is issue"]
-                }
-            },
-            
-            "Galaxy S24": {
-                charging: {
-                    title: "Samsung Galaxy S24 Charging Problem - Complete Guide",
-                    possibleCauses: ["🔌 Dirty USB-C port", "🔋 Battery issue", "🔧 SM5150 IC failure", "⚡ Capacitor short near charging IC", "🔌 Charging flex connection"],
-                    steps: [
-                        "STEP 1: Clean USB-C port - most common solution for S24",
-                        "STEP 2: Test with different chargers (25W and 45W)",
-                        "STEP 3: Check battery connector J500 for loose connection",
-                        "STEP 4: Locate SM5150 Charging IC on motherboard",
-                        "STEP 5: Check capacitors around SM5150 for shorts",
-                        "STEP 6: Measure VCHG line - should be 5V-9V",
-                        "STEP 7: Check continuity from USB-C to SM5150",
-                        "STEP 8: Reheat SM5150 carefully",
-                        "STEP 9: Remove shorted capacitor if found",
-                        "STEP 10: Replace SM5150 if all else fails"
-                    ],
-                    tools: ["Multimeter", "Hot air gun (320°C)", "ESD tweezers", "Isopropyl alcohol", "Soft brush"],
-                    warnings: ["Base S24 has smaller motherboard - more compact components", "Check for bent pins in USB-C port"]
-                }
-            },
-            
-            // ========== TECHNO MODELS ==========
-            "Spark 20 Pro": {
-                charging: {
-                    title: "Techno Spark 20 Pro Charging Problem - Complete Guide",
-                    possibleCauses: ["🔌 Loose or dirty charging port", "🔋 Battery connector issue", "🔧 MTK Charging IC (BQ25601)", "🧵 Broken charging coil", "⚡ Overvoltage protection IC"],
-                    steps: [
-                        "STEP 1: Clean charging port with toothbrush and alcohol",
-                        "STEP 2: Check if battery connector is properly seated",
-                        "STEP 3: Locate BQ25601 Charging IC (Mediatek platform)",
-                        "STEP 4: Check charging coil L1800 for continuity",
-                        "STEP 5: Measure VBUS line - should be 5V",
-                        "STEP 6: Check BAT+ line for 3.7V",
-                        "STEP 7: Inspect OVP (Overvoltage Protection) IC near USB port",
-                        "STEP 8: Reheat BQ25601 with hot air at 300°C",
-                        "STEP 9: Check for shorts on capacitors around charging IC",
-                        "STEP 10: Replace charging port flex (common on Techno phones)"
-                    ],
-                    tools: ["Multimeter", "Hot air gun (300°C)", "Soldering iron", "Toothbrush", "Isopropyl alcohol", "Tweezers"],
-                    warnings: ["Techno phones use Mediatek chips - different from Qualcomm", "Charging port is often soldered directly on board"]
-                },
-                dead: {
-                    title: "Techno Spark 20 Pro Dead - Complete Guide",
-                    possibleCauses: ["🔋 Completely dead battery", "🔧 PMIC (MT6357) failure", "⚡ Short on VBAT line", "🔘 Power button issue", "💀 CPU cold solder"],
-                    steps: [
-                        "STEP 1: Connect charger and wait 30 minutes for deep discharge recovery",
-                        "STEP 2: Check battery voltage - below 2.5V needs replacement",
-                        "STEP 3: Locate MT6357 Power Management IC",
-                        "STEP 4: Check VSYS line - should be 3.7V",
-                        "STEP 5: Check VIO18 for 1.8V",
-                        "STEP 6: Check VPROC for 0.9V (CPU core)",
-                        "STEP 7: Check power button continuity on flex cable",
-                        "STEP 8: Reheat MT6357 with flux at 320°C",
-                        "STEP 9: Check for shorts on main power lines",
-                        "STEP 10: Replace MT6357 if no output"
-                    ],
-                    tools: ["DC Power Supply", "Multimeter", "Hot air gun (320°C)", "Flux", "Microscope", "Tweezers"],
-                    warnings: ["Spark 20 Pro has unibody design - careful when opening", "Use plastic tools to avoid damaging frame"]
-                }
-            },
-            
-            "Spark 20": {
-                charging: {
-                    title: "Techno Spark 20 Charging Problem - Complete Guide",
-                    possibleCauses: ["🔌 Dirty charging port", "🔋 Battery BMS tripped", "🔧 BQ25601 IC failure", "🧵 Charging coil broken", "🔌 Charging flex cable"],
-                    steps: [
-                        "STEP 1: Clean USB-C port thoroughly",
-                        "STEP 2: Test with 18W fast charger",
-                        "STEP 3: Check battery voltage on connector",
-                        "STEP 4: Locate BQ25601 charging IC",
-                        "STEP 5: Check VBUS voltage at USB port",
-                        "STEP 6: Measure CHG_EN line - should be high",
-                        "STEP 7: Check charging coil continuity",
-                        "STEP 8: Reheat BQ25601 at 300°C",
-                        "STEP 9: Replace charging port if pins damaged",
-                        "STEP 10: Replace BQ25601 as last resort"
-                    ],
-                    tools: ["Multimeter", "Hot air gun (300°C)", "USB meter", "Plastic pick", "Alcohol", "Tweezers"],
-                    warnings: ["Spark 20 has micro-USB or USB-C depending on variant - check first"]
-                }
-            },
-            
-            // ========== INFINIX MODELS ==========
-            "GT 20 Pro": {
-                charging: {
-                    title: "Infinix GT 20 Pro Charging Problem - Complete Guide",
-                    possibleCauses: ["🔌 USB-C port damage", "🔋 Battery issue", "🔧 BQ25601 Charging IC", "⚡ Overvoltage protection", "🚀 68W fast charging circuit issue"],
-                    steps: [
-                        "STEP 1: Clean USB-C port with alcohol",
-                        "STEP 2: Use Infinix 68W charger with yellow cable",
-                        "STEP 3: Check battery voltage - GT 20 Pro uses dual cell battery",
-                        "STEP 4: Locate BQ25601 Charging IC",
-                        "STEP 5: Check dual cell balancing circuit",
-                        "STEP 6: Measure VBUS - should be 5V-20V (68W negotiation)",
-                        "STEP 7: Check charging MOSFETs for damage",
-                        "STEP 8: Reheat BQ25601 with flux",
-                        "STEP 9: Check for shorts on battery connector pins",
-                        "STEP 10: Replace charging IC if needed"
-                    ],
-                    tools: ["Multimeter", "Hot air gun (310°C)", "USB-PD tester", "68W Infinix charger", "Tweezers", "Microscope"],
-                    warnings: ["GT 20 Pro uses 68W fast charging - needs proprietary charger", "Dual cell battery has 2 positive terminals - check both"]
-                }
-            },
-            
-            "Note 40 Pro+": {
-                charging: {
-                    title: "Infinix Note 40 Pro+ Charging Problem - Complete Guide",
-                    possibleCauses: ["🔌 USB-C port dirty", "🔋 Wireless charging circuit issue", "🔧 Charging IC failure", "⚡ Capacitor short", "🔌 Charging flex damage"],
-                    steps: [
-                        "STEP 1: Clean charging port - Note 40 has dust issues",
-                        "STEP 2: Test wired and wireless charging separately",
-                        "STEP 3: Check battery voltage - 3.87V standard",
-                        "STEP 4: Locate BQ25619 Charging IC",
-                        "STEP 5: Check wireless charging coil for continuity",
-                        "STEP 6: Measure VBUS on wired charging",
-                        "STEP 7: Check WLC_IN on wireless charging",
-                        "STEP 8: Reheat charging IC at 300°C",
-                        "STEP 9: Check capacitors around IC for shorts",
-                        "STEP 10: Replace charging IC if needed"
-                    ],
-                    tools: ["Multimeter", "Hot air gun (300°C)", "Wireless charger", "USB meter", "Tweezers"],
-                    warnings: ["Note 40 Pro+ has both wired and wireless charging - isolate which is faulty"]
-                }
-            },
-            
-            // ========== XIAOMI MODELS ==========
-            "14 Ultra": {
-                charging: {
-                    title: "Xiaomi 14 Ultra Charging Problem - Complete Guide",
-                    possibleCauses: ["🔌 USB-C port damage", "🔋 Dual cell battery issue", "🔧 SURGE Charging IC", "⚡ P1302 Power IC", "🚀 90W fast charging circuit"],
-                    steps: [
-                        "STEP 1: Clean USB-C port - common on Xiaomi",
-                        "STEP 2: Use Xiaomi 90W charger with 6A cable",
-                        "STEP 3: Check dual cell battery voltage (two cells in series)",
-                        "STEP 4: Locate SURGE Charging IC (Xiaomi proprietary)",
-                        "STEP 5: Locate P1302 Power IC for fast charging",
-                        "STEP 6: Check battery balancing circuit",
-                        "STEP 7: Measure VBUS - 90W requires 20V/4.5A",
-                        "STEP 8: Reheat SURGE IC with flux at 320°C",
-                        "STEP 9: Check for shorts on battery connector",
-                        "STEP 10: Replace SURGE IC if needed"
-                    ],
-                    tools: ["Multimeter", "Hot air gun (320°C)", "USB-PD 3.1 tester", "Xiaomi 90W charger", "Microscope"],
-                    warnings: ["14 Ultra uses 90W fast charging - needs proprietary charger and cable", "Dual cell battery requires special handling"]
-                }
-            },
-            
-            "14 Pro": {
-                charging: {
-                    title: "Xiaomi 14 Pro Charging Problem - Complete Guide",
-                    possibleCauses: ["🔌 USB-C port issues", "🔋 Battery BMS", "🔧 SURGE Charging IC", "⚡ Capacitor short", "🔌 Charging flex"],
-                    steps: [
-                        "STEP 1: Clean USB-C port thoroughly",
-                        "STEP 2: Test with 120W charger (if Pro model)",
-                        "STEP 3: Check battery voltage - 3.88V standard",
-                        "STEP 4: Locate SURGE Charging IC on motherboard",
-                        "STEP 5: Check VBUS line - 5V-20V depending on charger",
-                        "STEP 6: Measure BATT+ voltage",
-                        "STEP 7: Check for shorts on power lines",
-                        "STEP 8: Reheat SURGE IC at 310°C",
-                        "STEP 9: Check charging MOSFETs",
-                        "STEP 10: Replace SURGE IC as last resort"
-                    ],
-                    tools: ["Multimeter", "Hot air gun (310°C)", "USB meter", "Flux", "Tweezers", "Magnifying glass"],
-                    warnings: ["Xiaomi uses proprietary SURGE IC - hard to find replacement", "Check if phone charges slowly vs not at all"]
-                }
-            },
-            
-            // ========== OPPO MODELS ==========
-            "Find X8 Pro": {
-                charging: {
-                    title: "Oppo Find X8 Pro Charging Problem - Complete Guide",
-                    possibleCauses: ["🔌 USB-C port damage", "🔋 Battery issue", "🔧 BQ25970 Charging IC", "⚡ Overvoltage protection", "🚀 100W SuperVOOC circuit"],
-                    steps: [
-                        "STEP 1: Clean USB-C port with alcohol",
-                        "STEP 2: Use Oppo 100W SuperVOOC charger with red cable",
-                        "STEP 3: Check dual cell battery (2x 2,500mAh cells)",
-                        "STEP 4: Locate BQ25970 Charging IC",
-                        "STEP 5: Check SuperVOOC handshake protocol",
-                        "STEP 6: Measure VBUS - SuperVOOC uses 10V/10A",
-                        "STEP 7: Check battery cell balancing",
-                        "STEP 8: Reheat BQ25970 at 310°C",
-                        "STEP 9: Check charging MOSFETs for shorts",
-                        "STEP 10: Replace charging IC if needed"
-                    ],
-                    tools: ["Multimeter", "Hot air gun (310°C)", "SuperVOOC tester", "Oppo 100W charger", "Microscope"],
-                    warnings: ["Find X8 Pro uses SuperVOOC - only works with Oppo chargers and cables", "Dual cell battery has 4 pins"]
-                }
-            },
-            
-            // ========== VIVO MODELS ==========
-            "X100 Pro": {
-                charging: {
-                    title: "Vivo X100 Pro Charging Problem - Complete Guide",
-                    possibleCauses: ["🔌 USB-C port dirty", "🔋 Battery BMS", "🔧 BQ25619 Charging IC", "⚡ Capacitor short", "🚀 100W FlashCharge circuit"],
-                    steps: [
-                        "STEP 1: Clean USB-C port thoroughly",
-                        "STEP 2: Use Vivo 100W FlashCharge charger",
-                        "STEP 3: Check battery voltage - X100 Pro uses 3.91V high voltage battery",
-                        "STEP 4: Locate BQ25619 Charging IC",
-                        "STEP 5: Check FlashCharge negotiation circuit",
-                        "STEP 6: Measure VBUS - FlashCharge uses 20V/5A",
-                        "STEP 7: Check battery connector pins",
-                        "STEP 8: Reheat BQ25619 at 300°C",
-                        "STEP 9: Check for shorts on VBUS line",
-                        "STEP 10: Replace charging IC if needed"
-                    ],
-                    tools: ["Multimeter", "Hot air gun (300°C)", "USB meter", "Vivo 100W charger", "Tweezers"],
-                    warnings: ["X100 Pro uses high voltage battery (3.91V) - different from standard 3.7V", "FlashCharge needs proprietary charger"]
-                }
-            },
-            
-            // ========== ONEPLUS MODELS ==========
-            "12": {
-                charging: {
-                    title: "OnePlus 12 Charging Problem - Complete Guide",
-                    possibleCauses: ["🔌 USB-C port damage", "🔋 Battery issue", "🔧 BQ25970 Charging IC", "⚡ 100W SuperVOOC circuit", "🔌 Charging flex cable"],
-                    steps: [
-                        "STEP 1: Clean USB-C port - common dust issue",
-                        "STEP 2: Use OnePlus 100W charger with red cable",
-                        "STEP 3: Check dual cell battery voltage",
-                        "STEP 4: Locate BQ25970 Charging IC (same as Oppo)",
-                        "STEP 5: Check SuperVOOC handshake protocol",
-                        "STEP 6: Measure VBUS - should be 5V-20V",
-                        "STEP 7: Check battery cell balancing",
-                        "STEP 8: Reheat BQ25970 with flux at 310°C",
-                        "STEP 9: Check charging MOSFETs for shorts",
-                        "STEP 10: Replace charging IC if needed"
-                    ],
-                    tools: ["Multimeter", "Hot air gun (310°C)", "SuperVOOC tester", "OnePlus 100W charger", "Microscope"],
-                    warnings: ["OnePlus 12 uses same charging tech as Oppo", "Check if phone shows 'Charging Slowly' - may need cable replacement"]
-                }
-            }
+        // iPhone 16 Pro Max - Complete 15 Faults Guide
+        const iPhone16ProMaxGuides = {
+            charging: { title: "iPhone 16 Pro Max Charging Problem", causes: ["🔌 Damaged USB-C port", "🔋 Faulty battery BMS", "🔧 Tristar IC (U4000) failure", "🔧 Hydra IC (U4900) issue", "⚡ Overvoltage protection IC"], steps: ["STEP 1: Clean USB-C port with isopropyl alcohol", "STEP 2: Test with Apple 20W+ charger and certified cable", "STEP 3: Check battery voltage - should be 3.85V", "STEP 4: Locate Tristar IC U4000 near charging port", "STEP 5: Measure PP_VBUS_MAIN - should be 5V/9V", "STEP 6: Check Hydra IC U4900 for fast charging", "STEP 7: Reheat Tristar IC with flux at 320°C", "STEP 8: Replace Tristar IC if reheat fails", "STEP 9: Check charging port flex cable", "STEP 10: Replace PMIC as last resort"], tools: ["Multimeter", "Hot air gun 320°C", "Soldering iron", "Flux", "USB-C tester"], warnings: ["Don't use cheap USB-C cables", "Always disconnect battery first"] },
+            dead: { title: "iPhone 16 Pro Max Dead Fix", causes: ["🔋 Dead battery below 2.5V", "🔧 PMIC U7000 failure", "⚡ Short on PP_BATT_VCC", "🔘 Power button flex", "💀 CPU underfill issue"], steps: ["STEP 1: Connect to power - check amperage draw", "STEP 2: Check battery voltage - below 2.5V replace", "STEP 3: Use DC power supply at 3.85V", "STEP 4: Locate PMIC U7000 (main power IC)", "STEP 5: Check PP_VDD_MAIN - should be 3.8V", "STEP 6: Check PP1V8_SDRAM and PP0V9_SOC", "STEP 7: Use thermal camera to find shorts", "STEP 8: Reheat PMIC with hot air 350°C", "STEP 9: Replace PMIC if no voltages", "STEP 10: Check NAND chip for shorts"], tools: ["DC Power Supply", "Multimeter", "Hot air gun 350°C", "Thermal camera", "Microscope"], warnings: ["Don't apply more than 4.2V", "Use ESD protection"] },
+            speaker: { title: "iPhone 16 Pro Max Speaker Fix", causes: ["🔊 Blown speaker", "🧹 Blocked grille", "🔌 Loose connector J4200", "🎛️ Audio Amp U4200 failure"], steps: ["STEP 1: Clean speaker grille with soft brush", "STEP 2: Test with known working speaker", "STEP 3: Check connector J4200 on motherboard", "STEP 4: Inspect speaker flex for tears", "STEP 5: Locate Audio Amp U4200", "STEP 6: Measure SPKRAMP_VDD - 3.8V", "STEP 7: Reheat Audio Amp at 320°C", "STEP 8: Replace speaker module"], tools: ["Multimeter", "Hot air gun 320°C", "Soft brush", "Tweezers"], warnings: ["Don't blow compressed air directly", "Handle flex cable carefully"] },
+            mic: { title: "iPhone 16 Pro Max Microphone Fix", causes: ["🎙️ Blocked mic hole", "🔌 Loose connector", "🔧 Audio codec issue", "🧵 Broken track"], steps: ["STEP 1: Clean bottom mic hole with soft brush", "STEP 2: Test with Voice Memos app", "STEP 3: Check charging port flex (contains mic)", "STEP 4: Inspect mic component on flex", "STEP 5: Check continuity to audio IC", "STEP 6: Replace charging port flex if mic dead", "STEP 7: Reheat audio codec IC"], tools: ["Multimeter", "Soft brush", "Soldering iron", "Tweezers"], warnings: ["Don't poke mic hole with metal", "Mic is on charging port flex"] },
+            network: { title: "iPhone 16 Pro Max Network Fix", causes: ["📡 Damaged antenna flex", "🔧 RF IC failure", "📱 IMEI corruption", "🔌 Loose antenna connector"], steps: ["STEP 1: Toggle Airplane mode", "STEP 2: Check IMEI in Settings", "STEP 3: Inspect antenna flex cables", "STEP 4: Check antenna contact points on frame", "STEP 5: Locate RF IC under shield", "STEP 6: Reheat RF IC at 330°C", "STEP 7: Check baseband PMIC", "STEP 8: Restore firmware via iTunes"], tools: ["Multimeter", "Hot air gun 330°C", "Flux", "Microscope"], warnings: ["Don't short antenna contacts", "Backup data before restore"] },
+            display: { title: "iPhone 16 Pro Max Display Fix", causes: ["🔌 Loose connector", "🖥️ Cracked OLED panel", "🔧 Display IC failure", "⚡ Backlight circuit issue"], steps: ["STEP 1: Reseat display connector", "STEP 2: Clean connector with alcohol", "STEP 3: Test with known working display", "STEP 4: Inspect flex cable for tears", "STEP 5: Check display voltage lines", "STEP 6: Check backlight coil L3700", "STEP 7: Reheat display IC on flex", "STEP 8: Replace display assembly"], tools: ["Multimeter", "Plastic pry tools", "Isopropyl alcohol", "Magnifying glass"], warnings: ["Don't bend flex sharply", "Disconnect battery first"] },
+            water: { title: "iPhone 16 Pro Max Water Damage Fix", causes: ["💧 Corrosion on motherboard", "⚡ Short circuit", "🔧 Damaged ICs", "🧵 Broken traces"], steps: ["STEP 1: Remove battery immediately", "STEP 2: Disassemble completely", "STEP 3: Clean with isopropyl alcohol 99%", "STEP 4: Use ultrasonic cleaner if available", "STEP 5: Inspect under microscope for corrosion", "STEP 6: Clean all connectors", "STEP 7: Check for shorts on power lines", "STEP 8: Remove corroded components", "STEP 9: Dry for 2-4 hours", "STEP 10: Reassemble and test"], tools: ["Isopropyl alcohol 99%", "Ultrasonic cleaner", "Microscope", "Soft brush", "Multimeter"], warnings: ["DO NOT power on wet phone", "DO NOT use rice", "DO NOT use hair dryer"] },
+            camera: { title: "iPhone 16 Pro Max Camera Fix", causes: ["🔌 Loose camera connector", "📸 Camera module failure", "🔧 Camera IC issue", "💻 Software glitch"], steps: ["STEP 1: Force restart iPhone", "STEP 2: Test front and rear cameras separately", "STEP 3: Reseat camera connectors", "STEP 4: Clean connectors with alcohol", "STEP 5: Test with known working camera", "STEP 6: Check camera power IC", "STEP 7: Restore via iTunes", "STEP 8: Replace camera module"], tools: ["Plastic pry tools", "Multimeter", "Isopropyl alcohol", "Tweezers"], warnings: ["Don't touch camera lens", "Handle flex cables gently"] },
+            wifi: { title: "iPhone 16 Pro Max WiFi Fix", causes: ["📡 WiFi antenna issue", "🔧 WiFi/BT IC failure", "📱 Software issue", "🔌 Loose connector"], steps: ["STEP 1: Toggle WiFi on/off", "STEP 2: Reset Network Settings", "STEP 3: Check WiFi antenna flex", "STEP 4: Locate WiFi IC U5300", "STEP 5: Check for shorts around WiFi IC", "STEP 6: Reheat WiFi IC at 320°C", "STEP 7: Replace WiFi IC if needed", "STEP 8: Restore firmware"], tools: ["Multimeter", "Hot air gun 320°C", "Flux", "Microscope"], warnings: ["WiFi IC also controls Bluetooth", "Check antenna first"] },
+            bluetooth: { title: "iPhone 16 Pro Max Bluetooth Fix", causes: ["🔵 WiFi/BT IC issue", "📡 Antenna problem", "💻 Software glitch", "🔌 Connector loose"], steps: ["STEP 1: Toggle Bluetooth on/off", "STEP 2: Forget and re-pair devices", "STEP 3: Reset Network Settings", "STEP 4: Check WiFi/BT combo IC", "STEP 5: Reheat WiFi/BT IC", "STEP 6: Check Bluetooth antenna", "STEP 7: Restore firmware"], tools: ["Multimeter", "Hot air gun 320°C", "Flux"], warnings: ["Same IC controls both WiFi and Bluetooth", "Replace IC if both fail"] },
+            touch: { title: "iPhone 16 Pro Max Touch Problem", causes: ["👆 Touch IC failure", "🖥️ Display issue", "🔌 Connector loose", "💻 Software issue"], steps: ["STEP 1: Force restart iPhone", "STEP 2: Check for screen protector issues", "STEP 3: Reseat display connector", "STEP 4: Locate Touch IC on motherboard", "STEP 5: Reheat Touch IC at 320°C", "STEP 6: Test with known working display", "STEP 7: Replace Touch IC", "STEP 8: Replace display assembly"], tools: ["Multimeter", "Hot air gun 320°C", "Plastic pry tools", "Microscope"], warnings: ["Touch IC under display shield", "Check for ghost touches"] },
+            battery: { title: "iPhone 16 Pro Max Battery Drain Fix", causes: ["🔋 Old battery", "📱 Background apps", "🔧 Power leakage", "💻 iOS issue"], steps: ["STEP 1: Check Battery Health in Settings", "STEP 2: Check for background app activity", "STEP 3: Calibrate battery (100% to 0%)", "STEP 4: Check for current leakage with multimeter", "STEP 5: Check PMIC for shorts", "STEP 6: Update iOS", "STEP 7: Replace battery if health below 80%"], tools: ["Multimeter", "DC Power Supply", "Thermal camera"], warnings: ["Check for overheating apps", "Replace battery if swollen"] },
+            sim: { title: "iPhone 16 Pro Max SIM Not Detected", causes: ["💳 SIM card issue", "📱 SIM tray problem", "🔧 SIM IC failure", "🔌 Connector loose"], steps: ["STEP 1: Reinsert SIM card", "STEP 2: Test with different SIM", "STEP 3: Check SIM tray for damage", "STEP 4: Inspect SIM connector pins", "STEP 5: Locate SIM IC on motherboard", "STEP 6: Check continuity to SIM IC", "STEP 7: Reheat SIM IC at 310°C", "STEP 8: Replace SIM IC"], tools: ["Multimeter", "Hot air gun 310°C", "Microscope", "Tweezers"], warnings: ["Don't bend SIM pins", "eSIM also available on iPhone 16"] },
+            fingerprint: { title: "iPhone 16 Pro Max Fingerprint Fix", causes: ["🔐 Note: iPhone 16 uses Face ID, not Touch ID", "👤 Face ID TrueDepth camera issue", "🔧 Flood illuminator failure"], steps: ["STEP 1: iPhone 16 uses Face ID - no fingerprint sensor", "STEP 2: Check Face ID in Settings", "STEP 3: Clean front camera area", "STEP 4: Check TrueDepth camera connector", "STEP 5: Reset Face ID", "STEP 6: Reconnect front camera flex", "STEP 7: Replace Face ID module (paired to motherboard)"], tools: ["Soft cloth", "Plastic pry tools", "Multimeter"], warnings: ["Face ID is paired to motherboard - cannot replace individually", "Only Apple can replace Face ID"] },
+            buttons: { title: "iPhone 16 Pro Max Button Fix", causes: ["🔘 Action Button issue", "🔘 Volume button problem", "🔘 Power button issue", "🧵 Button flex damage"], steps: ["STEP 1: Check if buttons feel clicky", "STEP 2: Inspect button flex cable", "STEP 3: Clean button contacts with alcohol", "STEP 4: Check continuity of button switches", "STEP 5: Reheat button flex connector", "STEP 6: Replace button flex cable", "STEP 7: Check side button IC"], tools: ["Multimeter", "Soldering iron", "Isopropyl alcohol", "Tweezers"], warnings: ["iPhone 16 Pro Max has Action button", "Check flexibility first"] }
         };
 
-        // Default repair guide for models without specific guide
-        const defaultRepairGuide = {
-            charging: {
-                title: "Charging Problem - Standard Repair Guide",
-                possibleCauses: ["🔌 Dirty or damaged charging port", "🔋 Faulty battery", "🔧 Charging IC issue", "🧵 Broken charging coil", "⚡ Capacitor short circuit"],
-                steps: [
-                    "STEP 1: Clean charging port with isopropyl alcohol and soft brush",
-                    "STEP 2: Test with different charger and cable",
-                    "STEP 3: Check battery voltage with multimeter (should be 3.7V)",
-                    "STEP 4: Inspect charging port pins for damage",
-                    "STEP 5: Check continuity from charging port to motherboard",
-                    "STEP 6: Locate charging IC near battery connector",
-                    "STEP 7: Check for shorts on capacitors around charging IC",
-                    "STEP 8: Reheat charging IC with hot air at 320°C",
-                    "STEP 9: Replace charging port if damaged",
-                    "STEP 10: Replace charging IC as last resort"
-                ],
-                tools: ["Multimeter", "Hot air gun", "Soldering iron", "Isopropyl alcohol", "Tweezers"],
-                warnings: ["Always disconnect battery first", "Don't use metal tools to clean port", "Use ESD protection"]
-            },
-            dead: {
-                title: "Dead Mobile - Standard Repair Guide",
-                possibleCauses: ["🔋 Dead battery", "🔧 Power IC failure", "⚡ Short circuit", "🔘 Power button issue", "💀 CPU or memory problem"],
-                steps: [
-                    "STEP 1: Connect charger and wait 30 minutes",
-                    "STEP 2: Check battery voltage - below 2.5V means dead",
-                    "STEP 3: Test with known working battery",
-                    "STEP 4: Check power button continuity",
-                    "STEP 5: Check battery connector pins",
-                    "STEP 6: Look for shorts on main power line",
-                    "STEP 7: Locate main Power Management IC",
-                    "STEP 8: Check for voltages on test points",
-                    "STEP 9: Reheat PMIC with hot air",
-                    "STEP 10: Replace PMIC if no voltages"
-                ],
-                tools: ["Multimeter", "DC Power Supply", "Hot air gun", "Soldering iron", "Microscope"],
-                warnings: ["Don't apply power if short detected", "Check polarity before connecting battery"]
-            },
-            speaker: {
-                title: "Speaker Problem - Standard Repair Guide",
-                possibleCauses: ["🔊 Blown speaker", "🧹 Blocked speaker grille", "🔌 Loose connector", "🎛️ Audio IC issue", "🧵 Broken flex cable"],
-                steps: [
-                    "STEP 1: Clean speaker grille with soft brush",
-                    "STEP 2: Test with known working speaker",
-                    "STEP 3: Check speaker connector on motherboard",
-                    "STEP 4: Inspect speaker for physical damage",
-                    "STEP 5: Check continuity from speaker to audio IC",
-                    "STEP 6: Locate audio amplifier IC",
-                    "STEP 7: Reheat audio IC at 320°C",
-                    "STEP 8: Replace speaker if diaphragm damaged",
-                    "STEP 9: Replace audio IC as last resort"
-                ],
-                tools: ["Multimeter", "Hot air gun", "Soft brush", "Tweezers", "Magnifying glass"],
-                warnings: ["Don't blow compressed air directly into speaker", "Don't use sharp objects on speaker mesh"]
-            }
+        // Samsung S24 Ultra - Complete 15 Faults Guide
+        const SamsungS24UltraGuides = {
+            charging: { title: "Samsung S24 Ultra Charging Fix", causes: ["🔌 Damaged USB-C port", "🔋 Battery BMS issue", "🔧 SM5150 Charging IC", "🔧 MAX77801 Power IC", "⚡ Overvoltage protection"], steps: ["STEP 1: Clean USB-C port", "STEP 2: Use Samsung 45W charger", "STEP 3: Check battery voltage 3.88V", "STEP 4: Locate SM5150 IC", "STEP 5: Locate MAX77801 PMIC", "STEP 6: Measure VCHG line 5V/9V", "STEP 7: Check charging coil L5200", "STEP 8: Reheat SM5150 at 330°C", "STEP 9: Replace SM5150 if needed"], tools: ["Multimeter", "Hot air gun 330°C", "Samsung 45W charger", "USB-C meter"], warnings: ["Requires 45W for fast charging", "Don't use cheap cables"] },
+            dead: { title: "Samsung S24 Ultra Dead Fix", causes: ["🔋 Dead battery below 2.5V", "🔧 MAX77801 PMIC failure", "⚡ Short on VSYS", "🔘 Power button issue", "💀 CPU problem"], steps: ["STEP 1: Connect charger wait 30 min", "STEP 2: Check battery voltage", "STEP 3: Use DC supply at 3.88V", "STEP 4: Locate MAX77801 PMIC", "STEP 5: Check VSYS - 3.8V", "STEP 6: Check VREG_BUCK1 - 1.8V", "STEP 7: Check VREG_BUCK4 - 0.9V", "STEP 8: Reheat MAX77801 at 350°C", "STEP 9: Replace PMIC if no output"], tools: ["DC Power Supply", "Multimeter", "Hot air gun 350°C", "Thermal camera"], warnings: ["Has vapor chamber cooling", "Use flux on PMIC"] },
+            speaker: { title: "Samsung S24 Ultra Speaker Fix", causes: ["🔊 Blown speaker", "🧹 Blocked grille", "🔌 Loose connector", "🎛️ Audio amp failure"], steps: ["STEP 1: Clean speaker grille", "STEP 2: Test with known speaker", "STEP 3: Check connector on board", "STEP 4: Inspect speaker flex", "STEP 5: Locate audio amplifier", "STEP 6: Reheat audio IC at 320°C", "STEP 7: Replace speaker module"], tools: ["Multimeter", "Hot air gun 320°C", "Soft brush", "Tweezers"], warnings: ["S24 Ultra has dual speakers", "Check both speakers"] },
+            mic: { title: "Samsung S24 Ultra Microphone Fix", causes: ["🎙️ Blocked mic hole", "🔌 Charging flex issue", "🔧 Audio IC failure", "🧵 Broken track"], steps: ["STEP 1: Clean bottom mic hole", "STEP 2: Test with Voice Recorder", "STEP 3: Check charging port flex", "STEP 4: Inspect mic component", "STEP 5: Check continuity to audio IC", "STEP 6: Reheat audio codec", "STEP 7: Replace charging flex"], tools: ["Multimeter", "Soft brush", "Soldering iron", "Tweezers"], warnings: ["Multiple mics on S24 Ultra", "Check all mics separately"] },
+            network: { title: "Samsung S24 Ultra Network Fix", causes: ["📡 Damaged antenna", "🔧 RF IC failure", "📱 IMEI corruption", "🔌 Antenna connector"], steps: ["STEP 1: Toggle Airplane mode", "STEP 2: Check IMEI in Settings", "STEP 3: Inspect antenna flex", "STEP 4: Check antenna contacts on frame", "STEP 5: Locate Shannon RF IC", "STEP 6: Reheat RF IC at 330°C", "STEP 7: Check baseband", "STEP 8: Flash firmware"], tools: ["Multimeter", "Hot air gun 330°C", "Microscope", "Flux"], warnings: ["Samsung uses Shannon modem", "Check IMEI first"] },
+            display: { title: "Samsung S24 Ultra Display Fix", causes: ["🔌 Loose connector", "🖥️ Cracked AMOLED", "🔧 Display IC", "⚡ Backlight circuit"], steps: ["STEP 1: Reseat display connector", "STEP 2: Clean with alcohol", "STEP 3: Test with known display", "STEP 4: Inspect flex for tears", "STEP 5: Check display voltage lines", "STEP 6: Check AMOLED driver IC", "STEP 7: Replace display assembly"], tools: ["Multimeter", "Plastic pry tools", "Isopropyl alcohol", "Magnifying glass"], warnings: ["AMOLED is fragile", "Disconnect battery first"] },
+            water: { title: "Samsung S24 Ultra Water Damage", causes: ["💧 Corrosion", "⚡ Short circuit", "🔧 Damaged ICs", "🧵 Broken traces"], steps: ["STEP 1: Remove battery immediately", "STEP 2: Disassemble completely", "STEP 3: Clean with 99% alcohol", "STEP 4: Ultrasonic cleaning", "STEP 5: Inspect under microscope", "STEP 6: Clean all connectors", "STEP 7: Check for shorts", "STEP 8: Remove corroded components", "STEP 9: Dry 2-4 hours", "STEP 10: Reassemble and test"], tools: ["Isopropyl alcohol 99%", "Ultrasonic cleaner", "Microscope", "Soft brush", "Multimeter"], warnings: ["DO NOT power on wet", "IP68 rating not permanent"] },
+            camera: { title: "Samsung S24 Ultra Camera Fix", causes: ["🔌 Loose connector", "📸 Camera module failure", "🔧 Camera IC", "💻 Software issue"], steps: ["STEP 1: Clear camera app cache", "STEP 2: Test all 4 cameras separately", "STEP 3: Reseat camera connectors", "STEP 4: Clean with alcohol", "STEP 5: Test with known camera", "STEP 6: Check camera power IC", "STEP 7: Restore firmware", "STEP 8: Replace camera module"], tools: ["Plastic pry tools", "Multimeter", "Isopropyl alcohol", "Tweezers"], warnings: ["S24 Ultra has 4 cameras", "Zoom camera often fails"] },
+            wifi: { title: "Samsung S24 Ultra WiFi Fix", causes: ["📡 WiFi antenna", "🔧 WiFi IC failure", "📱 Software", "🔌 Connector"], steps: ["STEP 1: Toggle WiFi", "STEP 2: Reset Network Settings", "STEP 3: Check antenna flex", "STEP 4: Locate WiFi IC", "STEP 5: Check for shorts", "STEP 6: Reheat WiFi IC 320°C", "STEP 7: Replace WiFi IC", "STEP 8: Flash firmware"], tools: ["Multimeter", "Hot air gun 320°C", "Flux", "Microscope"], warnings: ["WiFi IC also controls BT", "Check antenna first"] },
+            bluetooth: { title: "Samsung S24 Ultra Bluetooth Fix", causes: ["🔵 WiFi/BT IC issue", "📡 Antenna", "💻 Software", "🔌 Connector"], steps: ["STEP 1: Toggle Bluetooth", "STEP 2: Forget devices", "STEP 3: Reset Network Settings", "STEP 4: Check WiFi/BT combo IC", "STEP 5: Reheat IC at 320°C", "STEP 6: Check BT antenna", "STEP 7: Replace IC", "STEP 8: Firmware restore"], tools: ["Multimeter", "Hot air gun 320°C", "Flux"], warnings: ["Same IC for WiFi/BT", "Replace if both fail"] },
+            touch: { title: "Samsung S24 Ultra Touch Fix", causes: ["👆 Touch IC failure", "🖥️ Display issue", "🔌 Connector", "💻 Software"], steps: ["STEP 1: Restart phone", "STEP 2: Remove screen protector", "STEP 3: Reseat display connector", "STEP 4: Locate Touch IC", "STEP 5: Reheat Touch IC at 320°C", "STEP 6: Test with known display", "STEP 7: Replace Touch IC", "STEP 8: Replace display"], tools: ["Multimeter", "Hot air gun 320°C", "Plastic pry tools", "Microscope"], warnings: ["S-Pen uses different tech", "Check S-Pen separately"] },
+            battery: { title: "Samsung S24 Ultra Battery Drain", causes: ["🔋 Old battery", "📱 Background apps", "🔧 Power leakage", "💻 Software"], steps: ["STEP 1: Check Battery Health", "STEP 2: Check background apps", "STEP 3: Calibrate battery", "STEP 4: Check current leakage", "STEP 5: Check PMIC for shorts", "STEP 6: Update One UI", "STEP 7: Replace battery if <80%"], tools: ["Multimeter", "DC Power Supply", "Thermal camera"], warnings: ["5000mAh battery", "Check for swollen battery"] },
+            sim: { title: "Samsung S24 Ultra SIM Fix", causes: ["💳 SIM card", "📱 SIM tray", "🔧 SIM IC", "🔌 Connector"], steps: ["STEP 1: Reinsert SIM", "STEP 2: Test different SIM", "STEP 3: Check SIM tray", "STEP 4: Inspect SIM pins", "STEP 5: Locate SIM IC", "STEP 6: Check continuity", "STEP 7: Reheat SIM IC 310°C", "STEP 8: Replace SIM IC"], tools: ["Multimeter", "Hot air gun 310°C", "Microscope", "Tweezers"], warnings: ["Dual SIM model", "Check both slots"] },
+            fingerprint: { title: "Samsung S24 Ultra Fingerprint Fix", causes: ["🔐 Ultrasonic sensor", "🖥️ Screen protector", "🔧 Sensor IC", "💻 Software"], steps: ["STEP 1: Delete and re-add fingerprints", "STEP 2: Remove screen protector", "STEP 3: Clean screen area", "STEP 4: Check display connector", "STEP 5: Ultrasonic sensor under display", "STEP 6: Calibrate sensor", "STEP 7: Update software", "STEP 8: Replace display (sensor integrated)"], tools: ["Soft cloth", "Multimeter", "Plastic tools"], warnings: ["Sensor under display", "Screen protector affects performance"] },
+            buttons: { title: "Samsung S24 Ultra Button Fix", causes: ["🔘 Power button", "🔘 Volume buttons", "🧵 Button flex", "🔌 Connector"], steps: ["STEP 1: Check button feel", "STEP 2: Inspect button flex", "STEP 3: Clean contacts", "STEP 4: Check continuity", "STEP 5: Reheat connector", "STEP 6: Replace button flex", "STEP 7: Check side key IC"], tools: ["Multimeter", "Soldering iron", "Isopropyl alcohol", "Tweezers"], warnings: ["Bixby button on some models", "Check all buttons"] }
         };
+
+        // Techno Spark 20 Pro - Complete 15 Faults Guide
+        const TechnoSpark20ProGuides = {
+            charging: { title: "Techno Spark 20 Pro Charging Fix", causes: ["🔌 Dirty USB-C port", "🔋 Battery BMS", "🔧 BQ25601 IC", "🧵 Charging coil", "⚡ OVP IC"], steps: ["STEP 1: Clean charging port", "STEP 2: Use 18W charger", "STEP 3: Check battery voltage 3.7V", "STEP 4: Locate BQ25601 IC", "STEP 5: Check VBUS 5V", "STEP 6: Check charging coil L1800", "STEP 7: Reheat BQ25601 at 300°C", "STEP 8: Replace charging port flex"], tools: ["Multimeter", "Hot air gun 300°C", "Toothbrush", "Alcohol"], warnings: ["MTK platform", "Port often soldered on board"] },
+            dead: { title: "Techno Spark 20 Pro Dead Fix", causes: ["🔋 Dead battery", "🔧 MT6357 PMIC", "⚡ Short on VBAT", "🔘 Power button", "💀 CPU issue"], steps: ["STEP 1: Charge for 30 min", "STEP 2: Check battery voltage", "STEP 3: Use DC supply 3.7V", "STEP 4: Locate MT6357 PMIC", "STEP 5: Check VSYS 3.7V", "STEP 6: Check VIO18 1.8V", "STEP 7: Check VPROC 0.9V", "STEP 8: Reheat MT6357 320°C", "STEP 9: Replace PMIC"], tools: ["DC Power Supply", "Multimeter", "Hot air gun 320°C", "Flux"], warnings: ["Unibody design", "Use plastic tools to open"] },
+            speaker: { title: "Techno Spark 20 Pro Speaker Fix", causes: ["🔊 Blown speaker", "🧹 Blocked grille", "🔌 Loose connector", "🎛️ Audio IC"], steps: ["STEP 1: Clean speaker grille", "STEP 2: Test with known speaker", "STEP 3: Check connector", "STEP 4: Inspect speaker flex", "STEP 5: Locate audio amp", "STEP 6: Reheat audio IC 300°C", "STEP 7: Replace speaker"], tools: ["Multimeter", "Hot air gun 300°C", "Soft brush", "Tweezers"], warnings: ["Single bottom speaker", "Check earpiece too"] },
+            mic: { title: "Techno Spark 20 Pro Mic Fix", causes: ["🎙️ Blocked mic", "🔌 Charging flex", "🔧 Audio IC", "🧵 Broken track"], steps: ["STEP 1: Clean mic hole", "STEP 2: Test voice recording", "STEP 3: Check charging port flex", "STEP 4: Inspect mic component", "STEP 5: Check continuity", "STEP 6: Reheat audio codec", "STEP 7: Replace charging flex"], tools: ["Multimeter", "Soft brush", "Soldering iron", "Tweezers"], warnings: ["Dual mics on Spark 20 Pro", "Check top and bottom"] },
+            network: { title: "Techno Spark 20 Pro Network Fix", causes: ["📡 Antenna issue", "🔧 MTK RF IC", "📱 IMEI", "🔌 Connector"], steps: ["STEP 1: Toggle Airplane mode", "STEP 2: Check IMEI", "STEP 3: Inspect antenna flex", "STEP 4: Check antenna contacts", "STEP 5: Locate MTK RF IC", "STEP 6: Reheat RF IC 330°C", "STEP 7: Flash firmware"], tools: ["Multimeter", "Hot air gun 330°C", "Microscope", "Flux"], warnings: ["Mediatek chipset", "Check IMEI first"] },
+            display: { title: "Techno Spark 20 Pro Display Fix", causes: ["🔌 Loose connector", "🖥️ Cracked LCD", "🔧 Display IC", "⚡ Backlight"], steps: ["STEP 1: Reseat connector", "STEP 2: Clean with alcohol", "STEP 3: Test with known display", "STEP 4: Inspect flex", "STEP 5: Check display voltages", "STEP 6: Check backlight coil", "STEP 7: Replace display"], tools: ["Multimeter", "Plastic pry tools", "Alcohol", "Magnifying glass"], warnings: ["LCD not AMOLED", "Cheaper to replace"] },
+            water: { title: "Techno Spark 20 Pro Water Damage", causes: ["💧 Corrosion", "⚡ Shorts", "🔧 Damaged ICs", "🧵 Broken traces"], steps: ["STEP 1: Remove battery", "STEP 2: Disassemble", "STEP 3: Clean with 99% alcohol", "STEP 4: Ultrasonic clean", "STEP 5: Microscope inspection", "STEP 6: Clean connectors", "STEP 7: Check for shorts", "STEP 8: Remove corroded parts", "STEP 9: Dry 2-4 hours", "STEP 10: Test"], tools: ["Isopropyl alcohol 99%", "Ultrasonic cleaner", "Microscope", "Soft brush"], warnings: ["No IP rating", "Act quickly"] },
+            camera: { title: "Techno Spark 20 Pro Camera Fix", causes: ["🔌 Loose connector", "📸 Camera module", "🔧 Camera IC", "💻 Software"], steps: ["STEP 1: Clear camera cache", "STEP 2: Test front/back", "STEP 3: Reseat connectors", "STEP 4: Clean with alcohol", "STEP 5: Test known camera", "STEP 6: Check camera power", "STEP 7: Restore firmware", "STEP 8: Replace camera"], tools: ["Plastic pry tools", "Multimeter", "Alcohol", "Tweezers"], warnings: ["50MP main camera", "Check all lenses"] },
+            wifi: { title: "Techno Spark 20 Pro WiFi Fix", causes: ["📡 WiFi antenna", "🔧 MTK WiFi IC", "📱 Software", "🔌 Connector"], steps: ["STEP 1: Toggle WiFi", "STEP 2: Reset Network", "STEP 3: Check antenna flex", "STEP 4: Locate WiFi IC", "STEP 5: Check for shorts", "STEP 6: Reheat WiFi IC 310°C", "STEP 7: Replace IC", "STEP 8: Flash firmware"], tools: ["Multimeter", "Hot air gun 310°C", "Flux", "Microscope"], warnings: ["Mediatek WiFi/BT combo", "Check antenna first"] },
+            bluetooth: { title: "Techno Spark 20 Pro Bluetooth Fix", causes: ["🔵 WiFi/BT IC", "📡 Antenna", "💻 Software", "🔌 Connector"], steps: ["STEP 1: Toggle BT", "STEP 2: Forget devices", "STEP 3: Reset Network", "STEP 4: Check combo IC", "STEP 5: Reheat IC 310°C", "STEP 6: Check BT antenna", "STEP 7: Replace IC", "STEP 8: Restore firmware"], tools: ["Multimeter", "Hot air gun 310°C", "Flux"], warnings: ["Same IC for WiFi/BT", "Replace if both fail"] },
+            touch: { title: "Techno Spark 20 Pro Touch Fix", causes: ["👆 Touch IC", "🖥️ Display", "🔌 Connector", "💻 Software"], steps: ["STEP 1: Restart", "STEP 2: Remove screen protector", "STEP 3: Reseat connector", "STEP 4: Locate Touch IC", "STEP 5: Reheat Touch IC 300°C", "STEP 6: Test known display", "STEP 7: Replace Touch IC", "STEP 8: Replace display"], tools: ["Multimeter", "Hot air gun 300°C", "Plastic tools", "Microscope"], warnings: ["Touch IC on flex", "Check for ghost touches"] },
+            battery: { title: "Techno Spark 20 Pro Battery Drain", causes: ["🔋 Old battery", "📱 Background apps", "🔧 Power leakage", "💻 Software"], steps: ["STEP 1: Check battery health", "STEP 2: Check background apps", "STEP 3: Calibrate battery", "STEP 4: Check current leakage", "STEP 5: Check PMIC shorts", "STEP 6: Update OS", "STEP 7: Replace battery"], tools: ["Multimeter", "DC Power Supply", "Thermal camera"], warnings: ["5000mAh battery", "Check for swelling"] },
+            sim: { title: "Techno Spark 20 Pro SIM Fix", causes: ["💳 SIM card", "📱 SIM tray", "🔧 SIM IC", "🔌 Connector"], steps: ["STEP 1: Reinsert SIM", "STEP 2: Test different SIM", "STEP 3: Check SIM tray", "STEP 4: Inspect SIM pins", "STEP 5: Locate SIM IC", "STEP 6: Check continuity", "STEP 7: Reheat SIM IC 300°C", "STEP 8: Replace IC"], tools: ["Multimeter", "Hot air gun 300°C", "Microscope", "Tweezers"], warnings: ["Dual SIM", "Check both slots"] },
+            fingerprint: { title: "Techno Spark 20 Pro Fingerprint Fix", causes: ["🔐 Side sensor", "🔌 Connector", "🔧 Sensor IC", "💻 Software"], steps: ["STEP 1: Delete and re-add", "STEP 2: Clean sensor", "STEP 3: Check side button flex", "STEP 4: Inspect connector", "STEP 5: Check sensor continuity", "STEP 6: Reheat connector", "STEP 7: Replace sensor flex", "STEP 8: Update software"], tools: ["Multimeter", "Soldering iron", "Soft cloth", "Tweezers"], warnings: ["Side-mounted sensor", "Check button flex"] },
+            buttons: { title: "Techno Spark 20 Pro Button Fix", causes: ["🔘 Power button", "🔘 Volume buttons", "🧵 Button flex", "🔌 Connector"], steps: ["STEP 1: Check button feel", "STEP 2: Inspect button flex", "STEP 3: Clean contacts", "STEP 4: Check continuity", "STEP 5: Reheat connector", "STEP 6: Replace button flex", "STEP 7: Check side key IC"], tools: ["Multimeter", "Soldering iron", "Alcohol", "Tweezers"], warnings: ["Flex cable tears easily", "Handle carefully"] }
+        };
+
+        // Infinix GT 20 Pro - Complete 15 Faults Guide
+        const InfinixGT20ProGuides = {
+            charging: { title: "Infinix GT 20 Pro Charging Fix", causes: ["🔌 USB-C port", "🔋 Dual cell battery", "🔧 BQ25601 IC", "🚀 68W fast charging", "⚡ OVP IC"], steps: ["STEP 1: Clean USB-C port", "STEP 2: Use Infinix 68W charger", "STEP 3: Check dual cell battery (2x 3.7V)", "STEP 4: Locate BQ25601 IC", "STEP 5: Check VBUS 5V-20V", "STEP 6: Check battery balancing", "STEP 7: Reheat BQ25601 310°C", "STEP 8: Replace charging IC"], tools: ["Multimeter", "Hot air gun 310°C", "68W charger", "USB-PD tester"], warnings: ["Requires proprietary charger", "Dual cell needs balancing"] },
+            dead: { title: "Infinix GT 20 Pro Dead Fix", causes: ["🔋 Dead battery", "🔧 MTK PMIC", "⚡ Short", "🔘 Power button", "💀 CPU"], steps: ["STEP 1: Charge 30 min", "STEP 2: Check battery voltage", "STEP 3: Use DC supply 7.4V (dual cell)", "STEP 4: Locate MT6357 PMIC", "STEP 5: Check VSYS", "STEP 6: Check VIO18", "STEP 7: Check VPROC", "STEP 8: Reheat PMIC 320°C"], tools: ["DC Power Supply", "Multimeter", "Hot air gun 320°C", "Flux"], warnings: ["Dual cell battery - 7.4V total", "Don't short cells"] },
+            speaker: { title: "Infinix GT 20 Pro Speaker Fix", causes: ["🔊 Blown speaker", "🧹 Blocked grille", "🔌 Loose connector", "🎛️ Audio IC"], steps: ["STEP 1: Clean grille", "STEP 2: Test known speaker", "STEP 3: Check connector", "STEP 4: Inspect flex", "STEP 5: Locate audio amp", "STEP 6: Reheat IC 300°C", "STEP 7: Replace speaker"], tools: ["Multimeter", "Hot air gun 300°C", "Soft brush", "Tweezers"], warnings: ["Gaming phone - dual speakers", "Check both speakers"] },
+            mic: { title: "Infinix GT 20 Pro Mic Fix", causes: ["🎙️ Blocked mic", "🔌 Charging flex", "🔧 Audio IC", "🧵 Track"], steps: ["STEP 1: Clean mic hole", "STEP 2: Test recording", "STEP 3: Check charging flex", "STEP 4: Inspect mic", "STEP 5: Check continuity", "STEP 6: Reheat audio IC", "STEP 7: Replace flex"], tools: ["Multimeter", "Soft brush", "Soldering iron", "Tweezers"], warnings: ["Game mode uses mics", "Check all mics"] },
+            network: { title: "Infinix GT 20 Pro Network Fix", causes: ["📡 Antenna", "🔧 MTK RF IC", "📱 IMEI", "🔌 Connector"], steps: ["STEP 1: Toggle Airplane", "STEP 2: Check IMEI", "STEP 3: Inspect antenna", "STEP 4: Check contacts", "STEP 5: Locate RF IC", "STEP 6: Reheat RF IC 330°C", "STEP 7: Flash firmware"], tools: ["Multimeter", "Hot air gun 330°C", "Microscope", "Flux"], warnings: ["5G capable", "Check 5G antenna"] },
+            display: { title: "Infinix GT 20 Pro Display Fix", causes: ["🔌 Loose connector", "🖥️ AMOLED", "🔧 Display IC", "⚡ Backlight"], steps: ["STEP 1: Reseat connector", "STEP 2: Clean with alcohol", "STEP 3: Test known display", "STEP 4: Inspect flex", "STEP 5: Check voltages", "STEP 6: Check backlight", "STEP 7: Replace display"], tools: ["Multimeter", "Plastic pry tools", "Alcohol", "Magnifying glass"], warnings: ["AMOLED expensive", "Handle carefully"] },
+            water: { title: "Infinix GT 20 Pro Water Damage", causes: ["💧 Corrosion", "⚡ Shorts", "🔧 Damaged ICs", "🧵 Traces"], steps: ["STEP 1: Remove battery", "STEP 2: Disassemble", "STEP 3: Clean 99% alcohol", "STEP 4: Ultrasonic clean", "STEP 5: Microscope inspect", "STEP 6: Clean connectors", "STEP 7: Check shorts", "STEP 8: Remove corrosion", "STEP 9: Dry 2-4 hours", "STEP 10: Test"], tools: ["Isopropyl alcohol 99%", "Ultrasonic cleaner", "Microscope", "Soft brush"], warnings: ["No IP rating", "Act fast"] },
+            camera: { title: "Infinix GT 20 Pro Camera Fix", causes: ["🔌 Loose connector", "📸 Camera module", "🔧 Camera IC", "💻 Software"], steps: ["STEP 1: Clear cache", "STEP 2: Test all cameras", "STEP 3: Reseat connectors", "STEP 4: Clean alcohol", "STEP 5: Test known camera", "STEP 6: Check power IC", "STEP 7: Restore", "STEP 8: Replace camera"], tools: ["Plastic pry tools", "Multimeter", "Alcohol", "Tweezers"], warnings: ["108MP main camera", "Check OIS"] },
+            wifi: { title: "Infinix GT 20 Pro WiFi Fix", causes: ["📡 Antenna", "🔧 MTK WiFi IC", "📱 Software", "🔌 Connector"], steps: ["STEP 1: Toggle WiFi", "STEP 2: Reset Network", "STEP 3: Check antenna", "STEP 4: Locate WiFi IC", "STEP 5: Check shorts", "STEP 6: Reheat IC 310°C", "STEP 7: Replace IC", "STEP 8: Flash firmware"], tools: ["Multimeter", "Hot air gun 310°C", "Flux", "Microscope"], warnings: ["WiFi 6 capable", "Check antenna first"] },
+            bluetooth: { title: "Infinix GT 20 Pro Bluetooth Fix", causes: ["🔵 WiFi/BT IC", "📡 Antenna", "💻 Software", "🔌 Connector"], steps: ["STEP 1: Toggle BT", "STEP 2: Forget devices", "STEP 3: Reset Network", "STEP 4: Check combo IC", "STEP 5: Reheat IC 310°C", "STEP 6: Check antenna", "STEP 7: Replace IC", "STEP 8: Restore"], tools: ["Multimeter", "Hot air gun 310°C", "Flux"], warnings: ["BT 5.3", "Same IC as WiFi"] },
+            touch: { title: "Infinix GT 20 Pro Touch Fix", causes: ["👆 Touch IC", "🖥️ Display", "🔌 Connector", "💻 Software"], steps: ["STEP 1: Restart", "STEP 2: Remove protector", "STEP 3: Reseat connector", "STEP 4: Locate Touch IC", "STEP 5: Reheat 300°C", "STEP 6: Test known display", "STEP 7: Replace Touch IC", "STEP 8: Replace display"], tools: ["Multimeter", "Hot air gun 300°C", "Plastic tools", "Microscope"], warnings: ["360Hz touch sampling", "Gaming touch issues"] },
+            battery: { title: "Infinix GT 20 Pro Battery Drain", causes: ["🔋 Old battery", "📱 Background apps", "🔧 Leakage", "💻 Software"], steps: ["STEP 1: Check health", "STEP 2: Check background", "STEP 3: Calibrate", "STEP 4: Check leakage", "STEP 5: Check PMIC", "STEP 6: Update", "STEP 7: Replace battery"], tools: ["Multimeter", "DC Power Supply", "Thermal camera"], warnings: ["5000mAh dual cell", "Check both cells"] },
+            sim: { title: "Infinix GT 20 Pro SIM Fix", causes: ["💳 SIM card", "📱 SIM tray", "🔧 SIM IC", "🔌 Connector"], steps: ["STEP 1: Reinsert SIM", "STEP 2: Test different", "STEP 3: Check tray", "STEP 4: Inspect pins", "STEP 5: Locate SIM IC", "STEP 6: Check continuity", "STEP 7: Reheat 300°C", "STEP 8: Replace IC"], tools: ["Multimeter", "Hot air gun 300°C", "Microscope", "Tweezers"], warnings: ["Dual SIM", "Check both slots"] },
+            fingerprint: { title: "Infinix GT 20 Pro Fingerprint Fix", causes: ["🔐 Under display", "🖥️ Display", "🔧 Sensor", "💻 Software"], steps: ["STEP 1: Delete and re-add", "STEP 2: Clean screen", "STEP 3: Remove protector", "STEP 4: Check display connector", "STEP 5: Optical sensor under display", "STEP 6: Calibrate", "STEP 7: Update", "STEP 8: Replace display"], tools: ["Soft cloth", "Multimeter", "Plastic tools"], warnings: ["Optical sensor", "Screen protector affects"] },
+            buttons: { title: "Infinix GT 20 Pro Button Fix", causes: ["🔘 Power", "🔘 Volume", "🧵 Flex", "🔌 Connector"], steps: ["STEP 1: Check feel", "STEP 2: Inspect flex", "STEP 3: Clean contacts", "STEP 4: Check continuity", "STEP 5: Reheat connector", "STEP 6: Replace flex", "STEP 7: Check side IC"], tools: ["Multimeter", "Soldering iron", "Alcohol", "Tweezers"], warnings: ["Shoulder triggers", "Check gaming buttons"] }
+        };
+
+        // Map models to their specific guides
+        const modelGuideMap = {
+            "iPhone 16 Pro Max": iPhone16ProMaxGuides,
+            "Galaxy S24 Ultra": SamsungS24UltraGuides,
+            "Spark 20 Pro": TechnoSpark20ProGuides,
+            "GT 20 Pro": InfinixGT20ProGuides
+        };
+
+        // Default guide for any model/fault not specifically defined
+        function getDefaultGuide(faultId) {
+            const defaultGuides = {
+                charging: { title: "Charging Problem - Standard Guide", causes: ["🔌 Dirty port", "🔋 Battery issue", "🔧 Charging IC", "🧵 Coil issue"], steps: ["STEP 1: Clean port", "STEP 2: Test different charger", "STEP 3: Check battery voltage", "STEP 4: Locate charging IC", "STEP 5: Check VBUS", "STEP 6: Reheat IC", "STEP 7: Replace IC"], tools: ["Multimeter", "Hot air gun", "Soldering iron"], warnings: ["Disconnect battery first", "Use ESD protection"] },
+                dead: { title: "Dead Mobile - Standard Guide", causes: ["🔋 Dead battery", "🔧 PMIC", "⚡ Short", "🔘 Power button"], steps: ["STEP 1: Charge 30 min", "STEP 2: Check battery", "STEP 3: Use DC supply", "STEP 4: Check PMIC", "STEP 5: Check voltages", "STEP 6: Reheat PMIC"], tools: ["DC Supply", "Multimeter", "Hot air gun"], warnings: ["Check for shorts", "Don't overheat"] },
+                speaker: { title: "Speaker Problem - Standard Guide", causes: ["🔊 Blown speaker", "🧹 Blocked", "🔌 Loose", "🎛️ Audio IC"], steps: ["STEP 1: Clean grille", "STEP 2: Test known speaker", "STEP 3: Check connector", "STEP 4: Reheat audio IC", "STEP 5: Replace speaker"], tools: ["Multimeter", "Hot air gun", "Soft brush"], warnings: ["Don't blow air directly", "Handle gently"] },
+                mic: { title: "Microphone Problem - Standard Guide", causes: ["🎙️ Blocked", "🔌 Flex issue", "🔧 Audio IC", "🧵 Track"], steps: ["STEP 1: Clean mic hole", "STEP 2: Test recording", "STEP 3: Check flex", "STEP 4: Check continuity", "STEP 5: Reheat audio IC", "STEP 6: Replace flex"], tools: ["Multimeter", "Soft brush", "Soldering iron"], warnings: ["Don't poke hole", "Multiple mics"] },
+                network: { title: "Network Problem - Standard Guide", causes: ["📡 Antenna", "🔧 RF IC", "📱 IMEI", "🔌 Connector"], steps: ["STEP 1: Toggle Airplane", "STEP 2: Check IMEI", "STEP 3: Inspect antenna", "STEP 4: Reheat RF IC", "STEP 5: Flash firmware"], tools: ["Multimeter", "Hot air gun", "Microscope"], warnings: ["Check IMEI first", "Don't short antenna"] },
+                display: { title: "Display Problem - Standard Guide", causes: ["🔌 Loose", "🖥️ Cracked", "🔧 IC", "⚡ Backlight"], steps: ["STEP 1: Reseat connector", "STEP 2: Test known display", "STEP 3: Check voltages", "STEP 4: Replace display"], tools: ["Multimeter", "Plastic tools", "Alcohol"], warnings: ["Disconnect battery", "Handle carefully"] },
+                water: { title: "Water Damage - Standard Guide", causes: ["💧 Corrosion", "⚡ Shorts", "🔧 Damaged ICs"], steps: ["STEP 1: Remove battery", "STEP 2: Clean alcohol", "STEP 3: Ultrasonic clean", "STEP 4: Inspect", "STEP 5: Dry", "STEP 6: Test"], tools: ["Isopropyl alcohol", "Ultrasonic cleaner", "Microscope"], warnings: ["DO NOT power on", "Act quickly"] },
+                camera: { title: "Camera Problem - Standard Guide", causes: ["🔌 Loose", "📸 Module", "🔧 IC", "💻 Software"], steps: ["STEP 1: Clear cache", "STEP 2: Reseat connector", "STEP 3: Test known camera", "STEP 4: Replace module"], tools: ["Plastic tools", "Multimeter", "Alcohol"], warnings: ["Don't touch lens", "Check all cameras"] },
+                wifi: { title: "WiFi Problem - Standard Guide", causes: ["📡 Antenna", "🔧 WiFi IC", "💻 Software"], steps: ["STEP 1: Toggle WiFi", "STEP 2: Reset Network", "STEP 3: Check antenna", "STEP 4: Reheat WiFi IC", "STEP 5: Replace IC"], tools: ["Multimeter", "Hot air gun", "Flux"], warnings: ["Check antenna first", "Same IC for BT"] },
+                bluetooth: { title: "Bluetooth Problem - Standard Guide", causes: ["🔵 WiFi/BT IC", "📡 Antenna", "💻 Software"], steps: ["STEP 1: Toggle BT", "STEP 2: Forget devices", "STEP 3: Reset Network", "STEP 4: Reheat combo IC"], tools: ["Multimeter", "Hot air gun"], warnings: ["Same IC as WiFi", "Replace if both fail"] },
+                touch: { title: "Touch Problem - Standard Guide", causes: ["👆 Touch IC", "🖥️ Display", "💻 Software"], steps: ["STEP 1: Restart", "STEP 2: Remove protector", "STEP 3: Reseat connector", "STEP 4: Reheat Touch IC", "STEP 5: Replace display"], tools: ["Multimeter", "Hot air gun", "Plastic tools"], warnings: ["Check screen protector", "Ghost touches"] },
+                battery: { title: "Battery Drain - Standard Guide", causes: ["🔋 Old battery", "📱 Apps", "🔧 Leakage"], steps: ["STEP 1: Check health", "STEP 2: Check apps", "STEP 3: Calibrate", "STEP 4: Check leakage", "STEP 5: Replace battery"], tools: ["Multimeter", "DC Supply"], warnings: ["Check swelling", "Replace if <80%"] },
+                sim: { title: "SIM Not Detected - Standard Guide", causes: ["💳 SIM card", "📱 Tray", "🔧 SIM IC"], steps: ["STEP 1: Reinsert SIM", "STEP 2: Test different SIM", "STEP 3: Check tray", "STEP 4: Inspect pins", "STEP 5: Reheat SIM IC"], tools: ["Multimeter", "Hot air gun", "Microscope"], warnings: ["Don't bend pins", "Check both slots"] },
+                fingerprint: { title: "Fingerprint Problem - Standard Guide", causes: ["🔐 Sensor", "🔌 Connector", "💻 Software"], steps: ["STEP 1: Delete and re-add", "STEP 2: Clean sensor", "STEP 3: Check connector", "STEP 4: Update software"], tools: ["Soft cloth", "Multimeter"], warnings: ["Clean sensor", "Screen protector affects"] },
+                buttons: { title: "Button Problem - Standard Guide", causes: ["🔘 Button", "🧵 Flex", "🔌 Connector"], steps: ["STEP 1: Check feel", "STEP 2: Inspect flex", "STEP 3: Clean contacts", "STEP 4: Check continuity", "STEP 5: Replace flex"], tools: ["Multimeter", "Soldering iron", "Alcohol"], warnings: ["Flex tears easily", "Check all buttons"] }
+            };
+            return defaultGuides[faultId] || defaultGuides.charging;
+        }
+
+        function getRepairGuide(modelName, faultId) {
+            if (modelGuideMap[modelName] && modelGuideMap[modelName][faultId]) {
+                return modelGuideMap[modelName][faultId];
+            }
+            return getDefaultGuide(faultId);
+        }
 
         // Navigation state
         let currentPage = "home";
         let currentBrand = null;
         let currentModel = null;
-        let currentFault = null;
-
-        function getRepairGuide(modelName, faultId) {
-            if (modelRepairGuides[modelName] && modelRepairGuides[modelName][faultId]) {
-                return modelRepairGuides[modelName][faultId];
-            }
-            return defaultRepairGuide[faultId] || defaultRepairGuide.charging;
-        }
 
         function renderHome() {
             return `
                 <div class="search-bar">
-                    <input type="text" id="searchInput" placeholder="🔍 Search mobile model... (e.g., iPhone 16, Samsung S24)" onkeyup="filterBrands()">
+                    <input type="text" id="searchInput" placeholder="🔍 Search mobile model..." onkeyup="filterBrands()">
                 </div>
                 <h2 class="section-title">📱 Select Your Mobile Brand</h2>
-                <div class="brands-grid" id="brandsGrid">
+                <div class="brands-grid">
                     ${brands.map(brand => `
                         <div class="brand-card" onclick="navigateToBrand('${brand.id}')">
                             <div class="brand-icon">${brand.icon}</div>
@@ -911,14 +269,13 @@
         function renderBrandPage(brandId) {
             const brand = brands.find(b => b.id === brandId);
             const brandModels = models[brandId] || [];
-            
             return `
-                <h2 class="section-title">${brand?.icon || "📱"} ${brand?.name || brandId} - Models</h2>
+                <h2 class="section-title">${brand?.icon} ${brand?.name} - Models</h2>
                 <div class="models-grid">
                     ${brandModels.map(model => `
                         <div class="model-card" onclick="navigateToModel('${brandId}', '${model.replace(/'/g, "\\'")}')">
                             <div class="model-name">${model}</div>
-                            <div class="model-year">Click to see faults →</div>
+                            <div class="model-year">Click to see 15 faults →</div>
                         </div>
                     `).join('')}
                 </div>
@@ -926,19 +283,13 @@
         }
 
         function renderFaultsPage(brandId, modelName) {
-            const faults = [
-                { id: "charging", name: "🔋 Charging Problem", desc: "Not charging, slow charging, intermittent charging" },
-                { id: "dead", name: "💀 Dead Mobile", desc: "No power, not turning on, no response" },
-                { id: "speaker", name: "🔊 Speaker Problem", desc: "No sound, low volume, crackling sound" }
-            ];
-            
             return `
                 <div class="repair-header">
                     <h2>📱 ${modelName}</h2>
-                    <p>Select the fault you are experiencing</p>
+                    <p>Select the fault you are experiencing (15 faults available)</p>
                 </div>
                 <div class="faults-grid">
-                    ${faults.map(fault => `
+                    ${faultsList.map(fault => `
                         <div class="fault-card" onclick="navigateToRepair('${brandId}', '${modelName.replace(/'/g, "\\'")}', '${fault.id}')">
                             <div class="fault-icon">${fault.icon}</div>
                             <div class="fault-info">
@@ -953,24 +304,24 @@
 
         function renderRepairPage(brandId, modelName, faultId) {
             const guide = getRepairGuide(modelName, faultId);
-            const faultNames = { charging: "Charging Problem", dead: "Dead Mobile", speaker: "Speaker Problem" };
+            const fault = faultsList.find(f => f.id === faultId);
             
             return `
                 <div class="repair-header">
                     <h2>📱 ${modelName}</h2>
-                    <p>${faultNames[faultId] || "Repair Guide"} - Model-Specific Repair</p>
+                    <p>${fault?.name || faultId} - Complete Model-Specific Repair Guide</p>
                 </div>
                 
                 <div class="diagnosis-box">
                     <h3>🔍 EXPERT DIAGNOSIS - ${modelName}</h3>
-                    <p><strong>Problem:</strong> ${faultNames[faultId] || "Mobile fault"}</p>
+                    <p><strong>Problem:</strong> ${fault?.desc || "Mobile fault"}</p>
                     <p style="margin-top: 10px;"><strong>Guide:</strong> ${guide.title}</p>
                 </div>
                 
                 <div class="possible-causes">
                     <h3>📋 POSSIBLE CAUSES (Check in this order)</h3>
                     <ul class="cause-list">
-                        ${guide.possibleCauses.map(cause => `<li>🔹 ${cause}</li>`).join('')}
+                        ${guide.causes.map(cause => `<li>🔹 ${cause}</li>`).join('')}
                     </ul>
                 </div>
                 
@@ -1004,72 +355,24 @@
         function updateBackButton() {
             const container = document.getElementById('backBtnContainer');
             if (!container) return;
-            
-            if (currentPage === 'home') {
-                container.innerHTML = '';
-                return;
-            }
-            
+            if (currentPage === 'home') { container.innerHTML = ''; return; }
             let backAction = '';
-            let backText = '⬅ Back';
-            
-            if (currentPage === 'brand') {
-                backAction = 'navigateToHome()';
-                backText = '⬅ Back to Brands';
-            } else if (currentPage === 'faults') {
-                backAction = `navigateToBrand('${currentBrand}')`;
-                backText = '⬅ Back to Models';
-            } else if (currentPage === 'repair') {
-                backAction = `navigateToModel('${currentBrand}', '${currentModel?.replace(/'/g, "\\'")}')`;
-                backText = '⬅ Back to Faults';
-            }
-            
-            container.innerHTML = `<button class="back-btn" onclick="${backAction}">${backText}</button>`;
+            if (currentPage === 'brand') backAction = 'navigateToHome()';
+            else if (currentPage === 'faults') backAction = `navigateToBrand('${currentBrand}')`;
+            else if (currentPage === 'repair') backAction = `navigateToModel('${currentBrand}', '${currentModel?.replace(/'/g, "\\'")}')`;
+            container.innerHTML = `<button class="back-btn" onclick="${backAction}">⬅ Back</button>`;
         }
 
-        function navigateToHome() {
-            currentPage = 'home';
-            currentBrand = null;
-            currentModel = null;
-            document.getElementById('mainContent').innerHTML = renderHome();
-            updateBackButton();
-            window.scrollTo(0, 0);
-        }
-
-        function navigateToBrand(brandId) {
-            currentPage = 'brand';
-            currentBrand = brandId;
-            document.getElementById('mainContent').innerHTML = renderBrandPage(brandId);
-            updateBackButton();
-            window.scrollTo(0, 0);
-        }
-
-        function navigateToModel(brandId, modelName) {
-            currentPage = 'faults';
-            currentBrand = brandId;
-            currentModel = modelName;
-            document.getElementById('mainContent').innerHTML = renderFaultsPage(brandId, modelName);
-            updateBackButton();
-            window.scrollTo(0, 0);
-        }
-
-        function navigateToRepair(brandId, modelName, faultId) {
-            currentPage = 'repair';
-            currentBrand = brandId;
-            currentModel = modelName;
-            currentFault = faultId;
-            document.getElementById('mainContent').innerHTML = renderRepairPage(brandId, modelName, faultId);
-            updateBackButton();
-            window.scrollTo(0, 0);
-        }
+        function navigateToHome() { currentPage = 'home'; currentBrand = null; currentModel = null; document.getElementById('mainContent').innerHTML = renderHome(); updateBackButton(); window.scrollTo(0,0); }
+        function navigateToBrand(brandId) { currentPage = 'brand'; currentBrand = brandId; document.getElementById('mainContent').innerHTML = renderBrandPage(brandId); updateBackButton(); window.scrollTo(0,0); }
+        function navigateToModel(brandId, modelName) { currentPage = 'faults'; currentBrand = brandId; currentModel = modelName; document.getElementById('mainContent').innerHTML = renderFaultsPage(brandId, modelName); updateBackButton(); window.scrollTo(0,0); }
+        function navigateToRepair(brandId, modelName, faultId) { currentPage = 'repair'; currentBrand = brandId; currentModel = modelName; document.getElementById('mainContent').innerHTML = renderRepairPage(brandId, modelName, faultId); updateBackButton(); window.scrollTo(0,0); }
 
         function filterBrands() {
             const searchTerm = document.getElementById('searchInput')?.value.toLowerCase() || '';
-            const brandCards = document.querySelectorAll('.brand-card');
-            
-            brandCards.forEach(card => {
-                const brandName = card.querySelector('h3')?.innerText.toLowerCase() || '';
-                card.style.display = brandName.includes(searchTerm) ? 'block' : 'none';
+            document.querySelectorAll('.brand-card').forEach(card => {
+                const name = card.querySelector('h3')?.innerText.toLowerCase() || '';
+                card.style.display = name.includes(searchTerm) ? 'block' : 'none';
             });
         }
 
