@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <!-- ============================================ -->
+    <!-- GOOGLE SEARCH CONSOLE VERIFICATION -->
+    <!-- ============================================ -->
+    <meta name="google-site-verification" content="gRibrxvAVfKmyEyLhjcyqbpZHadMqNL008unLreiyqs" />
+    
     <title>Karachi Mobile Repairing Master | Complete Phone Repair Guide</title>
-    <meta name="description" content="Complete model-specific mobile phone repairing guide. Professional diagnosis and repair for all faults.">
-    <meta name="keywords" content="mobile repairing, iPhone repair, Samsung repair, Techno repair, charging problem, dead mobile, water damage, network fix">
+    <meta name="description" content="Complete model-specific mobile phone repairing guide. Professional diagnosis and repair for all faults. iPhone, Samsung, Techno, Infinix and more.">
+    <meta name="keywords" content="mobile repairing, phone repair, karachi mobile repairing, iPhone repair, Samsung repair, Techno repair, Infinix repair, charging problem, dead mobile, water damage, network fix, display repair">
     <meta name="author" content="Karachi Mobile Repairing Master">
     <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Karachi Mobile Repairing Master - Complete Phone Repair Guide">
+    <meta property="og:description" content="Professional mobile phone repairing guide. Model-specific diagnosis for all faults.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mobile-phone-repairing-course.netlify.app/">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mobile-phone-repairing-course.netlify.app/">
     
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -126,10 +141,8 @@
         ];
 
         // ============================================
-        // COMPLETE MODEL-SPECIFIC REPAIR GUIDES (ALL 15 FAULTS)
-        // ============================================
-        
         // iPhone 16 Pro Max - Complete 15 Faults Guide
+        // ============================================
         const iPhone16ProMaxGuides = {
             charging: { title: "iPhone 16 Pro Max Charging Problem", causes: ["🔌 Damaged USB-C port", "🔋 Faulty battery BMS", "🔧 Tristar IC (U4000) failure", "🔧 Hydra IC (U4900) issue", "⚡ Overvoltage protection IC"], steps: ["STEP 1: Clean USB-C port with isopropyl alcohol", "STEP 2: Test with Apple 20W+ charger and certified cable", "STEP 3: Check battery voltage - should be 3.85V", "STEP 4: Locate Tristar IC U4000 near charging port", "STEP 5: Measure PP_VBUS_MAIN - should be 5V/9V", "STEP 6: Check Hydra IC U4900 for fast charging", "STEP 7: Reheat Tristar IC with flux at 320°C", "STEP 8: Replace Tristar IC if reheat fails", "STEP 9: Check charging port flex cable", "STEP 10: Replace PMIC as last resort"], tools: ["Multimeter", "Hot air gun 320°C", "Soldering iron", "Flux", "USB-C tester"], warnings: ["Don't use cheap USB-C cables", "Always disconnect battery first"] },
             dead: { title: "iPhone 16 Pro Max Dead Fix", causes: ["🔋 Dead battery below 2.5V", "🔧 PMIC U7000 failure", "⚡ Short on PP_BATT_VCC", "🔘 Power button flex", "💀 CPU underfill issue"], steps: ["STEP 1: Connect to power - check amperage draw", "STEP 2: Check battery voltage - below 2.5V replace", "STEP 3: Use DC power supply at 3.85V", "STEP 4: Locate PMIC U7000 (main power IC)", "STEP 5: Check PP_VDD_MAIN - should be 3.8V", "STEP 6: Check PP1V8_SDRAM and PP0V9_SOC", "STEP 7: Use thermal camera to find shorts", "STEP 8: Reheat PMIC with hot air 350°C", "STEP 9: Replace PMIC if no voltages", "STEP 10: Check NAND chip for shorts"], tools: ["DC Power Supply", "Multimeter", "Hot air gun 350°C", "Thermal camera", "Microscope"], warnings: ["Don't apply more than 4.2V", "Use ESD protection"] },
@@ -366,7 +379,7 @@
         function navigateToHome() { currentPage = 'home'; currentBrand = null; currentModel = null; document.getElementById('mainContent').innerHTML = renderHome(); updateBackButton(); window.scrollTo(0,0); }
         function navigateToBrand(brandId) { currentPage = 'brand'; currentBrand = brandId; document.getElementById('mainContent').innerHTML = renderBrandPage(brandId); updateBackButton(); window.scrollTo(0,0); }
         function navigateToModel(brandId, modelName) { currentPage = 'faults'; currentBrand = brandId; currentModel = modelName; document.getElementById('mainContent').innerHTML = renderFaultsPage(brandId, modelName); updateBackButton(); window.scrollTo(0,0); }
-        function navigateToRepair(brandId, modelName, faultId) { currentPage = 'repair'; currentBrand = brandId; currentModel = modelName; document.getElementById('mainContent').innerHTML = renderRepairPage(brandId, modelName, faultId); updateBackButton(); window.scrollTo(0,0); }
+        function navigateToRepair(brandId, modelName, faultId) { currentPage = 'repair'; currentBrand = brandId; currentModel = modelName; currentFault = faultId; document.getElementById('mainContent').innerHTML = renderRepairPage(brandId, modelName, faultId); updateBackButton(); window.scrollTo(0,0); }
 
         function filterBrands() {
             const searchTerm = document.getElementById('searchInput')?.value.toLowerCase() || '';
