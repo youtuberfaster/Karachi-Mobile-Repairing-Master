@@ -1,66 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    
-    <!-- Main Pages -->
     <url>
-        <loc>https://YOUR-GITHUB-USERNAME.github.io/karachi-mobile-repairing/</loc>
-        <lastmod>2024-12-01</lastmod>
-        <changefreq>weekly</changefreq>
+        <loc>https://mobile-phone-repairing-course.netlify.app/</loc>
+        <lastmod>2026-04-16</lastmod>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
-    
-    <!-- Brand Pages -->
-    <url>
-        <loc>https://YOUR-GITHUB-USERNAME.github.io/karachi-mobile-repairing/?brand=apple</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://YOUR-GITHUB-USERNAME.github.io/karachi-mobile-repairing/?brand=samsung</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://YOUR-GITHUB-USERNAME.github.io/karachi-mobile-repairing/?brand=techno</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://YOUR-GITHUB-USERNAME.github.io/karachi-mobile-repairing/?brand=infinix</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://YOUR-GITHUB-USERNAME.github.io/karachi-mobile-repairing/?brand=xiaomi</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <!-- Fault Pages (SEO Keywords) -->
-    <url>
-        <loc>https://YOUR-GITHUB-USERNAME.github.io/karachi-mobile-repairing/?fault=charging</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://YOUR-GITHUB-USERNAME.github.io/karachi-mobile-repairing/?fault=speaker</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://YOUR-GITHUB-USERNAME.github.io/karachi-mobile-repairing/?fault=network</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://YOUR-GITHUB-USERNAME.github.io/karachi-mobile-repairing/?fault=dead</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://YOUR-GITHUB-USERNAME.github.io/karachi-mobile-repairing/?fault=water</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    
 </urlset>
