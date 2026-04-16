@@ -1,0 +1,21 @@
+# Google Search Engine Instructions
+User-agent: *
+Allow: /
+Disallow: /assets/private/
+Disallow: /temp/
+
+# Sitemap location
+Sitemap: https://YOUR-GITHUB-USERNAME.github.io/karachi-mobile-repairing/sitemap.xml
+
+# Crawl delay for bots
+Crawl-delay: 5
+
+# Specific rules for Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 2
+
+# Specific rules for Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
