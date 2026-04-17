@@ -1,9 +1,271 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- ========== HOME PAGE ========== -->
     <url>
         <loc>https://mobile-phone-repairing-course.netlify.app/</loc>
-        <lastmod>2026-04-16</lastmod>
+        <lastmod>2024-12-15</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
+
+    <!-- ========== BRAND PAGES (11 Brands) ========== -->
+    <url>
+        <loc>https://mobile-phone-repairing-course.netlify.app/#brand/apple</loc>
+        <lastmod>2024-12-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://mobile-phone-repairing-course.netlify.app/#brand/samsung</loc>
+        <lastmod>2024-12-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://mobile-phone-repairing-course.netlify.app/#brand/techno</loc>
+        <lastmod>2024-12-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://mobile-phone-repairing-course.netlify.app/#brand/infinix</loc>
+        <lastmod>2024-12-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://mobile-phone-repairing-course.netlify.app/#brand/xiaomi</loc>
+        <lastmod>2024-12-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://mobile-phone-repairing-course.netlify.app/#brand/oppo</loc>
+        <lastmod>2024-12-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://mobile-phone-repairing-course.netlify.app/#brand/vivo</loc>
+        <lastmod>2024-12-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://mobile-phone-repairing-course.netlify.app/#brand/realme</loc>
+        <lastmod>2024-12-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://mobile-phone-repairing-course.netlify.app/#brand/oneplus</loc>
+        <lastmod>2024-12-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://mobile-phone-repairing-course.netlify.app/#brand/google</loc>
+        <lastmod>2024-12-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://mobile-phone-repairing-course.netlify.app/#brand/motorola</loc>
+        <lastmod>2024-12-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- ========== APPLE iPHONE MODELS (18 Models) ========== -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/apple/iphone-16-pro-max</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/apple/iphone-16-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/apple/iphone-16-plus</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/apple/iphone-16</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/apple/iphone-15-pro-max</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/apple/iphone-15-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/apple/iphone-15-plus</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/apple/iphone-15</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/apple/iphone-14-pro-max</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/apple/iphone-14-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/apple/iphone-14-plus</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/apple/iphone-14</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/apple/iphone-13-pro-max</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/apple/iphone-13-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/apple/iphone-13</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/apple/iphone-se-3rd-gen</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/apple/iphone-12-pro-max</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/apple/iphone-12</loc><priority>0.8</priority></url>
+
+    <!-- ========== SAMSUNG MODELS (15 Models) ========== -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/samsung/galaxy-s24-ultra</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/samsung/galaxy-s24</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/samsung/galaxy-s23-ultra</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/samsung/galaxy-s23</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/samsung/galaxy-z-fold-6</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/samsung/galaxy-z-flip-6</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/samsung/galaxy-a55</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/samsung/galaxy-a35</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/samsung/galaxy-a15</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/samsung/galaxy-a05</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/samsung/galaxy-s22-ultra</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/samsung/galaxy-s22</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/samsung/galaxy-note-20-ultra</loc><priority>0.8</priority></url>
+
+    <!-- ========== TECHNIO MODELS (8 Models) ========== -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/techno/spark-20-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/techno/spark-20</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/techno/spark-20c</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/techno/pova-6-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/techno/pova-6</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/techno/camon-30-premier</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/techno/camon-30</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/techno/camon-30s</loc><priority>0.8</priority></url>
+
+    <!-- ========== INFINIX MODELS (10 Models) ========== -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/infinix/gt-20-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/infinix/note-40-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/infinix/note-40</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/infinix/smart-8-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/infinix/smart-8</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/infinix/hot-40-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/infinix/hot-40</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/infinix/hot-40i</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/infinix/zero-30-5g</loc><priority>0.8</priority></url>
+
+    <!-- ========== XIAOMI MODELS (12 Models) ========== -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/xiaomi/14-ultra</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/xiaomi/14-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/xiaomi/14</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/xiaomi/13t-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/xiaomi/13t</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/xiaomi/redmi-note-13-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/xiaomi/redmi-note-13</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/xiaomi/poco-x6-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/xiaomi/poco-x6</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/xiaomi/poco-f6</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/xiaomi/mi-14</loc><priority>0.8</priority></url>
+
+    <!-- ========== OPPO MODELS (10 Models) ========== -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/oppo/find-x8-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/oppo/find-x8</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/oppo/reno-12-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/oppo/reno-12</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/oppo/reno-11-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/oppo/reno-11</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/oppo/a79</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/oppo/a78</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/oppo/a58</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/oppo/f25-pro</loc><priority>0.8</priority></url>
+
+    <!-- ========== VIVO MODELS (10 Models) ========== -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/vivo/x100-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/vivo/x100</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/vivo/v40-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/vivo/v40</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/vivo/v30-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/vivo/v30</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/vivo/y100</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/vivo/y28</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/vivo/y18</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/vivo/t3-pro</loc><priority>0.8</priority></url>
+
+    <!-- ========== REALME MODELS (10 Models) ========== -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/realme/gt-6</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/realme/gt-6t</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/realme/12-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/realme/12</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/realme/narzo-70-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/realme/narzo-70</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/realme/c65</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/realme/c63</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/realme/c51</loc><priority>0.8</priority></url>
+
+    <!-- ========== ONEPLUS MODELS (8 Models) ========== -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/oneplus/12</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/oneplus/12r</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/oneplus/11</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/oneplus/11r</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/oneplus/nord-4</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/oneplus/nord-ce-4</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/oneplus/nord-n30</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/oneplus/open</loc><priority>0.8</priority></url>
+
+    <!-- ========== GOOGLE PIXEL MODELS (7 Models) ========== -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/google/pixel-9-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/google/pixel-9</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/google/pixel-8-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/google/pixel-8</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/google/pixel-7-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/google/pixel-7</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/google/pixel-fold</loc><priority>0.8</priority></url>
+
+    <!-- ========== MOTOROLA MODELS (6 Models) ========== -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/motorola/edge-50-ultra</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/motorola/edge-50-pro</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/motorola/edge-50-fusion</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/motorola/g85</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/motorola/g84</loc><priority>0.8</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#model/motorola/g54</loc><priority>0.8</priority></url>
+
+    <!-- ========== REPAIR PAGES (Charging Problem for All Top Models) ========== -->
+    <!-- iPhone Repair Pages -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/apple/iphone-16-pro/charging</loc><priority>0.9</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/apple/iphone-16-pro/dead</loc><priority>0.9</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/apple/iphone-15-pro/charging</loc><priority>0.9</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/apple/iphone-15-pro/dead</loc><priority>0.9</priority></url>
+    
+    <!-- Samsung Repair Pages -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/samsung/galaxy-s24-ultra/charging</loc><priority>0.9</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/samsung/galaxy-s24-ultra/dead</loc><priority>0.9</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/samsung/galaxy-s23-ultra/charging</loc><priority>0.9</priority></url>
+    
+    <!-- Techno Repair Pages -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/techno/spark-20-pro/charging</loc><priority>0.9</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/techno/spark-20-pro/dead</loc><priority>0.9</priority></url>
+    
+    <!-- Infinix Repair Pages -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/infinix/gt-20-pro/charging</loc><priority>0.9</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/infinix/note-40-pro/charging</loc><priority>0.9</priority></url>
+    
+    <!-- Xiaomi Repair Pages -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/xiaomi/14-ultra/charging</loc><priority>0.9</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/xiaomi/redmi-note-13-pro/charging</loc><priority>0.9</priority></url>
+    
+    <!-- Oppo Repair Pages -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/oppo/find-x8-pro/charging</loc><priority>0.9</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/oppo/reno-12-pro/charging</loc><priority>0.9</priority></url>
+    
+    <!-- Vivo Repair Pages -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/vivo/x100-pro/charging</loc><priority>0.9</priority></url>
+    
+    <!-- Realme Repair Pages -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/realme/gt-6/charging</loc><priority>0.9</priority></url>
+    
+    <!-- OnePlus Repair Pages -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/oneplus/12/charging</loc><priority>0.9</priority></url>
+    
+    <!-- Google Repair Pages -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/google/pixel-9-pro/charging</loc><priority>0.9</priority></url>
+    
+    <!-- Motorola Repair Pages -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#repair/motorola/edge-50-ultra/charging</loc><priority>0.9</priority></url>
+
+    <!-- ========== COMMON FAULT PAGES (General Guides) ========== -->
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#fault/charging-problem</loc><priority>0.7</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#fault/dead-mobile</loc><priority>0.7</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#fault/speaker-problem</loc><priority>0.7</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#fault/microphone-problem</loc><priority>0.7</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#fault/no-network-signal</loc><priority>0.7</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#fault/display-issue</loc><priority>0.7</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#fault/water-damage</loc><priority>0.7</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#fault/touch-problem</loc><priority>0.7</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#fault/camera-problem</loc><priority>0.7</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#fault/battery-drain</loc><priority>0.7</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#fault/wifi-problem</loc><priority>0.7</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#fault/button-issue</loc><priority>0.7</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#fault/sim-not-detected</loc><priority>0.7</priority></url>
+    <url><loc>https://mobile-phone-repairing-course.netlify.app/#fault/fingerprint-issue</loc><priority>0.7</priority></url>
+
 </urlset>
