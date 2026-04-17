@@ -1,21 +1,25 @@
-# Google Search Engine Instructions
+# Allow all crawlers to access everything
 User-agent: *
 Allow: /
-Disallow: /assets/private/
-Disallow: /temp/
 
-# Sitemap location
-Sitemap: https://YOUR-GITHUB-USERNAME.github.io/karachi-mobile-repairing/sitemap.xml
+# Tell crawlers where sitemap is located
+Sitemap: https://mobile-phone-repairing-course.netlify.app/sitemap.xml
 
-# Crawl delay for bots
-Crawl-delay: 5
+# Crawl delay to avoid server overload (optional)
+Crawl-delay: 1
 
-# Specific rules for Googlebot
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 2
+# Block access to admin or sensitive directories (if any)
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
 
-# Specific rules for Bingbot
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 2
+# Allow all important pages
+Allow: /#brand/
+Allow: /#model/
+Allow: /#repair/
+Allow: /#fault/
+
+# Block useless parameters
+Disallow: /*?*
