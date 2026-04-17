@@ -3,91 +3,410 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    
-    <!-- ============================================ -->
-    <!-- GOOGLE SEARCH CONSOLE VERIFICATION -->
-    <!-- ============================================ -->
-    <meta name="google-site-verification" content="gRibrxvAVfKmyEyLhjcyqbpZHadMqNL008unLreiyqs" />
-    
-    <title>Karachi Mobile Repairing Master | Complete Phone Repair Guide</title>
-    <meta name="description" content="Complete model-specific mobile phone repairing guide. Professional diagnosis and repair for all faults. iPhone, Samsung, Techno, Infinix and more.">
-    <meta name="keywords" content="mobile repairing, phone repair, karachi mobile repairing, iPhone repair, Samsung repair, Techno repair, Infinix repair, charging problem, dead mobile, water damage, network fix, display repair">
+    <title>Karachi Mobile Repairing Master - Professional Phone Repair Guide</title>
+    <meta name="description" content="Professional mobile repairing guide by Karachi Mobile Repairing Master. Step-by-step diagnosis with exact voltage readings, component testing, and repair procedures for all mobile brands.">
+    <meta name="keywords" content="mobile repairing, phone repair, karachi mobile repairing, mobile repairing course, iPhone repair, Samsung repair, charging problem, dead mobile fix">
     <meta name="author" content="Karachi Mobile Repairing Master">
     <meta name="robots" content="index, follow">
     
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Karachi Mobile Repairing Master - Complete Phone Repair Guide">
-    <meta property="og:description" content="Professional mobile phone repairing guide. Model-specific diagnosis for all faults.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mobile-phone-repairing-course.netlify.app/">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://mobile-phone-repairing-course.netlify.app/">
-    
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #f0f2f5 0%, #e0e5ec 100%); min-height: 100vh; }
-        .app-wrapper { max-width: 1400px; margin: 0 auto; padding: 20px; min-height: 100vh; display: flex; flex-direction: column; }
-        .main-header { background: linear-gradient(135deg, #c0392b, #e74c3c); border-radius: 25px; padding: 25px 30px; margin-bottom: 25px; text-align: center; box-shadow: 0 10px 30px rgba(192,57,43,0.3); }
-        .main-header h1 { color: white; font-size: 1.8rem; margin-bottom: 8px; }
-        .main-header p { color: #ffcdd2; font-size: 0.9rem; }
-        .back-btn-container { margin-bottom: 20px; }
-        .back-btn { background: #c0392b; color: white; border: none; padding: 12px 25px; font-size: 1rem; border-radius: 50px; cursor: pointer; font-weight: bold; display: inline-flex; align-items: center; gap: 8px; }
-        .back-btn:hover { background: #a93226; transform: translateX(-3px); }
-        .main-content { background: white; border-radius: 25px; padding: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); flex: 1; }
-        .main-footer { text-align: center; padding: 20px; margin-top: 25px; color: #7f8c8d; font-size: 0.8rem; }
-        .section-title { font-size: 1.5rem; color: #2c3e50; margin-bottom: 25px; padding-bottom: 10px; border-bottom: 3px solid #c0392b; display: inline-block; }
-        .brands-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
-        .brand-card { background: linear-gradient(135deg, #fff, #f8f9fa); border-radius: 20px; padding: 25px; cursor: pointer; transition: all 0.3s ease; text-align: center; border: 1px solid #e0e0e0; }
-        .brand-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.1); border-color: #c0392b; }
-        .brand-icon { font-size: 3rem; margin-bottom: 12px; }
-        .brand-card h3 { color: #2c3e50; font-size: 1.3rem; }
-        .model-count { display: inline-block; background: #c0392b; color: white; padding: 3px 10px; border-radius: 20px; font-size: 0.7rem; margin-top: 10px; }
-        .models-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; margin-top: 20px; }
-        .model-card { background: #f8f9fa; border-radius: 15px; padding: 18px; cursor: pointer; text-align: center; border: 1px solid #e0e0e0; transition: all 0.3s; }
-        .model-card:hover { background: #c0392b; color: white; transform: scale(1.02); }
-        .model-name { font-size: 1rem; font-weight: 600; color: #2c3e50; }
-        .model-card:hover .model-name { color: white; }
-        .faults-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px; margin-top: 20px; }
-        .fault-card { background: #f8f9fa; border-radius: 15px; padding: 20px; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; gap: 15px; border-left: 4px solid #c0392b; }
-        .fault-card:hover { background: #fff5f0; transform: translateX(5px); }
-        .fault-icon { font-size: 2rem; }
-        .fault-info h4 { color: #2c3e50; font-size: 1.1rem; }
-        .fault-info p { color: #7f8c8d; font-size: 0.75rem; }
-        .repair-header { text-align: center; margin-bottom: 30px; }
-        .repair-header h2 { color: #c0392b; font-size: 1.6rem; }
-        .diagnosis-box { background: #e8f4f8; border-radius: 20px; padding: 20px; margin-bottom: 25px; border-left: 5px solid #2980b9; }
-        .diagnosis-box h3 { color: #2980b9; margin-bottom: 15px; }
-        .possible-causes { background: #fef9e7; border-radius: 20px; padding: 20px; margin-bottom: 25px; border-left: 5px solid #f39c12; }
-        .possible-causes h3 { color: #e67e22; margin-bottom: 15px; }
-        .cause-list { list-style: none; }
-        .cause-list li { padding: 8px 0; border-bottom: 1px solid #f0e0c0; }
-        .step { background: #fff; border: 1px solid #e0e0e0; border-radius: 20px; margin-bottom: 20px; padding: 20px; }
-        .step-title { font-size: 1.1rem; font-weight: bold; color: #c0392b; margin-bottom: 12px; }
-        .step-text { line-height: 1.6; color: #34495e; }
-        .tools-box { background: #e8f5e9; border-radius: 20px; padding: 20px; margin-top: 25px; border-left: 5px solid #27ae60; }
-        .tools-box h3 { color: #27ae60; }
-        .warning-box { background: #fdecea; border-radius: 20px; padding: 20px; margin-top: 20px; border-left: 5px solid #e74c3c; }
-        .warning-box ul { padding-left: 20px; }
-        .search-bar { margin-bottom: 25px; }
-        .search-bar input { width: 100%; padding: 15px 20px; border: 2px solid #e0e0e0; border-radius: 50px; font-size: 1rem; outline: none; }
-        .search-bar input:focus { border-color: #c0392b; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f0f2f5 0%, #e0e5ec 100%);
+            min-height: 100vh;
+        }
+
+        .app-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .main-header {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            border-radius: 25px;
+            padding: 30px;
+            margin-bottom: 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .main-header h1 {
+            color: #e94560;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .main-header h1 a {
+            color: #e94560;
+            text-decoration: none;
+        }
+
+        .main-header p {
+            color: #a8b2d1;
+            font-size: 0.9rem;
+        }
+
+        .header-badge {
+            display: inline-block;
+            background: #e94560;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            margin-top: 12px;
+        }
+
+        /* Navigation */
+        .breadcrumb {
+            margin-bottom: 20px;
+            padding: 10px 0;
+        }
+
+        .breadcrumb a {
+            color: #e94560;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            color: #7f8c8d;
+            margin: 0 5px;
+        }
+
+        .main-content {
+            background: white;
+            border-radius: 25px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            min-height: 500px;
+        }
+
+        .main-footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 25px;
+            color: #7f8c8d;
+            font-size: 0.75rem;
+        }
+
+        /* Section Title */
+        .section-title {
+            font-size: 1.5rem;
+            color: #16213e;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #e94560;
+            display: inline-block;
+        }
+
+        /* Brands Grid */
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .brand-card {
+            background: linear-gradient(135deg, #fff, #f8f9fa);
+            border-radius: 20px;
+            padding: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+            text-decoration: none;
+            display: block;
+        }
+
+        .brand-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-color: #e94560;
+        }
+
+        .brand-icon {
+            font-size: 3.5rem;
+            margin-bottom: 12px;
+        }
+
+        .brand-card h3 {
+            color: #16213e;
+            font-size: 1.3rem;
+        }
+
+        .model-count {
+            display: inline-block;
+            background: #e94560;
+            color: white;
+            padding: 3px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            margin-top: 10px;
+        }
+
+        /* Models Grid */
+        .models-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .model-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+            text-decoration: none;
+            display: block;
+        }
+
+        .model-card:hover {
+            background: #e94560;
+            transform: scale(1.02);
+        }
+
+        .model-card:hover .model-name {
+            color: white;
+        }
+
+        .model-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #16213e;
+        }
+
+        .model-sub {
+            font-size: 0.7rem;
+            color: #7f8c8d;
+            margin-top: 5px;
+            display: block;
+        }
+
+        .model-card:hover .model-sub {
+            color: #ffcdd2;
+        }
+
+        /* Faults Grid */
+        .faults-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .fault-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-left: 4px solid #e94560;
+            text-decoration: none;
+        }
+
+        .fault-card:hover {
+            background: #fff5f0;
+            transform: translateX(5px);
+        }
+
+        .fault-icon {
+            font-size: 2rem;
+        }
+
+        .fault-info h4 {
+            color: #16213e;
+            font-size: 1rem;
+        }
+
+        .fault-info p {
+            color: #7f8c8d;
+            font-size: 0.7rem;
+        }
+
+        /* Repair Page Styles */
+        .diagnostic-header {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: white;
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .diagnostic-header h2 {
+            color: #e94560;
+            margin-bottom: 10px;
+        }
+
+        .diagnostic-step {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .diagnostic-step:hover {
+            border-color: #e94560;
+        }
+
+        .step-header {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .step-number {
+            background: #e94560;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            font-size: 0.8rem;
+        }
+
+        .step-body {
+            padding: 20px;
+            display: none;
+        }
+
+        .step-body.active {
+            display: block;
+        }
+
+        .reading-box {
+            background: #e8f4f8;
+            padding: 12px 15px;
+            border-radius: 12px;
+            margin: 10px 0;
+            font-family: monospace;
+            font-size: 0.85rem;
+            border-left: 4px solid #2980b9;
+        }
+
+        .reading-success {
+            background: #e8f5e9;
+            border-left-color: #27ae60;
+        }
+
+        .reading-fail {
+            background: #fdecea;
+            border-left-color: #e74c3c;
+        }
+
+        .reading-value {
+            font-weight: bold;
+            color: #e94560;
+            margin-top: 5px;
+        }
+
+        .component-img {
+            background: #f0f2f5;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 15px 0;
+            font-size: 3rem;
+        }
+
+        .tool-tag {
+            display: inline-block;
+            background: #16213e;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            margin: 3px;
+        }
+
+        .warning-box {
+            background: #fdecea;
+            border-radius: 15px;
+            padding: 15px;
+            margin-top: 20px;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .pro-tip {
+            background: linear-gradient(135deg, #f9f3e3, #fff8e7);
+            border-radius: 15px;
+            padding: 15px;
+            margin-top: 20px;
+            border-left: 4px solid #f39c12;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 50px;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .search-bar input:focus {
+            border-color: #e94560;
+            outline: none;
+        }
+
         @media (max-width: 768px) {
-            .app-wrapper { padding: 10px; }
-            .main-header h1 { font-size: 1.3rem; }
-            .main-content { padding: 20px 15px; }
-            .brands-grid, .models-grid, .faults-grid { grid-template-columns: 1fr; }
+            .app-wrapper {
+                padding: 10px;
+            }
+            .main-header h1 {
+                font-size: 1.2rem;
+            }
+            .faults-grid {
+                grid-template-columns: 1fr;
+            }
+            .brands-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <div class="app-wrapper">
         <div class="main-header">
-            <h1>📱 KARACHI MOBILE REPAIRING MASTER</h1>
-            <p>Model-Specific Complete Phone Repair Guide | 15 Faults | 50+ Models</p>
+            <h1><a href="/" style="text-decoration: none;">🔧 KARACHI MOBILE REPAIRING MASTER</a></h1>
+            <p>Professional Mobile Phone Repair Guide | Expert Diagnosis & Complete Solutions</p>
+            <div class="header-badge">⭐ 50+ Mobile Models | 15+ Common Faults | Professional Guide ⭐</div>
         </div>
-        <div id="backBtnContainer" class="back-btn-container"></div>
-        <div id="mainContent" class="main-content"></div>
+
+        <div id="breadcrumb" class="breadcrumb"></div>
+        <div id="mainContent"></div>
+
         <div class="main-footer">
             <p>© 2024 Karachi Mobile Repairing Master - Complete Mobile Repairing Guide</p>
         </div>
@@ -95,307 +414,324 @@
 
     <script>
         // ============================================
-        // BRANDS AND MODELS (50+)
+        // COMPLETE DATA
         // ============================================
         const brands = [
-            { id: "apple", name: "Apple iPhone", icon: "🍎", modelCount: 12 },
-            { id: "samsung", name: "Samsung", icon: "⭐", modelCount: 10 },
-            { id: "techno", name: "Techno", icon: "🚀", modelCount: 6 },
-            { id: "infinix", name: "Infinix", icon: "📱", modelCount: 6 },
-            { id: "xiaomi", name: "Xiaomi", icon: "📲", modelCount: 8 },
-            { id: "oppo", name: "Oppo", icon: "📷", modelCount: 6 },
-            { id: "vivo", name: "Vivo", icon: "🎵", modelCount: 6 },
-            { id: "oneplus", name: "OnePlus", icon: "💪", modelCount: 6 }
+            { id: "apple", name: "Apple iPhone", icon: "🍎", modelCount: 18, slug: "apple" },
+            { id: "samsung", name: "Samsung", icon: "⭐", modelCount: 15, slug: "samsung" },
+            { id: "techno", name: "Techno", icon: "🚀", modelCount: 8, slug: "techno" },
+            { id: "infinix", name: "Infinix", icon: "📱", modelCount: 10, slug: "infinix" },
+            { id: "xiaomi", name: "Xiaomi", icon: "📲", modelCount: 12, slug: "xiaomi" },
+            { id: "oppo", name: "Oppo", icon: "📷", modelCount: 10, slug: "oppo" },
+            { id: "vivo", name: "Vivo", icon: "🎵", modelCount: 10, slug: "vivo" },
+            { id: "realme", name: "Realme", icon: "⚡", modelCount: 10, slug: "realme" },
+            { id: "oneplus", name: "OnePlus", icon: "💪", modelCount: 8, slug: "oneplus" },
+            { id: "google", name: "Google Pixel", icon: "🔵", modelCount: 7, slug: "google" },
+            { id: "motorola", name: "Motorola", icon: "🔄", modelCount: 6, slug: "motorola" }
         ];
 
         const models = {
-            apple: ["iPhone 16 Pro Max", "iPhone 16 Pro", "iPhone 16", "iPhone 15 Pro Max", "iPhone 15 Pro", "iPhone 15", "iPhone 14 Pro Max", "iPhone 14 Pro", "iPhone 14", "iPhone 13 Pro Max", "iPhone 13 Pro", "iPhone 13"],
-            samsung: ["Galaxy S24 Ultra", "Galaxy S24+", "Galaxy S24", "Galaxy S23 Ultra", "Galaxy S23+", "Galaxy S23", "Galaxy Z Fold 5", "Galaxy Z Flip 5", "Galaxy A55", "Galaxy A35"],
-            techno: ["Spark 20 Pro", "Spark 20", "Spark 20C", "Pova 6 Pro", "Pova 6", "Camon 30 Premier"],
-            infinix: ["GT 20 Pro", "Note 40 Pro+", "Note 40 Pro", "Note 40", "Hot 40 Pro", "Hot 40"],
-            xiaomi: ["14 Ultra", "14 Pro", "14", "13T Pro", "13T", "Redmi Note 13 Pro+", "Redmi Note 13 Pro", "Redmi Note 13"],
-            oppo: ["Find X8 Pro", "Find X8", "Reno 12 Pro", "Reno 12", "A79", "A78"],
-            vivo: ["X100 Pro", "X100", "V40 Pro", "V40", "Y100", "Y28"],
-            oneplus: ["12", "12R", "11", "11R", "Nord 4", "Nord CE 4"]
+            apple: ["iPhone 16 Pro Max", "iPhone 16 Pro", "iPhone 16 Plus", "iPhone 16", "iPhone 15 Pro Max", "iPhone 15 Pro", "iPhone 15 Plus", "iPhone 15", "iPhone 14 Pro Max", "iPhone 14 Pro", "iPhone 14 Plus", "iPhone 14", "iPhone 13 Pro Max", "iPhone 13 Pro", "iPhone 13", "iPhone SE 3rd Gen", "iPhone 12 Pro Max", "iPhone 12"],
+            samsung: ["Galaxy S24 Ultra", "Galaxy S24+", "Galaxy S24", "Galaxy S23 Ultra", "Galaxy S23+", "Galaxy S23", "Galaxy Z Fold 6", "Galaxy Z Flip 6", "Galaxy A55", "Galaxy A35", "Galaxy A15", "Galaxy A05", "Galaxy S22 Ultra", "Galaxy S22", "Galaxy Note 20 Ultra"],
+            techno: ["Spark 20 Pro", "Spark 20", "Spark 20C", "Pova 6 Pro", "Pova 6", "Camon 30 Premier", "Camon 30", "Camon 30S"],
+            infinix: ["GT 20 Pro", "Note 40 Pro+", "Note 40 Pro", "Note 40", "Smart 8 Pro", "Smart 8", "Hot 40 Pro", "Hot 40", "Hot 40i", "Zero 30 5G"],
+            xiaomi: ["14 Ultra", "14 Pro", "14", "13T Pro", "13T", "Redmi Note 13 Pro+", "Redmi Note 13 Pro", "Redmi Note 13", "Poco X6 Pro", "Poco X6", "Poco F6", "Mi 14"],
+            oppo: ["Find X8 Pro", "Find X8", "Reno 12 Pro", "Reno 12", "Reno 11 Pro", "Reno 11", "A79", "A78", "A58", "F25 Pro"],
+            vivo: ["X100 Pro", "X100", "V40 Pro", "V40", "V30 Pro", "V30", "Y100", "Y28", "Y18", "T3 Pro"],
+            realme: ["GT 6", "GT 6T", "12 Pro+", "12 Pro", "12", "Narzo 70 Pro", "Narzo 70", "C65", "C63", "C51"],
+            oneplus: ["12", "12R", "11", "11R", "Nord 4", "Nord CE 4", "Nord N30", "Open"],
+            google: ["Pixel 9 Pro", "Pixel 9", "Pixel 8 Pro", "Pixel 8", "Pixel 7 Pro", "Pixel 7", "Pixel Fold"],
+            motorola: ["Edge 50 Ultra", "Edge 50 Pro", "Edge 50 Fusion", "G85", "G84", "G54"]
         };
 
-        // ============================================
-        // ALL 15 FAULTS LIST
-        // ============================================
         const faultsList = [
-            { id: "charging", name: "🔋 Charging Problem", icon: "🔋", desc: "Not charging, slow charging, intermittent charging" },
-            { id: "dead", name: "💀 Dead Mobile", icon: "💀", desc: "No power, not turning on, no response" },
-            { id: "speaker", name: "🔊 Speaker Problem", icon: "🔊", desc: "No sound, low volume, crackling sound" },
-            { id: "mic", name: "🎙️ Microphone Problem", icon: "🎙️", desc: "No voice in calls, voice recording not working" },
-            { id: "network", name: "📶 No Network Signal", icon: "📶", desc: "Emergency calls only, no service" },
-            { id: "display", name: "🖥️ Display Issue", icon: "🖥️", desc: "No display, lines on screen, flickering" },
-            { id: "water", name: "💧 Water Damage", icon: "💧", desc: "Liquid damage, phone dropped in water" },
-            { id: "camera", name: "📸 Camera Problem", icon: "📸", desc: "Camera not opening, blurry photos" },
-            { id: "wifi", name: "📡 WiFi Problem", icon: "📡", desc: "WiFi not connecting, weak signal" },
-            { id: "bluetooth", name: "🔵 Bluetooth Issue", icon: "🔵", desc: "Not pairing, connection drops" },
-            { id: "touch", name: "👆 Touch Problem", icon: "👆", desc: "Touch not working, ghost touches" },
-            { id: "battery", name: "🔋 Battery Drain", icon: "🔋", desc: "Battery dying fast, overheating" },
-            { id: "sim", name: "💳 SIM Not Detected", icon: "💳", desc: "No SIM card detected" },
-            { id: "fingerprint", name: "🔐 Fingerprint Issue", icon: "🔐", desc: "Fingerprint not working" },
-            { id: "buttons", name: "🔘 Button Issue", icon: "🔘", desc: "Power/volume buttons not working" }
+            { id: "charging", name: "🔋 Charging Problem", icon: "🔋", desc: "Phone not charging, slow charging, intermittent charging", slug: "charging-problem" },
+            { id: "dead", name: "💀 Dead Mobile", icon: "💀", desc: "No power, not turning on, no response at all", slug: "dead-mobile" },
+            { id: "speaker", name: "🔊 Speaker Problem", icon: "🔊", desc: "No sound, low volume, crackling sound", slug: "speaker-problem" },
+            { id: "mic", name: "🎙️ Microphone Problem", icon: "🎙️", desc: "No voice in calls, voice recording not working", slug: "microphone-problem" },
+            { id: "network", name: "📶 No Network Signal", icon: "📶", desc: "Emergency calls only, no service", slug: "no-network-signal" },
+            { id: "display", name: "🖥️ Display Issue", icon: "🖥️", desc: "No display, lines on screen, flickering", slug: "display-issue" },
+            { id: "water", name: "💧 Water Damage", icon: "💧", desc: "Liquid damage, phone dropped in water", slug: "water-damage" },
+            { id: "touch", name: "👆 Touch Problem", icon: "👆", desc: "Touch not working, ghost touches", slug: "touch-problem" },
+            { id: "camera", name: "📸 Camera Problem", icon: "📸", desc: "Camera not opening, blurry photos", slug: "camera-problem" },
+            { id: "battery", name: "🔋 Battery Drain", icon: "🔋", desc: "Battery dying fast, overheating", slug: "battery-drain" },
+            { id: "wifi", name: "📡 WiFi Problem", icon: "📡", desc: "WiFi not connecting, weak signal", slug: "wifi-problem" },
+            { id: "buttons", name: "🔘 Button Issue", icon: "🔘", desc: "Power/volume buttons not working", slug: "button-issue" },
+            { id: "sim", name: "💳 SIM Not Detected", icon: "💳", desc: "No SIM card detected", slug: "sim-not-detected" },
+            { id: "fingerprint", name: "🔐 Fingerprint Issue", icon: "🔐", desc: "Fingerprint not working", slug: "fingerprint-issue" }
         ];
 
         // ============================================
-        // iPhone 16 Pro Max - Complete 15 Faults Guide
+        // PROFESSIONAL DIAGNOSTIC DATA
         // ============================================
-        const iPhone16ProMaxGuides = {
-            charging: { title: "iPhone 16 Pro Max Charging Problem", causes: ["🔌 Damaged USB-C port", "🔋 Faulty battery BMS", "🔧 Tristar IC (U4000) failure", "🔧 Hydra IC (U4900) issue", "⚡ Overvoltage protection IC"], steps: ["STEP 1: Clean USB-C port with isopropyl alcohol", "STEP 2: Test with Apple 20W+ charger and certified cable", "STEP 3: Check battery voltage - should be 3.85V", "STEP 4: Locate Tristar IC U4000 near charging port", "STEP 5: Measure PP_VBUS_MAIN - should be 5V/9V", "STEP 6: Check Hydra IC U4900 for fast charging", "STEP 7: Reheat Tristar IC with flux at 320°C", "STEP 8: Replace Tristar IC if reheat fails", "STEP 9: Check charging port flex cable", "STEP 10: Replace PMIC as last resort"], tools: ["Multimeter", "Hot air gun 320°C", "Soldering iron", "Flux", "USB-C tester"], warnings: ["Don't use cheap USB-C cables", "Always disconnect battery first"] },
-            dead: { title: "iPhone 16 Pro Max Dead Fix", causes: ["🔋 Dead battery below 2.5V", "🔧 PMIC U7000 failure", "⚡ Short on PP_BATT_VCC", "🔘 Power button flex", "💀 CPU underfill issue"], steps: ["STEP 1: Connect to power - check amperage draw", "STEP 2: Check battery voltage - below 2.5V replace", "STEP 3: Use DC power supply at 3.85V", "STEP 4: Locate PMIC U7000 (main power IC)", "STEP 5: Check PP_VDD_MAIN - should be 3.8V", "STEP 6: Check PP1V8_SDRAM and PP0V9_SOC", "STEP 7: Use thermal camera to find shorts", "STEP 8: Reheat PMIC with hot air 350°C", "STEP 9: Replace PMIC if no voltages", "STEP 10: Check NAND chip for shorts"], tools: ["DC Power Supply", "Multimeter", "Hot air gun 350°C", "Thermal camera", "Microscope"], warnings: ["Don't apply more than 4.2V", "Use ESD protection"] },
-            speaker: { title: "iPhone 16 Pro Max Speaker Fix", causes: ["🔊 Blown speaker", "🧹 Blocked grille", "🔌 Loose connector J4200", "🎛️ Audio Amp U4200 failure"], steps: ["STEP 1: Clean speaker grille with soft brush", "STEP 2: Test with known working speaker", "STEP 3: Check connector J4200 on motherboard", "STEP 4: Inspect speaker flex for tears", "STEP 5: Locate Audio Amp U4200", "STEP 6: Measure SPKRAMP_VDD - 3.8V", "STEP 7: Reheat Audio Amp at 320°C", "STEP 8: Replace speaker module"], tools: ["Multimeter", "Hot air gun 320°C", "Soft brush", "Tweezers"], warnings: ["Don't blow compressed air directly", "Handle flex cable carefully"] },
-            mic: { title: "iPhone 16 Pro Max Microphone Fix", causes: ["🎙️ Blocked mic hole", "🔌 Loose connector", "🔧 Audio codec issue", "🧵 Broken track"], steps: ["STEP 1: Clean bottom mic hole with soft brush", "STEP 2: Test with Voice Memos app", "STEP 3: Check charging port flex (contains mic)", "STEP 4: Inspect mic component on flex", "STEP 5: Check continuity to audio IC", "STEP 6: Replace charging port flex if mic dead", "STEP 7: Reheat audio codec IC"], tools: ["Multimeter", "Soft brush", "Soldering iron", "Tweezers"], warnings: ["Don't poke mic hole with metal", "Mic is on charging port flex"] },
-            network: { title: "iPhone 16 Pro Max Network Fix", causes: ["📡 Damaged antenna flex", "🔧 RF IC failure", "📱 IMEI corruption", "🔌 Loose antenna connector"], steps: ["STEP 1: Toggle Airplane mode", "STEP 2: Check IMEI in Settings", "STEP 3: Inspect antenna flex cables", "STEP 4: Check antenna contact points on frame", "STEP 5: Locate RF IC under shield", "STEP 6: Reheat RF IC at 330°C", "STEP 7: Check baseband PMIC", "STEP 8: Restore firmware via iTunes"], tools: ["Multimeter", "Hot air gun 330°C", "Flux", "Microscope"], warnings: ["Don't short antenna contacts", "Backup data before restore"] },
-            display: { title: "iPhone 16 Pro Max Display Fix", causes: ["🔌 Loose connector", "🖥️ Cracked OLED panel", "🔧 Display IC failure", "⚡ Backlight circuit issue"], steps: ["STEP 1: Reseat display connector", "STEP 2: Clean connector with alcohol", "STEP 3: Test with known working display", "STEP 4: Inspect flex cable for tears", "STEP 5: Check display voltage lines", "STEP 6: Check backlight coil L3700", "STEP 7: Reheat display IC on flex", "STEP 8: Replace display assembly"], tools: ["Multimeter", "Plastic pry tools", "Isopropyl alcohol", "Magnifying glass"], warnings: ["Don't bend flex sharply", "Disconnect battery first"] },
-            water: { title: "iPhone 16 Pro Max Water Damage Fix", causes: ["💧 Corrosion on motherboard", "⚡ Short circuit", "🔧 Damaged ICs", "🧵 Broken traces"], steps: ["STEP 1: Remove battery immediately", "STEP 2: Disassemble completely", "STEP 3: Clean with isopropyl alcohol 99%", "STEP 4: Use ultrasonic cleaner if available", "STEP 5: Inspect under microscope for corrosion", "STEP 6: Clean all connectors", "STEP 7: Check for shorts on power lines", "STEP 8: Remove corroded components", "STEP 9: Dry for 2-4 hours", "STEP 10: Reassemble and test"], tools: ["Isopropyl alcohol 99%", "Ultrasonic cleaner", "Microscope", "Soft brush", "Multimeter"], warnings: ["DO NOT power on wet phone", "DO NOT use rice", "DO NOT use hair dryer"] },
-            camera: { title: "iPhone 16 Pro Max Camera Fix", causes: ["🔌 Loose camera connector", "📸 Camera module failure", "🔧 Camera IC issue", "💻 Software glitch"], steps: ["STEP 1: Force restart iPhone", "STEP 2: Test front and rear cameras separately", "STEP 3: Reseat camera connectors", "STEP 4: Clean connectors with alcohol", "STEP 5: Test with known working camera", "STEP 6: Check camera power IC", "STEP 7: Restore via iTunes", "STEP 8: Replace camera module"], tools: ["Plastic pry tools", "Multimeter", "Isopropyl alcohol", "Tweezers"], warnings: ["Don't touch camera lens", "Handle flex cables gently"] },
-            wifi: { title: "iPhone 16 Pro Max WiFi Fix", causes: ["📡 WiFi antenna issue", "🔧 WiFi/BT IC failure", "📱 Software issue", "🔌 Loose connector"], steps: ["STEP 1: Toggle WiFi on/off", "STEP 2: Reset Network Settings", "STEP 3: Check WiFi antenna flex", "STEP 4: Locate WiFi IC U5300", "STEP 5: Check for shorts around WiFi IC", "STEP 6: Reheat WiFi IC at 320°C", "STEP 7: Replace WiFi IC if needed", "STEP 8: Restore firmware"], tools: ["Multimeter", "Hot air gun 320°C", "Flux", "Microscope"], warnings: ["WiFi IC also controls Bluetooth", "Check antenna first"] },
-            bluetooth: { title: "iPhone 16 Pro Max Bluetooth Fix", causes: ["🔵 WiFi/BT IC issue", "📡 Antenna problem", "💻 Software glitch", "🔌 Connector loose"], steps: ["STEP 1: Toggle Bluetooth on/off", "STEP 2: Forget and re-pair devices", "STEP 3: Reset Network Settings", "STEP 4: Check WiFi/BT combo IC", "STEP 5: Reheat WiFi/BT IC", "STEP 6: Check Bluetooth antenna", "STEP 7: Restore firmware"], tools: ["Multimeter", "Hot air gun 320°C", "Flux"], warnings: ["Same IC controls both WiFi and Bluetooth", "Replace IC if both fail"] },
-            touch: { title: "iPhone 16 Pro Max Touch Problem", causes: ["👆 Touch IC failure", "🖥️ Display issue", "🔌 Connector loose", "💻 Software issue"], steps: ["STEP 1: Force restart iPhone", "STEP 2: Check for screen protector issues", "STEP 3: Reseat display connector", "STEP 4: Locate Touch IC on motherboard", "STEP 5: Reheat Touch IC at 320°C", "STEP 6: Test with known working display", "STEP 7: Replace Touch IC", "STEP 8: Replace display assembly"], tools: ["Multimeter", "Hot air gun 320°C", "Plastic pry tools", "Microscope"], warnings: ["Touch IC under display shield", "Check for ghost touches"] },
-            battery: { title: "iPhone 16 Pro Max Battery Drain Fix", causes: ["🔋 Old battery", "📱 Background apps", "🔧 Power leakage", "💻 iOS issue"], steps: ["STEP 1: Check Battery Health in Settings", "STEP 2: Check for background app activity", "STEP 3: Calibrate battery (100% to 0%)", "STEP 4: Check for current leakage with multimeter", "STEP 5: Check PMIC for shorts", "STEP 6: Update iOS", "STEP 7: Replace battery if health below 80%"], tools: ["Multimeter", "DC Power Supply", "Thermal camera"], warnings: ["Check for overheating apps", "Replace battery if swollen"] },
-            sim: { title: "iPhone 16 Pro Max SIM Not Detected", causes: ["💳 SIM card issue", "📱 SIM tray problem", "🔧 SIM IC failure", "🔌 Connector loose"], steps: ["STEP 1: Reinsert SIM card", "STEP 2: Test with different SIM", "STEP 3: Check SIM tray for damage", "STEP 4: Inspect SIM connector pins", "STEP 5: Locate SIM IC on motherboard", "STEP 6: Check continuity to SIM IC", "STEP 7: Reheat SIM IC at 310°C", "STEP 8: Replace SIM IC"], tools: ["Multimeter", "Hot air gun 310°C", "Microscope", "Tweezers"], warnings: ["Don't bend SIM pins", "eSIM also available on iPhone 16"] },
-            fingerprint: { title: "iPhone 16 Pro Max Fingerprint Fix", causes: ["🔐 Note: iPhone 16 uses Face ID, not Touch ID", "👤 Face ID TrueDepth camera issue", "🔧 Flood illuminator failure"], steps: ["STEP 1: iPhone 16 uses Face ID - no fingerprint sensor", "STEP 2: Check Face ID in Settings", "STEP 3: Clean front camera area", "STEP 4: Check TrueDepth camera connector", "STEP 5: Reset Face ID", "STEP 6: Reconnect front camera flex", "STEP 7: Replace Face ID module (paired to motherboard)"], tools: ["Soft cloth", "Plastic pry tools", "Multimeter"], warnings: ["Face ID is paired to motherboard - cannot replace individually", "Only Apple can replace Face ID"] },
-            buttons: { title: "iPhone 16 Pro Max Button Fix", causes: ["🔘 Action Button issue", "🔘 Volume button problem", "🔘 Power button issue", "🧵 Button flex damage"], steps: ["STEP 1: Check if buttons feel clicky", "STEP 2: Inspect button flex cable", "STEP 3: Clean button contacts with alcohol", "STEP 4: Check continuity of button switches", "STEP 5: Reheat button flex connector", "STEP 6: Replace button flex cable", "STEP 7: Check side button IC"], tools: ["Multimeter", "Soldering iron", "Isopropyl alcohol", "Tweezers"], warnings: ["iPhone 16 Pro Max has Action button", "Check flexibility first"] }
-        };
-
-        // Samsung S24 Ultra - Complete 15 Faults Guide
-        const SamsungS24UltraGuides = {
-            charging: { title: "Samsung S24 Ultra Charging Fix", causes: ["🔌 Damaged USB-C port", "🔋 Battery BMS issue", "🔧 SM5150 Charging IC", "🔧 MAX77801 Power IC", "⚡ Overvoltage protection"], steps: ["STEP 1: Clean USB-C port", "STEP 2: Use Samsung 45W charger", "STEP 3: Check battery voltage 3.88V", "STEP 4: Locate SM5150 IC", "STEP 5: Locate MAX77801 PMIC", "STEP 6: Measure VCHG line 5V/9V", "STEP 7: Check charging coil L5200", "STEP 8: Reheat SM5150 at 330°C", "STEP 9: Replace SM5150 if needed"], tools: ["Multimeter", "Hot air gun 330°C", "Samsung 45W charger", "USB-C meter"], warnings: ["Requires 45W for fast charging", "Don't use cheap cables"] },
-            dead: { title: "Samsung S24 Ultra Dead Fix", causes: ["🔋 Dead battery below 2.5V", "🔧 MAX77801 PMIC failure", "⚡ Short on VSYS", "🔘 Power button issue", "💀 CPU problem"], steps: ["STEP 1: Connect charger wait 30 min", "STEP 2: Check battery voltage", "STEP 3: Use DC supply at 3.88V", "STEP 4: Locate MAX77801 PMIC", "STEP 5: Check VSYS - 3.8V", "STEP 6: Check VREG_BUCK1 - 1.8V", "STEP 7: Check VREG_BUCK4 - 0.9V", "STEP 8: Reheat MAX77801 at 350°C", "STEP 9: Replace PMIC if no output"], tools: ["DC Power Supply", "Multimeter", "Hot air gun 350°C", "Thermal camera"], warnings: ["Has vapor chamber cooling", "Use flux on PMIC"] },
-            speaker: { title: "Samsung S24 Ultra Speaker Fix", causes: ["🔊 Blown speaker", "🧹 Blocked grille", "🔌 Loose connector", "🎛️ Audio amp failure"], steps: ["STEP 1: Clean speaker grille", "STEP 2: Test with known speaker", "STEP 3: Check connector on board", "STEP 4: Inspect speaker flex", "STEP 5: Locate audio amplifier", "STEP 6: Reheat audio IC at 320°C", "STEP 7: Replace speaker module"], tools: ["Multimeter", "Hot air gun 320°C", "Soft brush", "Tweezers"], warnings: ["S24 Ultra has dual speakers", "Check both speakers"] },
-            mic: { title: "Samsung S24 Ultra Microphone Fix", causes: ["🎙️ Blocked mic hole", "🔌 Charging flex issue", "🔧 Audio IC failure", "🧵 Broken track"], steps: ["STEP 1: Clean bottom mic hole", "STEP 2: Test with Voice Recorder", "STEP 3: Check charging port flex", "STEP 4: Inspect mic component", "STEP 5: Check continuity to audio IC", "STEP 6: Reheat audio codec", "STEP 7: Replace charging flex"], tools: ["Multimeter", "Soft brush", "Soldering iron", "Tweezers"], warnings: ["Multiple mics on S24 Ultra", "Check all mics separately"] },
-            network: { title: "Samsung S24 Ultra Network Fix", causes: ["📡 Damaged antenna", "🔧 RF IC failure", "📱 IMEI corruption", "🔌 Antenna connector"], steps: ["STEP 1: Toggle Airplane mode", "STEP 2: Check IMEI in Settings", "STEP 3: Inspect antenna flex", "STEP 4: Check antenna contacts on frame", "STEP 5: Locate Shannon RF IC", "STEP 6: Reheat RF IC at 330°C", "STEP 7: Check baseband", "STEP 8: Flash firmware"], tools: ["Multimeter", "Hot air gun 330°C", "Microscope", "Flux"], warnings: ["Samsung uses Shannon modem", "Check IMEI first"] },
-            display: { title: "Samsung S24 Ultra Display Fix", causes: ["🔌 Loose connector", "🖥️ Cracked AMOLED", "🔧 Display IC", "⚡ Backlight circuit"], steps: ["STEP 1: Reseat display connector", "STEP 2: Clean with alcohol", "STEP 3: Test with known display", "STEP 4: Inspect flex for tears", "STEP 5: Check display voltage lines", "STEP 6: Check AMOLED driver IC", "STEP 7: Replace display assembly"], tools: ["Multimeter", "Plastic pry tools", "Isopropyl alcohol", "Magnifying glass"], warnings: ["AMOLED is fragile", "Disconnect battery first"] },
-            water: { title: "Samsung S24 Ultra Water Damage", causes: ["💧 Corrosion", "⚡ Short circuit", "🔧 Damaged ICs", "🧵 Broken traces"], steps: ["STEP 1: Remove battery immediately", "STEP 2: Disassemble completely", "STEP 3: Clean with 99% alcohol", "STEP 4: Ultrasonic cleaning", "STEP 5: Inspect under microscope", "STEP 6: Clean all connectors", "STEP 7: Check for shorts", "STEP 8: Remove corroded components", "STEP 9: Dry 2-4 hours", "STEP 10: Reassemble and test"], tools: ["Isopropyl alcohol 99%", "Ultrasonic cleaner", "Microscope", "Soft brush", "Multimeter"], warnings: ["DO NOT power on wet", "IP68 rating not permanent"] },
-            camera: { title: "Samsung S24 Ultra Camera Fix", causes: ["🔌 Loose connector", "📸 Camera module failure", "🔧 Camera IC", "💻 Software issue"], steps: ["STEP 1: Clear camera app cache", "STEP 2: Test all 4 cameras separately", "STEP 3: Reseat camera connectors", "STEP 4: Clean with alcohol", "STEP 5: Test with known camera", "STEP 6: Check camera power IC", "STEP 7: Restore firmware", "STEP 8: Replace camera module"], tools: ["Plastic pry tools", "Multimeter", "Isopropyl alcohol", "Tweezers"], warnings: ["S24 Ultra has 4 cameras", "Zoom camera often fails"] },
-            wifi: { title: "Samsung S24 Ultra WiFi Fix", causes: ["📡 WiFi antenna", "🔧 WiFi IC failure", "📱 Software", "🔌 Connector"], steps: ["STEP 1: Toggle WiFi", "STEP 2: Reset Network Settings", "STEP 3: Check antenna flex", "STEP 4: Locate WiFi IC", "STEP 5: Check for shorts", "STEP 6: Reheat WiFi IC 320°C", "STEP 7: Replace WiFi IC", "STEP 8: Flash firmware"], tools: ["Multimeter", "Hot air gun 320°C", "Flux", "Microscope"], warnings: ["WiFi IC also controls BT", "Check antenna first"] },
-            bluetooth: { title: "Samsung S24 Ultra Bluetooth Fix", causes: ["🔵 WiFi/BT IC issue", "📡 Antenna", "💻 Software", "🔌 Connector"], steps: ["STEP 1: Toggle Bluetooth", "STEP 2: Forget devices", "STEP 3: Reset Network Settings", "STEP 4: Check WiFi/BT combo IC", "STEP 5: Reheat IC at 320°C", "STEP 6: Check BT antenna", "STEP 7: Replace IC", "STEP 8: Firmware restore"], tools: ["Multimeter", "Hot air gun 320°C", "Flux"], warnings: ["Same IC for WiFi/BT", "Replace if both fail"] },
-            touch: { title: "Samsung S24 Ultra Touch Fix", causes: ["👆 Touch IC failure", "🖥️ Display issue", "🔌 Connector", "💻 Software"], steps: ["STEP 1: Restart phone", "STEP 2: Remove screen protector", "STEP 3: Reseat display connector", "STEP 4: Locate Touch IC", "STEP 5: Reheat Touch IC at 320°C", "STEP 6: Test with known display", "STEP 7: Replace Touch IC", "STEP 8: Replace display"], tools: ["Multimeter", "Hot air gun 320°C", "Plastic pry tools", "Microscope"], warnings: ["S-Pen uses different tech", "Check S-Pen separately"] },
-            battery: { title: "Samsung S24 Ultra Battery Drain", causes: ["🔋 Old battery", "📱 Background apps", "🔧 Power leakage", "💻 Software"], steps: ["STEP 1: Check Battery Health", "STEP 2: Check background apps", "STEP 3: Calibrate battery", "STEP 4: Check current leakage", "STEP 5: Check PMIC for shorts", "STEP 6: Update One UI", "STEP 7: Replace battery if <80%"], tools: ["Multimeter", "DC Power Supply", "Thermal camera"], warnings: ["5000mAh battery", "Check for swollen battery"] },
-            sim: { title: "Samsung S24 Ultra SIM Fix", causes: ["💳 SIM card", "📱 SIM tray", "🔧 SIM IC", "🔌 Connector"], steps: ["STEP 1: Reinsert SIM", "STEP 2: Test different SIM", "STEP 3: Check SIM tray", "STEP 4: Inspect SIM pins", "STEP 5: Locate SIM IC", "STEP 6: Check continuity", "STEP 7: Reheat SIM IC 310°C", "STEP 8: Replace SIM IC"], tools: ["Multimeter", "Hot air gun 310°C", "Microscope", "Tweezers"], warnings: ["Dual SIM model", "Check both slots"] },
-            fingerprint: { title: "Samsung S24 Ultra Fingerprint Fix", causes: ["🔐 Ultrasonic sensor", "🖥️ Screen protector", "🔧 Sensor IC", "💻 Software"], steps: ["STEP 1: Delete and re-add fingerprints", "STEP 2: Remove screen protector", "STEP 3: Clean screen area", "STEP 4: Check display connector", "STEP 5: Ultrasonic sensor under display", "STEP 6: Calibrate sensor", "STEP 7: Update software", "STEP 8: Replace display (sensor integrated)"], tools: ["Soft cloth", "Multimeter", "Plastic tools"], warnings: ["Sensor under display", "Screen protector affects performance"] },
-            buttons: { title: "Samsung S24 Ultra Button Fix", causes: ["🔘 Power button", "🔘 Volume buttons", "🧵 Button flex", "🔌 Connector"], steps: ["STEP 1: Check button feel", "STEP 2: Inspect button flex", "STEP 3: Clean contacts", "STEP 4: Check continuity", "STEP 5: Reheat connector", "STEP 6: Replace button flex", "STEP 7: Check side key IC"], tools: ["Multimeter", "Soldering iron", "Isopropyl alcohol", "Tweezers"], warnings: ["Bixby button on some models", "Check all buttons"] }
-        };
-
-        // Techno Spark 20 Pro - Complete 15 Faults Guide
-        const TechnoSpark20ProGuides = {
-            charging: { title: "Techno Spark 20 Pro Charging Fix", causes: ["🔌 Dirty USB-C port", "🔋 Battery BMS", "🔧 BQ25601 IC", "🧵 Charging coil", "⚡ OVP IC"], steps: ["STEP 1: Clean charging port", "STEP 2: Use 18W charger", "STEP 3: Check battery voltage 3.7V", "STEP 4: Locate BQ25601 IC", "STEP 5: Check VBUS 5V", "STEP 6: Check charging coil L1800", "STEP 7: Reheat BQ25601 at 300°C", "STEP 8: Replace charging port flex"], tools: ["Multimeter", "Hot air gun 300°C", "Toothbrush", "Alcohol"], warnings: ["MTK platform", "Port often soldered on board"] },
-            dead: { title: "Techno Spark 20 Pro Dead Fix", causes: ["🔋 Dead battery", "🔧 MT6357 PMIC", "⚡ Short on VBAT", "🔘 Power button", "💀 CPU issue"], steps: ["STEP 1: Charge for 30 min", "STEP 2: Check battery voltage", "STEP 3: Use DC supply 3.7V", "STEP 4: Locate MT6357 PMIC", "STEP 5: Check VSYS 3.7V", "STEP 6: Check VIO18 1.8V", "STEP 7: Check VPROC 0.9V", "STEP 8: Reheat MT6357 320°C", "STEP 9: Replace PMIC"], tools: ["DC Power Supply", "Multimeter", "Hot air gun 320°C", "Flux"], warnings: ["Unibody design", "Use plastic tools to open"] },
-            speaker: { title: "Techno Spark 20 Pro Speaker Fix", causes: ["🔊 Blown speaker", "🧹 Blocked grille", "🔌 Loose connector", "🎛️ Audio IC"], steps: ["STEP 1: Clean speaker grille", "STEP 2: Test with known speaker", "STEP 3: Check connector", "STEP 4: Inspect speaker flex", "STEP 5: Locate audio amp", "STEP 6: Reheat audio IC 300°C", "STEP 7: Replace speaker"], tools: ["Multimeter", "Hot air gun 300°C", "Soft brush", "Tweezers"], warnings: ["Single bottom speaker", "Check earpiece too"] },
-            mic: { title: "Techno Spark 20 Pro Mic Fix", causes: ["🎙️ Blocked mic", "🔌 Charging flex", "🔧 Audio IC", "🧵 Broken track"], steps: ["STEP 1: Clean mic hole", "STEP 2: Test voice recording", "STEP 3: Check charging port flex", "STEP 4: Inspect mic component", "STEP 5: Check continuity", "STEP 6: Reheat audio codec", "STEP 7: Replace charging flex"], tools: ["Multimeter", "Soft brush", "Soldering iron", "Tweezers"], warnings: ["Dual mics on Spark 20 Pro", "Check top and bottom"] },
-            network: { title: "Techno Spark 20 Pro Network Fix", causes: ["📡 Antenna issue", "🔧 MTK RF IC", "📱 IMEI", "🔌 Connector"], steps: ["STEP 1: Toggle Airplane mode", "STEP 2: Check IMEI", "STEP 3: Inspect antenna flex", "STEP 4: Check antenna contacts", "STEP 5: Locate MTK RF IC", "STEP 6: Reheat RF IC 330°C", "STEP 7: Flash firmware"], tools: ["Multimeter", "Hot air gun 330°C", "Microscope", "Flux"], warnings: ["Mediatek chipset", "Check IMEI first"] },
-            display: { title: "Techno Spark 20 Pro Display Fix", causes: ["🔌 Loose connector", "🖥️ Cracked LCD", "🔧 Display IC", "⚡ Backlight"], steps: ["STEP 1: Reseat connector", "STEP 2: Clean with alcohol", "STEP 3: Test with known display", "STEP 4: Inspect flex", "STEP 5: Check display voltages", "STEP 6: Check backlight coil", "STEP 7: Replace display"], tools: ["Multimeter", "Plastic pry tools", "Alcohol", "Magnifying glass"], warnings: ["LCD not AMOLED", "Cheaper to replace"] },
-            water: { title: "Techno Spark 20 Pro Water Damage", causes: ["💧 Corrosion", "⚡ Shorts", "🔧 Damaged ICs", "🧵 Broken traces"], steps: ["STEP 1: Remove battery", "STEP 2: Disassemble", "STEP 3: Clean with 99% alcohol", "STEP 4: Ultrasonic clean", "STEP 5: Microscope inspection", "STEP 6: Clean connectors", "STEP 7: Check for shorts", "STEP 8: Remove corroded parts", "STEP 9: Dry 2-4 hours", "STEP 10: Test"], tools: ["Isopropyl alcohol 99%", "Ultrasonic cleaner", "Microscope", "Soft brush"], warnings: ["No IP rating", "Act quickly"] },
-            camera: { title: "Techno Spark 20 Pro Camera Fix", causes: ["🔌 Loose connector", "📸 Camera module", "🔧 Camera IC", "💻 Software"], steps: ["STEP 1: Clear camera cache", "STEP 2: Test front/back", "STEP 3: Reseat connectors", "STEP 4: Clean with alcohol", "STEP 5: Test known camera", "STEP 6: Check camera power", "STEP 7: Restore firmware", "STEP 8: Replace camera"], tools: ["Plastic pry tools", "Multimeter", "Alcohol", "Tweezers"], warnings: ["50MP main camera", "Check all lenses"] },
-            wifi: { title: "Techno Spark 20 Pro WiFi Fix", causes: ["📡 WiFi antenna", "🔧 MTK WiFi IC", "📱 Software", "🔌 Connector"], steps: ["STEP 1: Toggle WiFi", "STEP 2: Reset Network", "STEP 3: Check antenna flex", "STEP 4: Locate WiFi IC", "STEP 5: Check for shorts", "STEP 6: Reheat WiFi IC 310°C", "STEP 7: Replace IC", "STEP 8: Flash firmware"], tools: ["Multimeter", "Hot air gun 310°C", "Flux", "Microscope"], warnings: ["Mediatek WiFi/BT combo", "Check antenna first"] },
-            bluetooth: { title: "Techno Spark 20 Pro Bluetooth Fix", causes: ["🔵 WiFi/BT IC", "📡 Antenna", "💻 Software", "🔌 Connector"], steps: ["STEP 1: Toggle BT", "STEP 2: Forget devices", "STEP 3: Reset Network", "STEP 4: Check combo IC", "STEP 5: Reheat IC 310°C", "STEP 6: Check BT antenna", "STEP 7: Replace IC", "STEP 8: Restore firmware"], tools: ["Multimeter", "Hot air gun 310°C", "Flux"], warnings: ["Same IC for WiFi/BT", "Replace if both fail"] },
-            touch: { title: "Techno Spark 20 Pro Touch Fix", causes: ["👆 Touch IC", "🖥️ Display", "🔌 Connector", "💻 Software"], steps: ["STEP 1: Restart", "STEP 2: Remove screen protector", "STEP 3: Reseat connector", "STEP 4: Locate Touch IC", "STEP 5: Reheat Touch IC 300°C", "STEP 6: Test known display", "STEP 7: Replace Touch IC", "STEP 8: Replace display"], tools: ["Multimeter", "Hot air gun 300°C", "Plastic tools", "Microscope"], warnings: ["Touch IC on flex", "Check for ghost touches"] },
-            battery: { title: "Techno Spark 20 Pro Battery Drain", causes: ["🔋 Old battery", "📱 Background apps", "🔧 Power leakage", "💻 Software"], steps: ["STEP 1: Check battery health", "STEP 2: Check background apps", "STEP 3: Calibrate battery", "STEP 4: Check current leakage", "STEP 5: Check PMIC shorts", "STEP 6: Update OS", "STEP 7: Replace battery"], tools: ["Multimeter", "DC Power Supply", "Thermal camera"], warnings: ["5000mAh battery", "Check for swelling"] },
-            sim: { title: "Techno Spark 20 Pro SIM Fix", causes: ["💳 SIM card", "📱 SIM tray", "🔧 SIM IC", "🔌 Connector"], steps: ["STEP 1: Reinsert SIM", "STEP 2: Test different SIM", "STEP 3: Check SIM tray", "STEP 4: Inspect SIM pins", "STEP 5: Locate SIM IC", "STEP 6: Check continuity", "STEP 7: Reheat SIM IC 300°C", "STEP 8: Replace IC"], tools: ["Multimeter", "Hot air gun 300°C", "Microscope", "Tweezers"], warnings: ["Dual SIM", "Check both slots"] },
-            fingerprint: { title: "Techno Spark 20 Pro Fingerprint Fix", causes: ["🔐 Side sensor", "🔌 Connector", "🔧 Sensor IC", "💻 Software"], steps: ["STEP 1: Delete and re-add", "STEP 2: Clean sensor", "STEP 3: Check side button flex", "STEP 4: Inspect connector", "STEP 5: Check sensor continuity", "STEP 6: Reheat connector", "STEP 7: Replace sensor flex", "STEP 8: Update software"], tools: ["Multimeter", "Soldering iron", "Soft cloth", "Tweezers"], warnings: ["Side-mounted sensor", "Check button flex"] },
-            buttons: { title: "Techno Spark 20 Pro Button Fix", causes: ["🔘 Power button", "🔘 Volume buttons", "🧵 Button flex", "🔌 Connector"], steps: ["STEP 1: Check button feel", "STEP 2: Inspect button flex", "STEP 3: Clean contacts", "STEP 4: Check continuity", "STEP 5: Reheat connector", "STEP 6: Replace button flex", "STEP 7: Check side key IC"], tools: ["Multimeter", "Soldering iron", "Alcohol", "Tweezers"], warnings: ["Flex cable tears easily", "Handle carefully"] }
-        };
-
-        // Infinix GT 20 Pro - Complete 15 Faults Guide
-        const InfinixGT20ProGuides = {
-            charging: { title: "Infinix GT 20 Pro Charging Fix", causes: ["🔌 USB-C port", "🔋 Dual cell battery", "🔧 BQ25601 IC", "🚀 68W fast charging", "⚡ OVP IC"], steps: ["STEP 1: Clean USB-C port", "STEP 2: Use Infinix 68W charger", "STEP 3: Check dual cell battery (2x 3.7V)", "STEP 4: Locate BQ25601 IC", "STEP 5: Check VBUS 5V-20V", "STEP 6: Check battery balancing", "STEP 7: Reheat BQ25601 310°C", "STEP 8: Replace charging IC"], tools: ["Multimeter", "Hot air gun 310°C", "68W charger", "USB-PD tester"], warnings: ["Requires proprietary charger", "Dual cell needs balancing"] },
-            dead: { title: "Infinix GT 20 Pro Dead Fix", causes: ["🔋 Dead battery", "🔧 MTK PMIC", "⚡ Short", "🔘 Power button", "💀 CPU"], steps: ["STEP 1: Charge 30 min", "STEP 2: Check battery voltage", "STEP 3: Use DC supply 7.4V (dual cell)", "STEP 4: Locate MT6357 PMIC", "STEP 5: Check VSYS", "STEP 6: Check VIO18", "STEP 7: Check VPROC", "STEP 8: Reheat PMIC 320°C"], tools: ["DC Power Supply", "Multimeter", "Hot air gun 320°C", "Flux"], warnings: ["Dual cell battery - 7.4V total", "Don't short cells"] },
-            speaker: { title: "Infinix GT 20 Pro Speaker Fix", causes: ["🔊 Blown speaker", "🧹 Blocked grille", "🔌 Loose connector", "🎛️ Audio IC"], steps: ["STEP 1: Clean grille", "STEP 2: Test known speaker", "STEP 3: Check connector", "STEP 4: Inspect flex", "STEP 5: Locate audio amp", "STEP 6: Reheat IC 300°C", "STEP 7: Replace speaker"], tools: ["Multimeter", "Hot air gun 300°C", "Soft brush", "Tweezers"], warnings: ["Gaming phone - dual speakers", "Check both speakers"] },
-            mic: { title: "Infinix GT 20 Pro Mic Fix", causes: ["🎙️ Blocked mic", "🔌 Charging flex", "🔧 Audio IC", "🧵 Track"], steps: ["STEP 1: Clean mic hole", "STEP 2: Test recording", "STEP 3: Check charging flex", "STEP 4: Inspect mic", "STEP 5: Check continuity", "STEP 6: Reheat audio IC", "STEP 7: Replace flex"], tools: ["Multimeter", "Soft brush", "Soldering iron", "Tweezers"], warnings: ["Game mode uses mics", "Check all mics"] },
-            network: { title: "Infinix GT 20 Pro Network Fix", causes: ["📡 Antenna", "🔧 MTK RF IC", "📱 IMEI", "🔌 Connector"], steps: ["STEP 1: Toggle Airplane", "STEP 2: Check IMEI", "STEP 3: Inspect antenna", "STEP 4: Check contacts", "STEP 5: Locate RF IC", "STEP 6: Reheat RF IC 330°C", "STEP 7: Flash firmware"], tools: ["Multimeter", "Hot air gun 330°C", "Microscope", "Flux"], warnings: ["5G capable", "Check 5G antenna"] },
-            display: { title: "Infinix GT 20 Pro Display Fix", causes: ["🔌 Loose connector", "🖥️ AMOLED", "🔧 Display IC", "⚡ Backlight"], steps: ["STEP 1: Reseat connector", "STEP 2: Clean with alcohol", "STEP 3: Test known display", "STEP 4: Inspect flex", "STEP 5: Check voltages", "STEP 6: Check backlight", "STEP 7: Replace display"], tools: ["Multimeter", "Plastic pry tools", "Alcohol", "Magnifying glass"], warnings: ["AMOLED expensive", "Handle carefully"] },
-            water: { title: "Infinix GT 20 Pro Water Damage", causes: ["💧 Corrosion", "⚡ Shorts", "🔧 Damaged ICs", "🧵 Traces"], steps: ["STEP 1: Remove battery", "STEP 2: Disassemble", "STEP 3: Clean 99% alcohol", "STEP 4: Ultrasonic clean", "STEP 5: Microscope inspect", "STEP 6: Clean connectors", "STEP 7: Check shorts", "STEP 8: Remove corrosion", "STEP 9: Dry 2-4 hours", "STEP 10: Test"], tools: ["Isopropyl alcohol 99%", "Ultrasonic cleaner", "Microscope", "Soft brush"], warnings: ["No IP rating", "Act fast"] },
-            camera: { title: "Infinix GT 20 Pro Camera Fix", causes: ["🔌 Loose connector", "📸 Camera module", "🔧 Camera IC", "💻 Software"], steps: ["STEP 1: Clear cache", "STEP 2: Test all cameras", "STEP 3: Reseat connectors", "STEP 4: Clean alcohol", "STEP 5: Test known camera", "STEP 6: Check power IC", "STEP 7: Restore", "STEP 8: Replace camera"], tools: ["Plastic pry tools", "Multimeter", "Alcohol", "Tweezers"], warnings: ["108MP main camera", "Check OIS"] },
-            wifi: { title: "Infinix GT 20 Pro WiFi Fix", causes: ["📡 Antenna", "🔧 MTK WiFi IC", "📱 Software", "🔌 Connector"], steps: ["STEP 1: Toggle WiFi", "STEP 2: Reset Network", "STEP 3: Check antenna", "STEP 4: Locate WiFi IC", "STEP 5: Check shorts", "STEP 6: Reheat IC 310°C", "STEP 7: Replace IC", "STEP 8: Flash firmware"], tools: ["Multimeter", "Hot air gun 310°C", "Flux", "Microscope"], warnings: ["WiFi 6 capable", "Check antenna first"] },
-            bluetooth: { title: "Infinix GT 20 Pro Bluetooth Fix", causes: ["🔵 WiFi/BT IC", "📡 Antenna", "💻 Software", "🔌 Connector"], steps: ["STEP 1: Toggle BT", "STEP 2: Forget devices", "STEP 3: Reset Network", "STEP 4: Check combo IC", "STEP 5: Reheat IC 310°C", "STEP 6: Check antenna", "STEP 7: Replace IC", "STEP 8: Restore"], tools: ["Multimeter", "Hot air gun 310°C", "Flux"], warnings: ["BT 5.3", "Same IC as WiFi"] },
-            touch: { title: "Infinix GT 20 Pro Touch Fix", causes: ["👆 Touch IC", "🖥️ Display", "🔌 Connector", "💻 Software"], steps: ["STEP 1: Restart", "STEP 2: Remove protector", "STEP 3: Reseat connector", "STEP 4: Locate Touch IC", "STEP 5: Reheat 300°C", "STEP 6: Test known display", "STEP 7: Replace Touch IC", "STEP 8: Replace display"], tools: ["Multimeter", "Hot air gun 300°C", "Plastic tools", "Microscope"], warnings: ["360Hz touch sampling", "Gaming touch issues"] },
-            battery: { title: "Infinix GT 20 Pro Battery Drain", causes: ["🔋 Old battery", "📱 Background apps", "🔧 Leakage", "💻 Software"], steps: ["STEP 1: Check health", "STEP 2: Check background", "STEP 3: Calibrate", "STEP 4: Check leakage", "STEP 5: Check PMIC", "STEP 6: Update", "STEP 7: Replace battery"], tools: ["Multimeter", "DC Power Supply", "Thermal camera"], warnings: ["5000mAh dual cell", "Check both cells"] },
-            sim: { title: "Infinix GT 20 Pro SIM Fix", causes: ["💳 SIM card", "📱 SIM tray", "🔧 SIM IC", "🔌 Connector"], steps: ["STEP 1: Reinsert SIM", "STEP 2: Test different", "STEP 3: Check tray", "STEP 4: Inspect pins", "STEP 5: Locate SIM IC", "STEP 6: Check continuity", "STEP 7: Reheat 300°C", "STEP 8: Replace IC"], tools: ["Multimeter", "Hot air gun 300°C", "Microscope", "Tweezers"], warnings: ["Dual SIM", "Check both slots"] },
-            fingerprint: { title: "Infinix GT 20 Pro Fingerprint Fix", causes: ["🔐 Under display", "🖥️ Display", "🔧 Sensor", "💻 Software"], steps: ["STEP 1: Delete and re-add", "STEP 2: Clean screen", "STEP 3: Remove protector", "STEP 4: Check display connector", "STEP 5: Optical sensor under display", "STEP 6: Calibrate", "STEP 7: Update", "STEP 8: Replace display"], tools: ["Soft cloth", "Multimeter", "Plastic tools"], warnings: ["Optical sensor", "Screen protector affects"] },
-            buttons: { title: "Infinix GT 20 Pro Button Fix", causes: ["🔘 Power", "🔘 Volume", "🧵 Flex", "🔌 Connector"], steps: ["STEP 1: Check feel", "STEP 2: Inspect flex", "STEP 3: Clean contacts", "STEP 4: Check continuity", "STEP 5: Reheat connector", "STEP 6: Replace flex", "STEP 7: Check side IC"], tools: ["Multimeter", "Soldering iron", "Alcohol", "Tweezers"], warnings: ["Shoulder triggers", "Check gaming buttons"] }
-        };
-
-        // Map models to their specific guides
-        const modelGuideMap = {
-            "iPhone 16 Pro Max": iPhone16ProMaxGuides,
-            "Galaxy S24 Ultra": SamsungS24UltraGuides,
-            "Spark 20 Pro": TechnoSpark20ProGuides,
-            "GT 20 Pro": InfinixGT20ProGuides
-        };
-
-        // Default guide for any model/fault not specifically defined
-        function getDefaultGuide(faultId) {
-            const defaultGuides = {
-                charging: { title: "Charging Problem - Standard Guide", causes: ["🔌 Dirty port", "🔋 Battery issue", "🔧 Charging IC", "🧵 Coil issue"], steps: ["STEP 1: Clean port", "STEP 2: Test different charger", "STEP 3: Check battery voltage", "STEP 4: Locate charging IC", "STEP 5: Check VBUS", "STEP 6: Reheat IC", "STEP 7: Replace IC"], tools: ["Multimeter", "Hot air gun", "Soldering iron"], warnings: ["Disconnect battery first", "Use ESD protection"] },
-                dead: { title: "Dead Mobile - Standard Guide", causes: ["🔋 Dead battery", "🔧 PMIC", "⚡ Short", "🔘 Power button"], steps: ["STEP 1: Charge 30 min", "STEP 2: Check battery", "STEP 3: Use DC supply", "STEP 4: Check PMIC", "STEP 5: Check voltages", "STEP 6: Reheat PMIC"], tools: ["DC Supply", "Multimeter", "Hot air gun"], warnings: ["Check for shorts", "Don't overheat"] },
-                speaker: { title: "Speaker Problem - Standard Guide", causes: ["🔊 Blown speaker", "🧹 Blocked", "🔌 Loose", "🎛️ Audio IC"], steps: ["STEP 1: Clean grille", "STEP 2: Test known speaker", "STEP 3: Check connector", "STEP 4: Reheat audio IC", "STEP 5: Replace speaker"], tools: ["Multimeter", "Hot air gun", "Soft brush"], warnings: ["Don't blow air directly", "Handle gently"] },
-                mic: { title: "Microphone Problem - Standard Guide", causes: ["🎙️ Blocked", "🔌 Flex issue", "🔧 Audio IC", "🧵 Track"], steps: ["STEP 1: Clean mic hole", "STEP 2: Test recording", "STEP 3: Check flex", "STEP 4: Check continuity", "STEP 5: Reheat audio IC", "STEP 6: Replace flex"], tools: ["Multimeter", "Soft brush", "Soldering iron"], warnings: ["Don't poke hole", "Multiple mics"] },
-                network: { title: "Network Problem - Standard Guide", causes: ["📡 Antenna", "🔧 RF IC", "📱 IMEI", "🔌 Connector"], steps: ["STEP 1: Toggle Airplane", "STEP 2: Check IMEI", "STEP 3: Inspect antenna", "STEP 4: Reheat RF IC", "STEP 5: Flash firmware"], tools: ["Multimeter", "Hot air gun", "Microscope"], warnings: ["Check IMEI first", "Don't short antenna"] },
-                display: { title: "Display Problem - Standard Guide", causes: ["🔌 Loose", "🖥️ Cracked", "🔧 IC", "⚡ Backlight"], steps: ["STEP 1: Reseat connector", "STEP 2: Test known display", "STEP 3: Check voltages", "STEP 4: Replace display"], tools: ["Multimeter", "Plastic tools", "Alcohol"], warnings: ["Disconnect battery", "Handle carefully"] },
-                water: { title: "Water Damage - Standard Guide", causes: ["💧 Corrosion", "⚡ Shorts", "🔧 Damaged ICs"], steps: ["STEP 1: Remove battery", "STEP 2: Clean alcohol", "STEP 3: Ultrasonic clean", "STEP 4: Inspect", "STEP 5: Dry", "STEP 6: Test"], tools: ["Isopropyl alcohol", "Ultrasonic cleaner", "Microscope"], warnings: ["DO NOT power on", "Act quickly"] },
-                camera: { title: "Camera Problem - Standard Guide", causes: ["🔌 Loose", "📸 Module", "🔧 IC", "💻 Software"], steps: ["STEP 1: Clear cache", "STEP 2: Reseat connector", "STEP 3: Test known camera", "STEP 4: Replace module"], tools: ["Plastic tools", "Multimeter", "Alcohol"], warnings: ["Don't touch lens", "Check all cameras"] },
-                wifi: { title: "WiFi Problem - Standard Guide", causes: ["📡 Antenna", "🔧 WiFi IC", "💻 Software"], steps: ["STEP 1: Toggle WiFi", "STEP 2: Reset Network", "STEP 3: Check antenna", "STEP 4: Reheat WiFi IC", "STEP 5: Replace IC"], tools: ["Multimeter", "Hot air gun", "Flux"], warnings: ["Check antenna first", "Same IC for BT"] },
-                bluetooth: { title: "Bluetooth Problem - Standard Guide", causes: ["🔵 WiFi/BT IC", "📡 Antenna", "💻 Software"], steps: ["STEP 1: Toggle BT", "STEP 2: Forget devices", "STEP 3: Reset Network", "STEP 4: Reheat combo IC"], tools: ["Multimeter", "Hot air gun"], warnings: ["Same IC as WiFi", "Replace if both fail"] },
-                touch: { title: "Touch Problem - Standard Guide", causes: ["👆 Touch IC", "🖥️ Display", "💻 Software"], steps: ["STEP 1: Restart", "STEP 2: Remove protector", "STEP 3: Reseat connector", "STEP 4: Reheat Touch IC", "STEP 5: Replace display"], tools: ["Multimeter", "Hot air gun", "Plastic tools"], warnings: ["Check screen protector", "Ghost touches"] },
-                battery: { title: "Battery Drain - Standard Guide", causes: ["🔋 Old battery", "📱 Apps", "🔧 Leakage"], steps: ["STEP 1: Check health", "STEP 2: Check apps", "STEP 3: Calibrate", "STEP 4: Check leakage", "STEP 5: Replace battery"], tools: ["Multimeter", "DC Supply"], warnings: ["Check swelling", "Replace if <80%"] },
-                sim: { title: "SIM Not Detected - Standard Guide", causes: ["💳 SIM card", "📱 Tray", "🔧 SIM IC"], steps: ["STEP 1: Reinsert SIM", "STEP 2: Test different SIM", "STEP 3: Check tray", "STEP 4: Inspect pins", "STEP 5: Reheat SIM IC"], tools: ["Multimeter", "Hot air gun", "Microscope"], warnings: ["Don't bend pins", "Check both slots"] },
-                fingerprint: { title: "Fingerprint Problem - Standard Guide", causes: ["🔐 Sensor", "🔌 Connector", "💻 Software"], steps: ["STEP 1: Delete and re-add", "STEP 2: Clean sensor", "STEP 3: Check connector", "STEP 4: Update software"], tools: ["Soft cloth", "Multimeter"], warnings: ["Clean sensor", "Screen protector affects"] },
-                buttons: { title: "Button Problem - Standard Guide", causes: ["🔘 Button", "🧵 Flex", "🔌 Connector"], steps: ["STEP 1: Check feel", "STEP 2: Inspect flex", "STEP 3: Clean contacts", "STEP 4: Check continuity", "STEP 5: Replace flex"], tools: ["Multimeter", "Soldering iron", "Alcohol"], warnings: ["Flex tears easily", "Check all buttons"] }
-            };
-            return defaultGuides[faultId] || defaultGuides.charging;
-        }
-
-        function getRepairGuide(modelName, faultId) {
-            if (modelGuideMap[modelName] && modelGuideMap[modelName][faultId]) {
-                return modelGuideMap[modelName][faultId];
+        const diagnosticData = {
+            charging: {
+                title: "🔋 Charging Problem - Complete Professional Diagnosis",
+                steps: [
+                    { number: 1, title: "External Accessories Check", content: "Sab se pehle doosra charger aur cable use karo. Confirm karo ke problem phone mein hai ya charger mein.", readings: [{ text: "✅ Doosra charger aur cable use karo", type: "success" }, { text: "✅ Doosre phone se same charger check karo", type: "success" }, { text: "❌ Agar doosra phone charge ho raha hai → Problem phone mein hai", type: "fail" }], image: "🔌" },
+                    { number: 2, title: "Charging Port Inspection", content: "Charging port ko magnifying glass se check karo. Dust ya bend pins to nahi?", readings: [{ text: "📌 Port ke andar koi pin bend to nahi?", type: "info" }, { text: "✅ Port saaf karo - Soft brush + Isopropyl Alcohol 99%", type: "success" }, { text: "❌ Agar pin bend hai → Charging port replace karo", type: "fail" }], image: "🔍" },
+                    { number: 3, title: "Battery Voltage Check (Multimeter se)", content: "Multimeter le kar battery ke positive (+) aur negative (-) terminal check karo.", readings: [{ text: "📊 Normal Reading: 3.7V to 4.2V", type: "success", value: "3.7V - 4.2V" }, { text: "⚠️ Low Reading: 2.5V to 3.6V → Deep discharge", type: "fail", value: "2.5V - 3.6V" }, { text: "❌ Dead Reading: 0V to 2.4V → Battery replace karo", type: "fail", value: "0V - 2.4V" }], image: "🔋" },
+                    { number: 4, title: "Charging IC (PMIC) Check", content: "Motherboard par PMIC locate karo (battery connector ke paas).", readings: [{ text: "📊 PMIC Input Voltage (VBUS): 5V aana chahiye", type: "success", value: "5V ± 0.2V" }, { text: "📊 PMIC Output (VBAT): 3.7V to 4.2V", type: "success", value: "3.7V - 4.2V" }, { text: "❌ Agar voltage missing → PMIC reheat (350°C with flux)", type: "fail" }], image: "🧩" },
+                    { number: 5, title: "Final Solution", content: "Sab kuch check karne ke baad ye steps follow karo:", readings: [{ text: "✅ Step 1: Charging port replace karo", type: "success" }, { text: "✅ Step 2: Battery replace karo", type: "success" }, { text: "✅ Step 3: PMIC reheat/reball karo", type: "success" }], image: "🔧" }
+                ],
+                tools: ["Digital Multimeter", "Soldering iron (fine tip)", "Hot air gun (350°C)", "Isopropyl Alcohol 99%", "Flux", "Tweezers"],
+                warnings: ["⚠️ Battery disconnect karo motherboard par kaam karne se pehle", "⚠️ PMIC heat karte waqt 380°C se zyada nahi karna", "⚠️ Short circuit check karo bina power lagaye"]
+            },
+            dead: {
+                title: "💀 Dead Mobile - Complete Professional Diagnosis",
+                steps: [
+                    { number: 1, title: "Physical Inspection", content: "Phone ko khol kar motherboard inspect karo.", readings: [{ text: "🔍 Koi jaley hue component? (Black/brown spots)", type: "info" }, { text: "🔍 Koi cracked IC?", type: "info" }, { text: "🔍 Water damage signs?", type: "info" }], image: "🔍" },
+                    { number: 2, title: "Battery Check", content: "Battery ko disconnect karo aur voltage check karo.", readings: [{ text: "📊 Normal Reading: 3.7V to 4.2V", type: "success", value: "3.7V - 4.2V" }, { text: "❌ Agar 0V → Battery dead, replace karo", type: "fail", value: "0V" }], image: "🔋" },
+                    { number: 3, title: "Power Button Check", content: "Power button ke continuity check karo.", readings: [{ text: "📊 Power button par voltage: 1.8V ya 3.3V", type: "success", value: "1.8V or 3.3V" }, { text: "📊 Button press karte waqt voltage 0V", type: "success", value: "0V" }, { text: "❌ Agar voltage nahi hai → PMIC issue", type: "fail" }], image: "🔘" },
+                    { number: 4, title: "PMIC Voltage Check", content: "PMIC ke output pins par voltages measure karo.", readings: [{ text: "📊 VCC_MAIN: 3.3V to 4.2V", type: "success", value: "3.3V - 4.2V" }, { text: "📊 VDD_CPU: 0.9V to 1.2V", type: "success", value: "0.9V - 1.2V" }, { text: "📊 VDD_MEM: 1.1V to 1.8V", type: "success", value: "1.1V - 1.8V" }], image: "🧩" },
+                    { number: 5, title: "Final Solution", content: "Diagnosis complete karne ke baad:", readings: [{ text: "✅ Step 1: Battery replace karo", type: "success" }, { text: "✅ Step 2: Power button replace karo", type: "success" }, { text: "✅ Step 3: PMIC reheat/reball karo", type: "success" }, { text: "✅ Step 4: CPU reball (last option)", type: "success" }], image: "🔧" }
+                ],
+                tools: ["Digital Multimeter", "DC Power Supply", "Hot air gun", "Soldering iron", "Microscope"],
+                warnings: ["⚠️ Pehle short circuit check karo", "⚠️ DC power supply par current limit 1A set karo", "⚠️ CPU reballing expert level ka kaam hai"]
             }
-            return getDefaultGuide(faultId);
+        };
+
+        function getDiagnostic(faultId) {
+            return diagnosticData[faultId] || {
+                title: `🔧 ${faultsList.find(f => f.id === faultId)?.name || "Repair"} - Professional Guide`,
+                steps: [
+                    { number: 1, title: "Physical Inspection", content: "Device ko visually inspect karo. Visible damage check karo.", readings: [{ text: "🔍 Check for burn marks, corrosion, physical damage", type: "info" }], image: "🔍" },
+                    { number: 2, title: "Component Testing", content: "Related components ko multimeter se test karo.", readings: [{ text: "📊 Check continuity of related tracks", type: "info" }, { text: "📊 Check voltage at test points", type: "info" }], image: "📊" },
+                    { number: 3, title: "Final Repair", content: "Faulty component identify karne ke baad replace karo.", readings: [{ text: "✅ Replace faulty component", type: "success" }, { text: "✅ Test thoroughly after repair", type: "success" }], image: "🔧" }
+                ],
+                tools: ["Multimeter", "Soldering iron", "Hot air gun", "Tweezers", "Flux"],
+                warnings: ["⚠️ Always disconnect battery first", "⚠️ Use proper ESD protection"]
+            };
         }
 
-        // Navigation state
-        let currentPage = "home";
-        let currentBrand = null;
-        let currentModel = null;
+        // ============================================
+        // ROUTING SYSTEM (Pure JS)
+        // ============================================
+        function slugify(text) {
+            return text.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
+        }
 
+        function getRoute() {
+            const path = window.location.pathname;
+            if (path === '/' || path === '/index.html') return { type: 'home' };
+            
+            const parts = path.split('/').filter(p => p);
+            
+            if (parts[0] === 'brand' && parts[1]) {
+                return { type: 'brand', brandId: parts[1] };
+            }
+            if (parts[0] === 'model' && parts[1] && parts[2]) {
+                return { type: 'model', brandId: parts[1], modelSlug: parts[2] };
+            }
+            if (parts[0] === 'repair' && parts[1] && parts[2] && parts[3]) {
+                return { type: 'repair', brandId: parts[1], modelSlug: parts[2], faultId: parts[3] };
+            }
+            return { type: 'home' };
+        }
+
+        function getModelNameFromSlug(brandId, slug) {
+            const brandModels = models[brandId] || [];
+            return brandModels.find(m => slugify(m) === slug) || brandModels[0] || "";
+        }
+
+        function getFaultFromSlug(slug) {
+            return faultsList.find(f => f.slug === slug) || faultsList[0];
+        }
+
+        function navigateTo(url) {
+            window.history.pushState({}, '', url);
+            render();
+        }
+
+        // ============================================
+        // RENDER FUNCTIONS
+        // ============================================
         function renderHome() {
             return `
                 <div class="search-bar">
-                    <input type="text" id="searchInput" placeholder="🔍 Search mobile model..." onkeyup="filterBrands()">
+                    <input type="text" id="searchInput" placeholder="🔍 Search mobile brand... (e.g., Apple, Samsung)" onkeyup="filterBrands()">
                 </div>
                 <h2 class="section-title">📱 Select Your Mobile Brand</h2>
-                <div class="brands-grid">
+                <div class="brands-grid" id="brandsGrid">
                     ${brands.map(brand => `
-                        <div class="brand-card" onclick="navigateToBrand('${brand.id}')">
+                        <a href="/brand/${brand.id}" class="brand-card" onclick="event.preventDefault(); navigateTo('/brand/${brand.id}')">
                             <div class="brand-icon">${brand.icon}</div>
                             <h3>${brand.name}</h3>
                             <p>${brand.modelCount} Models Available</p>
-                            <span class="model-count">View Models →</span>
-                        </div>
+                            <span class="model-count">View All Models →</span>
+                        </a>
                     `).join('')}
+                </div>
+                <div style="margin-top: 40px; padding: 20px; background: #f8f9fa; border-radius: 15px;">
+                    <h3 style="color: #e94560;">📱 About Karachi Mobile Repairing Master</h3>
+                    <p style="margin-top: 10px; line-height: 1.6;">Welcome to Karachi Mobile Repairing Master - Pakistan's most trusted mobile repairing guide. We provide professional, step-by-step diagnosis and repair tutorials for all mobile brands including Apple iPhone, Samsung, Techno, Infinix, Xiaomi, Oppo, Vivo, Realme, OnePlus, Google Pixel, and Motorola. Learn to fix charging problems, dead mobiles, speaker issues, microphone faults, network signal loss, water damage, display problems, and more. Each guide includes exact voltage readings, component testing procedures, and professional repair techniques used by expert technicians.</p>
                 </div>
             `;
         }
 
-        function renderBrandPage(brandId) {
+        function renderBrand(brandId) {
             const brand = brands.find(b => b.id === brandId);
+            if (!brand) return renderHome();
+            
             const brandModels = models[brandId] || [];
+            
             return `
-                <h2 class="section-title">${brand?.icon} ${brand?.name} - Models</h2>
+                <h2 class="section-title">${brand.icon} ${brand.name} - All Models</h2>
                 <div class="models-grid">
                     ${brandModels.map(model => `
-                        <div class="model-card" onclick="navigateToModel('${brandId}', '${model.replace(/'/g, "\\'")}')">
+                        <a href="/model/${brandId}/${slugify(model)}" class="model-card" onclick="event.preventDefault(); navigateTo('/model/${brandId}/${slugify(model)}')">
                             <div class="model-name">${model}</div>
-                            <div class="model-year">Click to see 15 faults →</div>
-                        </div>
+                            <span class="model-sub">Click to see faults →</span>
+                        </a>
                     `).join('')}
+                </div>
+                <div style="margin-top: 30px; padding: 15px; background: #f8f9fa; border-radius: 15px;">
+                    <p>📱 Complete repair guides for all ${brand.name} models. Select your model above to get started with professional diagnosis.</p>
                 </div>
             `;
         }
 
-        function renderFaultsPage(brandId, modelName) {
+        function renderModel(brandId, modelSlug) {
+            const brand = brands.find(b => b.id === brandId);
+            const modelName = getModelNameFromSlug(brandId, modelSlug);
+            if (!brand || !modelName) return renderHome();
+            
             return `
-                <div class="repair-header">
-                    <h2>📱 ${modelName}</h2>
-                    <p>Select the fault you are experiencing (15 faults available)</p>
-                </div>
+                <h2 class="section-title">📱 ${modelName}</h2>
+                <p style="margin-bottom: 20px; color: #7f8c8d;">Select the fault you are experiencing with your ${modelName}</p>
                 <div class="faults-grid">
                     ${faultsList.map(fault => `
-                        <div class="fault-card" onclick="navigateToRepair('${brandId}', '${modelName.replace(/'/g, "\\'")}', '${fault.id}')">
+                        <a href="/repair/${brandId}/${modelSlug}/${fault.slug}" class="fault-card" onclick="event.preventDefault(); navigateTo('/repair/${brandId}/${modelSlug}/${fault.slug}')">
                             <div class="fault-icon">${fault.icon}</div>
                             <div class="fault-info">
                                 <h4>${fault.name}</h4>
                                 <p>${fault.desc}</p>
                             </div>
-                        </div>
+                        </a>
                     `).join('')}
                 </div>
             `;
         }
 
-        function renderRepairPage(brandId, modelName, faultId) {
-            const guide = getRepairGuide(modelName, faultId);
-            const fault = faultsList.find(f => f.id === faultId);
+        function renderRepair(brandId, modelSlug, faultSlug) {
+            const brand = brands.find(b => b.id === brandId);
+            const modelName = getModelNameFromSlug(brandId, modelSlug);
+            const fault = getFaultFromSlug(faultSlug);
+            const data = getDiagnostic(fault.id);
+            
+            if (!brand || !modelName) return renderHome();
             
             return `
-                <div class="repair-header">
+                <div class="diagnostic-header">
                     <h2>📱 ${modelName}</h2>
-                    <p>${fault?.name || faultId} - Complete Model-Specific Repair Guide</p>
+                    <h3 style="color: #e94560;">${fault.name}</h3>
+                    <p>${data.title}</p>
                 </div>
                 
-                <div class="diagnosis-box">
-                    <h3>🔍 EXPERT DIAGNOSIS - ${modelName}</h3>
-                    <p><strong>Problem:</strong> ${fault?.desc || "Mobile fault"}</p>
-                    <p style="margin-top: 10px;"><strong>Guide:</strong> ${guide.title}</p>
-                </div>
+                <h3 style="margin: 20px 0; color: #16213e;">🔧 STEP-BY-STEP PROFESSIONAL DIAGNOSIS</h3>
                 
-                <div class="possible-causes">
-                    <h3>📋 POSSIBLE CAUSES (Check in this order)</h3>
-                    <ul class="cause-list">
-                        ${guide.causes.map(cause => `<li>🔹 ${cause}</li>`).join('')}
-                    </ul>
-                </div>
-                
-                <h3 style="margin: 20px 0 15px 0; color: #c0392b;">🛠️ STEP-BY-STEP REPAIR PROCEDURE</h3>
-                
-                ${guide.steps.map((step, index) => `
-                    <div class="step">
-                        <div class="step-title">📌 ${step.split(':')[0] || `Step ${index + 1}`}</div>
-                        <div class="step-text">${step}</div>
+                ${data.steps.map((step, idx) => `
+                    <div class="diagnostic-step">
+                        <div class="step-header" onclick="toggleStep(${idx})">
+                            <div>
+                                <span class="step-number">${step.number}</span>
+                                <strong>${step.title}</strong>
+                            </div>
+                            <span>▼</span>
+                        </div>
+                        <div class="step-body" id="step-${idx}">
+                            <p style="margin-bottom: 12px;">${step.content}</p>
+                            ${step.readings ? step.readings.map(r => `
+                                <div class="reading-box ${r.type === 'success' ? 'reading-success' : (r.type === 'fail' ? 'reading-fail' : '')}">
+                                    ${r.text}
+                                    ${r.value ? `<div class="reading-value">📊 Expected Reading: ${r.value}</div>` : ''}
+                                </div>
+                            `).join('') : ''}
+                            ${step.image ? `<div class="component-img">${step.image}</div>` : ''}
+                        </div>
                     </div>
                 `).join('')}
                 
-                <div class="tools-box">
-                    <h3>🔧 TOOLS REQUIRED</h3>
-                    <p>${guide.tools.join(' • ')}</p>
+                <div style="background: #16213e; color: white; padding: 20px; border-radius: 20px; margin: 20px 0;">
+                    <h3 style="color: #e94560; margin-bottom: 12px;">🔧 TOOLS REQUIRED</h3>
+                    <div>${data.tools.map(t => `<span class="tool-tag">${t}</span>`).join('')}</div>
                 </div>
                 
                 <div class="warning-box">
                     <h3>⚠️ IMPORTANT WARNINGS</h3>
-                    <ul>
-                        ${guide.warnings.map(warning => `<li>⚠️ ${warning}</li>`).join('')}
+                    <ul style="padding-left: 20px; margin-top: 10px;">
+                        ${data.warnings.map(w => `<li style="margin: 5px 0;">${w}</li>`).join('')}
                     </ul>
                 </div>
                 
-                <div style="background: #e8f4f8; border-radius: 15px; padding: 15px; margin-top: 20px; text-align: center;">
-                    <p style="color: #2980b9;">💡 <strong>${modelName} Pro Tip:</strong> Always start with the simplest fix first. Most problems are solved by cleaning!</p>
+                <div class="pro-tip">
+                    <h3>💡 PRO TIP</h3>
+                    <p>Always start with the simplest and cheapest fix first. Most problems are solved by cleaning or checking loose connections. Don't rush to replace expensive components!</p>
                 </div>
             `;
         }
 
-        function updateBackButton() {
-            const container = document.getElementById('backBtnContainer');
+        function renderBreadcrumb() {
+            const route = getRoute();
+            const container = document.getElementById('breadcrumb');
             if (!container) return;
-            if (currentPage === 'home') { container.innerHTML = ''; return; }
-            let backAction = '';
-            if (currentPage === 'brand') backAction = 'navigateToHome()';
-            else if (currentPage === 'faults') backAction = `navigateToBrand('${currentBrand}')`;
-            else if (currentPage === 'repair') backAction = `navigateToModel('${currentBrand}', '${currentModel?.replace(/'/g, "\\'")}')`;
-            container.innerHTML = `<button class="back-btn" onclick="${backAction}">⬅ Back</button>`;
+            
+            let html = `<a href="/" onclick="event.preventDefault(); navigateTo('/')">Home</a>`;
+            
+            if (route.type === 'brand') {
+                const brand = brands.find(b => b.id === route.brandId);
+                if (brand) html += `<span>›</span><a href="/brand/${route.brandId}" onclick="event.preventDefault(); navigateTo('/brand/${route.brandId}')">${brand.name}</a>`;
+            }
+            else if (route.type === 'model') {
+                const brand = brands.find(b => b.id === route.brandId);
+                const modelName = getModelNameFromSlug(route.brandId, route.modelSlug);
+                if (brand) html += `<span>›</span><a href="/brand/${route.brandId}" onclick="event.preventDefault(); navigateTo('/brand/${route.brandId}')">${brand.name}</a>`;
+                if (modelName) html += `<span>›</span><span>${modelName}</span>`;
+            }
+            else if (route.type === 'repair') {
+                const brand = brands.find(b => b.id === route.brandId);
+                const modelName = getModelNameFromSlug(route.brandId, route.modelSlug);
+                const fault = getFaultFromSlug(route.faultId);
+                if (brand) html += `<span>›</span><a href="/brand/${route.brandId}" onclick="event.preventDefault(); navigateTo('/brand/${route.brandId}')">${brand.name}</a>`;
+                if (modelName) html += `<span>›</span><a href="/model/${route.brandId}/${route.modelSlug}" onclick="event.preventDefault(); navigateTo('/model/${route.brandId}/${route.modelSlug}')">${modelName}</a>`;
+                if (fault) html += `<span>›</span><span>${fault.name}</span>`;
+            }
+            
+            container.innerHTML = html;
         }
 
-        function navigateToHome() { currentPage = 'home'; currentBrand = null; currentModel = null; document.getElementById('mainContent').innerHTML = renderHome(); updateBackButton(); window.scrollTo(0,0); }
-        function navigateToBrand(brandId) { currentPage = 'brand'; currentBrand = brandId; document.getElementById('mainContent').innerHTML = renderBrandPage(brandId); updateBackButton(); window.scrollTo(0,0); }
-        function navigateToModel(brandId, modelName) { currentPage = 'faults'; currentBrand = brandId; currentModel = modelName; document.getElementById('mainContent').innerHTML = renderFaultsPage(brandId, modelName); updateBackButton(); window.scrollTo(0,0); }
-        function navigateToRepair(brandId, modelName, faultId) { currentPage = 'repair'; currentBrand = brandId; currentModel = modelName; currentFault = faultId; document.getElementById('mainContent').innerHTML = renderRepairPage(brandId, modelName, faultId); updateBackButton(); window.scrollTo(0,0); }
+        function render() {
+            const route = getRoute();
+            const contentDiv = document.getElementById('mainContent');
+            
+            if (route.type === 'home') contentDiv.innerHTML = renderHome();
+            else if (route.type === 'brand') contentDiv.innerHTML = renderBrand(route.brandId);
+            else if (route.type === 'model') contentDiv.innerHTML = renderModel(route.brandId, route.modelSlug);
+            else if (route.type === 'repair') contentDiv.innerHTML = renderRepair(route.brandId, route.modelSlug, route.faultId);
+            else contentDiv.innerHTML = renderHome();
+            
+            renderBreadcrumb();
+            window.scrollTo(0, 0);
+        }
 
-        function filterBrands() {
+        function toggleStep(index) {
+            const step = document.getElementById(`step-${index}`);
+            if (step) step.classList.toggle('active');
+        }
+
+        window.navigateTo = navigateTo;
+        window.toggleStep = toggleStep;
+        window.filterBrands = function() {
             const searchTerm = document.getElementById('searchInput')?.value.toLowerCase() || '';
-            document.querySelectorAll('.brand-card').forEach(card => {
+            const cards = document.querySelectorAll('.brand-card');
+            cards.forEach(card => {
                 const name = card.querySelector('h3')?.innerText.toLowerCase() || '';
                 card.style.display = name.includes(searchTerm) ? 'block' : 'none';
             });
-        }
+        };
 
-        window.navigateToHome = navigateToHome;
-        window.navigateToBrand = navigateToBrand;
-        window.navigateToModel = navigateToModel;
-        window.navigateToRepair = navigateToRepair;
-        window.filterBrands = filterBrands;
-
-        navigateToHome();
+        window.onpopstate = render;
+        render();
     </script>
 </body>
 </html>
